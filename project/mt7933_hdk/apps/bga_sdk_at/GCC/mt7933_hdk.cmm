@@ -1,0 +1,100 @@
+SYStem.RESet
+SYStem.CPU CORTEXM33F
+SYStem.Option ENRESET ON
+SYStem.Option TRST ON
+SYStem.Option ResBreak OFF
+SYStem.Option WaitReset OFF
+SYStem.JtagClock 1MHz
+;sys.mode prepare
+;if swd mode, need set debug port type to swd
+SYStem.CONFIG.DEBUGPORTTYPE SWD
+SYStem.Up
+
+Setup.IMASKHLL ON
+Setup.IMASKASM ON
+
+Break.Select Program OnChip
+Break.Select Hll OnChip
+Break.Select Spot OnChip
+Break.Select Read OnChip
+Break.Select Write OnChip
+
+; TODO: Disable watch dog
+D.S SD:0x21020030 %LE %WORD 0x2200
+
+; TODO: EMI init
+;D.S SD:0x0        %LE %LONG 0x5a5a5a5a
+;D.S SD:0x4        %LE %LONG 0x5a5a5a5a
+;D.S SD:0xA00500A0 %LE %LONG 0x0d030000
+;D.S SD:0xA0050030 %LE %LONG 0x0
+;D.S SD:0xA0050048 %LE %LONG 0x1e0000 
+
+; disable boot slave, 
+; boot_vec_sel: 0x2106_0008[0] (bit 0) 
+; 0 - boot from ROM
+; 1 - boot from { BOOT_VECTOR1, BOOT_VECTOR0 }
+;D.S SD:0x21060008 %LE %LONG 0x0
+
+; TODO: disable cache 
+;D.S SD:0x20000000 %LE %LONG 0x0
+
+; TODO: Connsys POS
+;D.S SD:0x300D0030 %LE %LONG 0x00000301 ;primary power on,    bit[0]=1
+;D.dump SD:0x300D0030                   ;check 				 bit[16]=1
+;D.S SD:0x300D0030 %LE %LONG 0x00000311 ;secondary power on,  bit[4]=1
+;D.dump SD:0x300D0030                   ;check 				 bit[20]=1
+;D.S SD:0x300D0030 %LE %LONG 0x00000211 ;piso disable, 		 bit[8]=0
+;D.S SD:0x300D0030 %LE %LONG 0x00000611 ;pwr_rstb deassert,   bit[10]=1
+;D.S SD:0x300D0030 %LE %LONG 0x00000411 ;clk enable,          bit[9]=0
+; TODO: Reset connsys
+;D.S SD:0x30030120 %LE %LONG 0xFFFFFFFF ;de-assert ap_sw_rst_b, NOTE: check bit[31]=1
+;D.S SD:0x30030040 %LE %LONG 0x0E       ;rg_cfg_2wire_jtag,     NOTE: check bit[1]=1
+
+
+Local &start &end
+&start=clock.seconds()
+
+&end=clock.seconds()
+Print "Elapsed time is " &end-&start    " seconds"
+
+; Clear the exceptions: AIRCR.VECTCLRACTIVE
+d.s asd:0xE000ED0C %le %long 0x05FA0002
+
+; ===================================================================
+; Download the binary image to PSRAM directly
+; ===================================================================
+D.LOAD.ELF .\qfn_evb.elf /quad
+
+R.S R13 0x80040000      ; set stack pointer to the end of CM33 TCM
+R.S PC Reset_Handler    ; real target bypass BROM effect
+
+; source path remapping
+; Y.SPATH.T "\proj\mtkXXXXX" "\\mtksfs01\mtkXXXXX"
+
+; TODO: add source path
+; y.spath ..\..\..\project\mt7933_hdk\apps\iot_sdk_demo\GCC
+; y.spath ..\..\..\project\mt7933_hdk\apps\iot_sdk_demo\src
+; y.spath ..\..\..\project\mt7933_hdk\apps\iot_sdk_demo\ut
+; y.spath ..\..\..\kernel\rtos\FreeRTOS\SourceV10
+; y.spath ..\..\..\kernel\rtos\FreeRTOS\SourceV10\portable\GCC\ARM_CM33\non_secure
+; y.spath ..\..\..\kernel\rtos\FreeRTOS\SourceV10\portable\GCC\mt7933
+; y.spath ..\..\..\kernel\service\src
+; y.spath ..\..\..\driver\chip\mt7933\src
+; y.spath ..\..\..\driver\board\mt7933_hdk\util\src
+; y.spath ..\..\..\kernel\rtos\FreeRTOS\SourceV10\portable\MemMang
+; y.spath ..\..\..\middleware\MTK\nvdm\src
+; y.spath ..\..\..\middleware\MTK\nvdm_core\src_core
+; y.spath ..\..\..\kernel\rtos\FreeRTOS_test\src
+; y.spath ..\..\..\middleware\MTK\minicli\src
+; y.spath ..\..\..\middleware\MTK\minicli_protected\src
+
+;WinCLEAR
+D.L
+
+;v.watch %Hex (SCB_Type *)0xE000ED00
+;v.watch %Hex (NVIC_Type *)0xE000E100
+;v.watch %Hex (MPU_Type *)0xE000ED90
+
+b.s main
+;Register.View
+

@@ -1,0 +1,46 @@
+SYStem.RESet
+SYStem.CPU CORTEXM33F
+SYStem.Option ENRESET ON
+SYStem.Option TRST ON
+SYStem.Option ResBreak OFF
+SYStem.Option WaitReset OFF
+SYStem.JtagClock 1MHz
+;sys.mode prepare
+;if swd mode, need set debug port type to swd
+SYStem.CONFIG.DEBUGPORTTYPE SWD
+SYStem.Up
+
+Setup.IMASKHLL ON
+Setup.IMASKASM ON
+
+Break.Select Program OnChip
+Break.Select Hll OnChip
+Break.Select Spot OnChip
+Break.Select Read OnChip
+Break.Select Write OnChip
+
+; Clear the exceptions: AIRCR.VECTCLRACTIVE
+d.s asd:0xE000ED0C %le %long 0x05FA0002
+
+D.LOAD.ELF .\mt7933_bootloader-xip.elf /quad /nocode
+
+IF data.long(asd:0x18000000)==0xbd9fc018
+(
+    ; skip mcuboot header
+    d.s asd:0x21060000 %le %long data.long(asd:0x18000080)
+    d.s asd:0x21060004 %le %long data.long(asd:0x18000084)
+    d.s asd:0x21060008 %le %long data.long(asd:0x21060008)|0x1
+)
+ELSE
+(
+    ; naked bin file
+    d.s asd:0x21060000 %le %long data.long(asd:0x18000000)
+    d.s asd:0x21060004 %le %long data.long(asd:0x18000004)
+    d.s asd:0x21060008 %le %long data.long(asd:0x21060008)|0x1
+)
+
+;system.reset
+;system.up
+;wait 10.ms
+
+D.L

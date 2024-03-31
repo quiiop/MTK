@@ -1,0 +1,542 @@
+# Copyright Statement:
+#
+# (C) 2005-2016  MediaTek Inc. All rights reserved.
+#
+# This software/firmware and related documentation ("MediaTek Software") are
+# protected under relevant copyright laws. The information contained herein
+# is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+# Without the prior written permission of MediaTek and/or its licensors,
+# any reproduction, modification, use or disclosure of MediaTek Software,
+# and information contained herein, in whole or in part, shall be strictly prohibited.
+# You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+# if you have agreed to and been bound by the applicable license agreement with
+# MediaTek ("License Agreement") and been granted explicit permission to do so within
+# the License Agreement ("Permitted User").  If you are not a Permitted User,
+# please cease any access or use of MediaTek Software immediately.
+# BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+# THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+# ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+# WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+# MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+# NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+# SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+# SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+# THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+# THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+# CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+# SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+# STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+# CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+# AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+# OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+# MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+#
+SHELL       := /bin/bash
+SOURCE_DIR   = ../../../../..
+
+PWD= $(shell pwd)
+SDK_PATH     = $(abspath $(PWD)/$(SOURCE_DIR))
+APP_PATH     = $(patsubst $(SDK_PATH)/%,%,$(abspath $(dir $(PWD))))
+
+FEATURE     ?= feature.mk
+HAL_FEATURE ?= hal_feature.mk
+SEC_FEATURE ?= security.mk
+BL_FEATURE  ?= bl_feature.mk
+
+#############################################################################
+# Show info about this build
+#############################################################################
+
+$(info BL BUILD start)
+
+ifeq ($(BL_MAIN_PROJECT),)
+$(info BUILD TYPE: standalone)
+else
+$(info BUILD TYPE: subproject of $(BL_MAIN_PROJECT))
+endif
+
+#############################################################################
+# Deciding feature options
+#############################################################################
+
+# Subproject build overrides BL options by new options from main project
+ifneq ($(BL_MAIN_PROJECT),)
+    BL_FEATURE_FILE=$(SDK_PATH)/project/mt7933_hdk/apps/$(BL_MAIN_PROJECT)/GCC/$(BL_FEATURE)
+    ifeq ($(wildcard $(BL_FEATURE_FILE)),)
+        $(info main project has not provided $(BL_FEATURE))
+    else
+        include $(BL_FEATURE_FILE)
+        $(info INCLUDING $(BL_FEATURE_FILE))
+    endif
+endif
+
+include $(FEATURE)
+include $(HAL_FEATURE)
+include $(SEC_FEATURE)
+
+#############################################################################
+
+$(info MTK_BL_PSRAM_ENABLE    = $(MTK_BL_PSRAM_ENABLE))
+$(info MTK_BL_PACKAGE_TYPE    = $(MTK_BL_PACKAGE_TYPE))
+
+#############################################################################
+
+ifeq ($(MTK_BL_PACKAGE_TYPE),qfn)
+MTK_PINMUX_SELECTION                = QFN
+else
+MTK_PINMUX_SELECTION                = BGA
+endif
+
+#######################################################
+# default target before any other targets
+
+all:
+
+#######################################################
+# Include Module
+
+# Gloabl Config
+-include $(SOURCE_DIR)/.config
+# IC Config
+-include $(SOURCE_DIR)/config/chip/$(IC_CONFIG)/chip.mk
+# Board Config
+-include $(SOURCE_DIR)/config/board/$(BOARD_CONFIG)/board.mk
+
+# EPT Config
+include $(SOURCE_DIR)/driver/board/mt7933_hdk/ept/module.mk
+
+FLOAT_TYPE   = hard
+BUILD_DIR    = $(PWD)/Build
+
+# Project name
+ifeq ($(MTK_PINMUX_SELECTION),QFN)
+PROJ_NAME    = mt7931an_bootloader
+endif
+
+ifeq ($(MTK_PINMUX_SELECTION),BGA)
+PROJ_NAME    = mt7933cv_bootloader
+endif
+
+###################################################
+# Release Mode Support - MTK_RELEASE_MODE
+#
+# The feature will allow to configure different
+# feature set via release purpose
+#
+# Currently, the supported release mode includes:
+# 1. release : SDK release purpose
+# 2. debug   : RD/SQA debug purpose
+# 3. mfg     : Manufacture testing purpose
+###################################################
+ifneq ($(MTK_RELEASE_MODE),)
+CFLAGS += -DMTK_M_RELEASE=1
+CFLAGS += -DMTK_M_DEBUG=2
+CFLAGS += -DMTK_M_MFG=3
+
+# Release mode
+ifeq ($(MTK_RELEASE_MODE), release)
+CFLAGS += -DMTK_RELEASE_MODE=MTK_M_RELEASE
+endif
+
+# Debug Mode
+ifeq ($(MTK_RELEASE_MODE), debug)
+CFLAGS += -DMTK_RELEASE_MODE=MTK_M_DEBUG
+endif
+
+# MFG Mode
+ifeq ($(MTK_RELEASE_MODE),mfg)
+CFLAGS += -DMTK_RELEASE_MODE=MTK_M_MFG
+endif
+
+# Bootloader Option From Project Configure
+ifeq ($(MTK_MFG_VERIFY), y)
+CFLAGS  += -DMTK_MFG_VERIFY
+endif
+ifeq ($(MTK_MFG_BOOT), y)
+CFLAGS  += -DMTK_MFG_BOOT
+endif
+ifdef BL_SWITCH_GPIO
+CFLAGS += -DBL_SWITCH_GPIO=$(BL_SWITCH_GPIO)
+endif
+ifdef MFG_MAGIC
+CFLAGS += -DMFG_MAGIC=$(MFG_MAGIC)
+endif
+endif
+
+PROJ_PATH    = $(PWD)
+OUTPATH      = $(PWD)/Build
+SCATTER_TOOL_PY=$(SDK_PATH)/tools/scripts/get_scatter/get_scatter_arg_v2.py
+#Q ?= @
+Q ?=
+
+BUILD_OUTPUT = output_ram output_xip
+
+
+ELF_RAM=$(OUTPATH)/$(PROJ_NAME)-ram.elf
+ELF_XIP=$(OUTPATH)/$(PROJ_NAME)-xip.elf
+
+MAP_RAM=$(patsubst $(SDK_PATH)/%,$(SOURCE_DIR)/%,$(OUTPATH)/$(PROJ_NAME)-ram.map)
+MAP_XIP=$(patsubst $(SDK_PATH)/%,$(SOURCE_DIR)/%,$(OUTPATH)/$(PROJ_NAME)-xip.map)
+
+HEX_RAM=$(OUTPATH)/$(PROJ_NAME)-ram.hex
+HEX_XIP=$(OUTPATH)/$(PROJ_NAME)-xip.hex
+
+BIN_RAM=$(OUTPATH)/$(PROJ_NAME)-ram.bin
+BIN_XIP=$(OUTPATH)/$(PROJ_NAME)-xip.bin
+
+ifeq ($(MTK_BL_SIGN_ENABLE),y)
+SGN_RAM=$(OUTPATH)/$(PROJ_NAME)-ram.sgn
+SGN_XIP=$(OUTPATH)/$(PROJ_NAME)-xip.sgn
+endif
+
+LNK_RAM=$(OUTPATH)/$(PROJ_NAME)-ram.lnk
+LNK_XIP=$(OUTPATH)/$(PROJ_NAME)-xip.lnk
+
+SCATTER_FILE=$(OUTPATH)/$(PROJ_NAME)_scatter.ini
+
+###################################################
+# MEMORY region source file
+#
+# This file is needed for generating scatter file.
+# It should contain ROM_xxx region information in
+# "MEMORY {}" block of a linker script file.
+#
+# Currently, the logic is:
+# 1. if bootloader is built standalone, use memory.ld from self, otherwise
+# 2. if MAIN-PROJECT has memory.ld, use it, otherwise,
+# 3. fallback to memory.ld from bootloader.
+###################################################
+
+ifneq ($(BL_MAIN_PROJECT),)
+#LDSCRIPT_PATHS  += -Wl,-L$(SOURCE_DIR)/project/mt7933_hdk/apps/$(BL_MAIN_PROJECT)/GCC/ld
+endif
+
+# LDSCRIPT_PATHS  ?= -Wl,-L$(SOURCE_DIR)/project/mt7933_hdk/apps/bootloader/GCC/ld
+MEMORY_LD ?= $(PROJ_PATH)/ld/memory.ld
+LDSCRIPT_PATHS  ?= -Wl,-L$(PROJ_PATH)/ld
+
+ifneq (,$(BL_MAIN_PROJECT))
+
+    MAIN_PRJ_DIR ?= $(SOURCE_DIR)/project/mt7933_hdk/apps/$(BL_MAIN_PROJECT)/GCC
+    ifneq (,$(wildcard $(MAIN_PRJ_DIR)/ld/memory.ld))
+        MEMORY_LD       := $(MAIN_PRJ_DIR)/ld/memory.ld
+        LDSCRIPT_PATHS  := -Wl,-L$(MAIN_PRJ_DIR)/ld
+    endif
+endif
+
+###################################################
+# Main APP files
+###################################################
+
+APP_PATH_SRC = $(APP_PATH)/src
+
+C_FILES += $(APP_PATH_SRC)/bl_fota.c
+C_FILES += $(APP_PATH_SRC)/bl_image.c
+C_FILES += $(APP_PATH_SRC)/bl_mem.c
+C_FILES += $(APP_PATH_SRC)/bl_mfg.c
+C_FILES += $(APP_PATH_SRC)/bl_mperf.c
+C_FILES += $(APP_PATH_SRC)/bl_region.c
+C_FILES += $(APP_PATH_SRC)/bl_sec.c
+C_FILES += $(APP_PATH_SRC)/bl_status.c
+C_FILES += $(APP_PATH_SRC)/bl_test.c
+C_FILES += $(APP_PATH_SRC)/bl_util.c
+C_FILES += $(APP_PATH_SRC)/cli_cmds.c
+C_FILES += $(APP_PATH_SRC)/cli_def.c
+C_FILES += $(APP_PATH_SRC)/crc16.c
+C_FILES += $(APP_PATH_SRC)/ept_eint_var.c
+C_FILES += $(APP_PATH_SRC)/ept_gpio_var.c
+C_FILES += $(APP_PATH_SRC)/exception_handler.c
+C_FILES += $(APP_PATH_SRC)/hw_uart.c
+C_FILES += $(APP_PATH_SRC)/main.c
+C_FILES += $(APP_PATH_SRC)/ps_loadsave.c
+C_FILES += $(APP_PATH_SRC)/sys_init.c
+C_FILES += $(APP_PATH_SRC)/system_mt7933.c
+C_FILES += $(APP_PATH_SRC)/xmodem.c
+C_FILES += $(APP_PATH)/GCC/syscalls.c
+ifeq ($(MTK_FOTA_V3_ENABLE),y)
+    C_FILES += $(APP_PATH_SRC)/fota_flash_config.c
+endif
+
+S_FILES += $(APP_PATH_SRC)/exception.s
+
+C_OBJS   = $(C_FILES:%.c=$(BUILD_DIR)/%.o)
+CXX_OBJS = $(CXX_FILES:%.cpp=$(BUILD_DIR)/%.o)
+S_OBJS   = $(S_FILES:%.s=$(BUILD_DIR)/%.o)
+
+ifeq ($(MTK_BUILD_WARNING_AS_ERROR_ENABLE),y)
+CFLAGS  += -Werror
+endif
+CFLAGS += -Wno-pointer-to-int-cast -mcmse
+CFLAGS += -Wdouble-promotion -Wtype-limits
+CFLAGS += -Wsign-compare -Wstrict-prototypes
+CFLAGS += -Wmissing-field-initializers -Wvla
+#sub-items of -Wextra
+CFLAGS +=-Wclobbered -Wignored-qualifiers -Wold-style-declaration
+CFLAGS +=-Wmissing-parameter-type -Woverride-init -Wstring-compare
+CFLAGS +=-Wuninitialized -Wshift-negative-value -Wunused-but-set-parameter
+CFLAGS +=-Wempty-body -Wimplicit-fallthrough=3 -Wcast-function-type -Wenum-conversion
+
+
+
+ifeq ($(MTK_TFM_ENABLE),y)
+    CFLAGS += -DMTK_TFM_ENABLE
+endif
+
+###################################################
+# BOOTLOADER option settings
+###################################################
+
+ifeq ($(MTK_BL_BOOT_MENU_ENABLE),y)
+  CFLAGS += -DMTK_BL_BOOT_MENU_ENABLE
+endif
+
+ifeq ($(MTK_BL_DEBUG_ENABLE),y)
+  CFLAGS += -DMTK_BL_DEBUG_ENABLE
+endif
+
+ifeq ($(MTK_BL_RESTORE_DEFAULT_ENABLE),y)
+  CFLAGS += -DMTK_BL_RESTORE_DEFAULT_ENABLE
+endif
+
+ifeq ($(MTK_BL_CACHE_ENABLE),y)
+  CFLAGS += -DMTK_BL_CACHE_ENABLE
+endif
+
+ifeq ($(MTK_BL_WDT_ENABLE), y)
+  CFLAGS += -DMTK_BL_WDT_ENABLE
+endif
+
+ifeq ($(MTK_BL_PSRAM_ENABLE),y)
+  CFLAGS += -DMTK_BL_PSRAM_ENABLE
+endif
+
+
+# Brief:       This option allows not verified image to boot up when secure
+#              boot feature is enabled.
+# Usage:       Enable the feature by configuring it as y.
+ifeq ($(MTK_BL_SECURE_BOOT_PERMISSIVE_ENABLE),y)
+  CFLAGS += -DMTK_BL_SECURE_BOOT_PERMISSIVE_ENABLE
+endif
+
+
+###################################################
+# MCUBOOT sign settings
+###################################################
+
+ifeq ($(MTK_BL_SIGN_ENABLE),y)
+    SGN_VER        = 0.0.1
+    SGN_PEM        = $(SDK_PATH)/$(APP_PATH)/mtk-dev.pem
+    HEADER_OFFSET := 0x80
+    LOAD_ADDR_RAM := 0x08001080
+    LOAD_ADDR_XIP := 0x18000080
+    BUILD_OUTPUT  += output_xip_sgn output_ram_sgn
+else
+    HEADER_OFFSET := 0x00
+endif
+
+ifeq ($(MTK_RTOS_SIGN_ENABLE),y)
+    CFLAGS        += -DMTK_RTOS_SIGN_ENABLE
+endif
+
+###################################################
+# include path
+###################################################
+
+CFLAGS += -I$(SOURCE_DIR)/$(APP_PATH)/inc
+
+ifeq ($(MTK_PINMUX_SELECTION),QFN)
+    CFLAGS += -I$(SOURCE_DIR)/$(APP_PATH)/inc/qfn
+endif
+
+ifeq ($(MTK_PINMUX_SELECTION),BGA)
+    CFLAGS += -I$(SOURCE_DIR)/$(APP_PATH)/inc/bga
+endif
+
+
+###################################################
+# LD Flags
+#
+# BL_MAIN_PROJECT (external dependency)
+#
+#   This symbol is supplied by build.sh to bootloader when there is a main
+#   RTOS project been built. Since bootloader needs to use matching memory
+#   addresses from main project, and it searches include files from paths
+#   specified by -L. The main project linker script location is added if
+#   BL_MAIN_PROJECT is not empty.
+#
+###################################################
+
+ifneq ($(BL_MAIN_PROJECT),)
+LDSCRIPT_PATHS  += -Wl,-L$(SOURCE_DIR)/project/mt7933_hdk/apps/$(BL_MAIN_PROJECT)/GCC/ld
+endif
+LDSCRIPT_PATHS  += -Wl,-L$(SOURCE_DIR)/project/mt7933_hdk/apps/bootloader/GCC/ld
+LDFLAGS         += $(ALLFLAGS) $(FPUFLAGS)
+LDFLAGS         += --specs=nano.specs -lnosys -nostartfiles
+LDFLAGS_RAM     += -Wl,-Tbootloader-ram.ld -Wl,--gc-sections
+LDFLAGS_XIP     += -Wl,-Tbootloader-xip.ld -Wl,--gc-sections
+
+###################################################
+# Libraries
+###################################################
+
+# HAL driver files
+include $(SOURCE_DIR)/driver/chip/$(IC_CONFIG)/module.mk
+# EPT Config
+-include $(SOURCE_DIR)/driver/board/mt7933_hdk/ept/module.mk
+# FOTA files
+ifeq ($(MTK_FOTA_V3_ENABLE),y)
+    include $(SOURCE_DIR)/middleware/MTK/fota/module.mk
+    ifeq ($(MTK_FOTA_V3_PAYLOAD_LZMA_ENABLE),y)
+        include $(SOURCE_DIR)/middleware/third_party/lzma_decoder/module.mk
+    endif
+endif
+ifeq ($(MTK_MPERF_ENABLE),y)
+include $(SOURCE_DIR)/middleware/protected/mperf/module.mk
+endif
+ifeq ($(MTK_MINICLI_ENABLE),y)
+include $(SOURCE_DIR)/middleware/MTK/minicli/module.mk
+endif
+ifeq ($(MTK_MINICLI_ENABLE),y)
+include $(SOURCE_DIR)/middleware/MTK/minicli/module.mk
+endif
+
+###################################################
+# Rules
+###################################################
+
+.PHONY: clean $(MODULE_PATH) $(BUILD_OUTPUT)
+
+all: cleanlog $(BUILD_OUTPUT)
+	@mkdir -p $(BUILD_DIR)
+	@if [ -f $(ELF_RAM) ]; then $(SIZE) $(ELF_RAM); fi
+	@if [ -f $(ELF_XIP) ]; then $(SIZE) $(ELF_XIP); fi
+	@echo "========================"
+	@echo "TOP 20 SYMBOL FOOTPRINTS"
+	@echo "========================"
+	@$(NM) -S --size-sort -r $(ELF_RAM) | head -20
+	@$(SOURCE_DIR)/tools/scripts/build/copy_firmware.sh $(SOURCE_DIR) $(OUTPATH) $(IC_CONFIG) $(BOARD_CONFIG) $(BIN_RAM) $(PWD)
+	@if [ -f $(BIN_RAM) ]; then du -b $(BIN_RAM); fi
+	@if [ -f $(BIN_XIP) ]; then du -b $(BIN_XIP); fi
+ifeq ($(MTK_BL_SIGN_ENABLE),y)
+	@if [ -f $(SGN_RAM) ]; then du -b $(SGN_RAM); fi
+	@if [ -f $(SGN_XIP) ]; then du -b $(SGN_XIP); fi
+endif
+
+
+MOD_EXTRA = BUILD_DIR=$(BUILD_DIR) OUTPATH=$(OUTPATH) PROJ_PATH=$(PROJ_PATH)
+
+
+$(LIBS): $(MODULE_PATH)
+
+
+$(MODULE_PATH):
+	@+make -C $@ $(MOD_EXTRA) $($@_EXTRA)
+
+###################################################
+# RAM version
+###################################################
+
+output_ram: $(HEX_RAM) $(BIN_RAM)
+
+$(ELF_RAM): $(C_OBJS) $(CXX_OBJS) $(S_OBJS) $(LIBS)
+	@echo Link RAM version
+	@echo $(patsubst $(SDK_PATH)/%,$(SOURCE_DIR)/%,$(LDSCRIPT_PATHS))   >  $(LNK_RAM)
+	@echo $(patsubst $(SDK_PATH)/%,$(SOURCE_DIR)/%,$(LDFLAGS_RAM))      >> $(LNK_RAM)
+	@echo $(patsubst $(SDK_PATH)/%,$(SOURCE_DIR)/%,$(LDFLAGS))          >> $(LNK_RAM)
+	@echo -Wl,--defsym=HEADER_OFFSET=$(HEADER_OFFSET) -lm               >> $(LNK_RAM)
+	@echo -Wl,--start-group                                             >> $(LNK_RAM)
+	@echo $(patsubst $(SDK_PATH)/%,$(SOURCE_DIR)/%,$^)                  >> $(LNK_RAM)
+	@echo $(patsubst $(SDK_PATH)/%,$(SOURCE_DIR)/%,-Wl,--end-group)     >> $(LNK_RAM)
+	@echo $(patsubst $(SDK_PATH)/%,$(SOURCE_DIR)/%,-Wl,-Map=$(MAP_RAM)) >> $(LNK_RAM)
+	@echo $(patsubst $(SDK_PATH)/%,$(SOURCE_DIR)/%,-o $@)               >> $(LNK_RAM)
+	$(Q)$(CC) @$(LNK_RAM) >> $(BUILD_LOG) 2>>$(ERR_LOG)
+	@echo Link RAM done
+
+###################################################
+# SCATTER FILE for flashtool
+###################################################
+
+$(SCATTER_FILE): $(MEMORY_LD)
+
+	$(Q)$(SCATTER_TOOL_PY) --prj_name    "$(PROJ_NAME)"                 \
+	                       --ld_file     "$(MEMORY_LD)"                 \
+	                       --scatter     "$(SCATTER_FILE)"              \
+	                       --bl_fw       "mt7931an_bootloader-xip.sgn"  \
+			2>>$(ERR_LOG) | tee -a $(BUILD_LOG)
+
+###################################################
+# XIP version
+###################################################
+
+output_xip: $(HEX_XIP) $(BIN_XIP)
+
+$(ELF_XIP): $(C_OBJS) $(CXX_OBJS) $(S_OBJS) $(LIBS)
+	@echo Link XIP version
+	@echo $(patsubst $(SDK_PATH)/%,$(SOURCE_DIR)/%,$(LDSCRIPT_PATHS))   >  $(LNK_XIP)
+	@echo $(patsubst $(SDK_PATH)/%,$(SOURCE_DIR)/%,$(LDFLAGS_XIP))      >> $(LNK_XIP)
+	@echo $(patsubst $(SDK_PATH)/%,$(SOURCE_DIR)/%,$(LDFLAGS))          >> $(LNK_XIP)
+	@echo -Wl,--defsym=HEADER_OFFSET=$(HEADER_OFFSET) -lm               >> $(LNK_XIP)
+	@echo -Wl,--start-group                                             >> $(LNK_XIP)
+	@echo $(patsubst $(SDK_PATH)/%,$(SOURCE_DIR)/%,$^)                  >> $(LNK_XIP)
+	@echo $(patsubst $(SDK_PATH)/%,$(SOURCE_DIR)/%,-Wl,--end-group)     >> $(LNK_XIP)
+	@echo $(patsubst $(SDK_PATH)/%,$(SOURCE_DIR)/%,-Wl,-Map=$(MAP_XIP)) >> $(LNK_XIP)
+	@echo $(patsubst $(SDK_PATH)/%,$(SOURCE_DIR)/%,-o $@)               >> $(LNK_XIP)
+	$(Q)$(CC) @$(LNK_XIP) >> $(BUILD_LOG) 2>>$(ERR_LOG)
+	@echo Link XIP done
+
+###################################################
+# SGN version
+###################################################
+
+ifeq ($(MTK_BL_SIGN_ENABLE),y)
+
+output_ram_sgn: $(SGN_RAM) $(SCATTER_FILE)
+
+output_xip_sgn: $(SGN_XIP) $(SCATTER_FILE)
+
+$(SGN_RAM): $(BIN_RAM)
+ifneq ($(MTK_SBOOT_SCOTT_SKIP_SIGN),y)
+	$(Q)if [ ! -f "$(SGN_PEM)"     ]; then echo "PEM keyfile not found"; exit 1; fi >> $(BUILD_LOG) 2>>$(ERR_LOG)
+	$(Q)source $(IMGTOOL_ENV) && \
+	    $(IMGTOOL) sign --pad-header --header-size $(HEADER_OFFSET)         \
+	                    --load-addr $(LOAD_ADDR_RAM) -k $(SGN_PEM) -S 65536 \
+	                    --align 4 -v $(SGN_VER) --pubkey                    \
+	                    --infra-dapc "$(BL_IMAGE_TLV_INFRA_DAPC)"           \
+	                    --aud-dapc "$(BL_IMAGE_TLV_AUDIO_DAPC)"             \
+	                    --asic-mpu "$(BL_IMAGE_TLV_ASIC_MPU)"               \
+	                    --no-bootrom-log                                    \
+	                    $< $@ >> $(BUILD_LOG) 2>>$(ERR_LOG)
+endif
+
+$(SGN_XIP): $(BIN_XIP)
+ifneq ($(MTK_SBOOT_SCOTT_SKIP_SIGN),y)
+	$(Q)if [ ! -f "$(SGN_PEM)"     ]; then echo "PEM keyfile not found"; exit 1; fi >> $(BUILD_LOG) 2>>$(ERR_LOG)
+	$(Q)source $(IMGTOOL_ENV) && \
+	    $(IMGTOOL) sign --pad-header --header-size $(HEADER_OFFSET)         \
+	                    --load-addr $(LOAD_ADDR_XIP) -k $(SGN_PEM) -S 65536 \
+	                    --align 4 -v $(SGN_VER) --pubkey                    \
+	                    --infra-dapc "$(BL_IMAGE_TLV_INFRA_DAPC)"           \
+	                    --aud-dapc "$(BL_IMAGE_TLV_AUDIO_DAPC)"             \
+	                    --asic-mpu "$(BL_IMAGE_TLV_ASIC_MPU)"               \
+	                    --no-bootrom-log                                    \
+	                    $< $@ >> $(BUILD_LOG) 2>>$(ERR_LOG)
+endif
+
+endif
+
+###################################################
+# common rules
+###################################################
+
+include $(SOURCE_DIR)/.rule.mk
+
+%.hex: %.elf
+	$(Q)$(OBJCOPY) -O ihex   $< $@ >> $(BUILD_LOG) 2>>$(ERR_LOG)
+
+%.bin: %.elf
+	$(Q)$(OBJCOPY) -O binary $< $@ >> $(BUILD_LOG) 2>>$(ERR_LOG)
+
+clean:
+	rm -rf $(OUTPATH)
+
+print-%  : ; @echo $* = $($*)

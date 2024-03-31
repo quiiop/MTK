@@ -1,0 +1,4 @@
+./build.sh mt7933_hdk bga_sdk_vad
+Start Build: Thu 28 Mar 2024 03:53:58 AM PDT
+End Build: Thu 28 Mar 2024 03:54:46 AM PDT
+TOTAL BUILD: PASS

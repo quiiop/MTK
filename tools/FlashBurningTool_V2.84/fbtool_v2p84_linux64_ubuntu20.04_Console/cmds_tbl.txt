@@ -1,0 +1,18 @@
+#---test0
+#-f U:/BGA_SDK_DEMO/mt7933cv_xip_bga_al_scatter.ini -o burn
+#-f U:/BGA_SDK_DEMO/mt7933cv_xip_bga_al_scatter.ini -o rdback
+#---test1:reduce erase time
+#-f whole_flash.ini -o erase
+#-f mt7933_bga_evb_scatter.ini -o burn_o
+#---test2
+#-f Y:/mtk-14/out/mt7933_hdk/bga_sdk_demo/mt7933cv_xip_bga_al_scatter.ini -o burn
+#-f Y:/mtk-14/out/mt7933_hdk/bga_sdk_demo/mt7933cv_xip_bga_al_scatter.ini -o rdefuse -s 0x30405190
+#-o customer -s cyberon_license.exe  -k Y:/mtk-14/out/mt7933_hdk/bga_sdk_demo/hrid.bin
+#---test3(relative path)
+-f  burn_files/scatter.ini -o erase
+-f  burn_files/scatter.ini -o burn 
+-f  burn_files/scatter.ini -o rdback  
+-f  burn_files/scatter.ini -o rdback_s
+-e  burn_files/customer_my_ef_tbl.txt -o rdefuse
+-e  burn_files/customer_my_ef_tbl.txt -o wrefuse
+-e  burn_files/customer_my_ef_tbl.txt -o rdefuse_c

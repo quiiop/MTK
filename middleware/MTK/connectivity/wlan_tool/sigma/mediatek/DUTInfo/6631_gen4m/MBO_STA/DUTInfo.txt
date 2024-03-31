@@ -1,0 +1,88 @@
+#$! File Type: TScript
+#
+# Copyright (c) 2017 Wi-Fi Alliance
+#
+#
+# THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+# WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+# MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY
+# SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER
+# RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT,
+# NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE
+# USE OR PERFORMANCE OF THIS SOFTWARE.
+#
+#
+# Description  : This file hold all CAPI commands used for specific test process
+#                as per testplan. It is part of test operation, and may send
+#                command to dut also to the testbed device as per testplan
+#                requirement.
+# Note         :
+#
+# Program      : MBO
+# Version      : 0.0.50
+# Release date : May, 2017
+#
+############################################################################ZZZ
+
+######### DUT (Device Under Test) Information #########################
+
+#### Wi-Fi Test Suite Control Agent Support ########
+# 1-If DUT has Wi-Fi Test Suite Control Agent support. 0-If not supported.
+WTS_ControlAgent_Support!1!
+
+# DUTType : WPA2-Personal or WPA2-Enterprise
+DUTType!WPA2-Enterprise!
+
+#DUT Category : c1 or c2 or c3 if device is WPA2-Enterprise
+DUTCategory!c1!
+
+# DUT Band : ABG or BG or B (B only) or ABGN or GN or AC
+DUTBand!ABGN!
+
+#Supported EAP Methods 0-No 1-Yes
+TLS!0!
+TTLS!1!
+PEAP0!0!
+PEAP1!0!
+SIM!0!
+AKA!0!
+FAST!0!
+AKA'!0!
+PWD!0!
+
+
+#Dual band support 0-No : it is single band,  1-Yes : it support 2.4/5G
+define!$Dual_Band!1!
+
+
+
+# APUT/STAUT Device support Fast Transition : 1, if not support : 0
+# 4.2.3 / 4.2.6 / 5.2.1 / 5.2.3 / 5.2.6
+define!$FastTrasition!1!
+
+#To run active,passive cases in 5.2.3 without FT (optional)
+#Value 0 : Not used
+#value 1 : Passive case only
+#Value 2 : Active case only
+#Value 3 : Both Active and Passive
+define!$RunAllOptionalCases_withoutFT!0!
+
+# APUT Cellular Aware capability 0-No : Not Cellular Data Aware,  1-Yes : Cellular Data Aware
+# 4.2.2 / 4.2.4.3 / 4.2.5.2 / 4.2.5.5
+define!$DUT_CellCap!0!
+
+# APUT BSS Candidate list auto-population  0-No : Not Auto,  1-Yes : Auto
+# 4.2.5.1 / 4.2.8
+define!$DUT_Candipop!0!
+
+#WNM Notification trigger frame - STAUT
+#Set this flag to 1 - Use CAPI to send WNM notification frame.
+#Default value is 0 - Device can send WNM notification without CAPI
+#4.2.8 / 5.2.8 / 5.2.9
+define!$Send_WNM_Notification_Request!0!
+
+#If DUT vendor provides AP1/AP2 for test cases 4.2.5.1 / 4.2.5.3 / 4.2.8
+#Default value is 0
+#Value 1 - Use vendor provided testbed(AP) with WTS Automation
+#Value 2 - Use vendor provided testbed(AP) without WTS Automation
+define!$Vendor_provided_testbed!0!

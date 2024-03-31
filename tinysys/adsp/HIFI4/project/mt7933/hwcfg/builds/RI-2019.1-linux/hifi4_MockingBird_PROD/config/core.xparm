@@ -1,0 +1,3677 @@
+<!-- core.xparm  -  Xtensa core parameter values file
+
+     Customer ID=14794; Build=0x87a3c; Copyright (c) 2008 Tensilica Inc.  ALL RIGHTS RESERVED.
+     These coded instructions, statements, and computer programs are the
+     copyrighted works and confidential proprietary information of Tensilica Inc.
+     They may not be modified, copied, reproduced, distributed, or disclosed to
+     third parties in any manner, medium, or form, in whole or in part, without
+     the prior written consent of Tensilica Inc.
+
+     WARNING: This file has been automatically generated with values that are
+     specific to a particular Xtensa processor configuration.  Changing values
+     here will likely result in an inconsistent system.  Do not edit!
+  -->
+
+<sysdoc>
+  <!-- This XML sequence is in 'Stash' format - see Xtensa/share/Stash.pm -->
+
+<types b="hash" t="typedef_hash">
+ <u16 b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+  <type b="array" value="i32"/>
+  <range b="array" value="0..65535"/>
+ </u16>
+ <i16 b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+  <type b="array" value="i32"/>
+  <range b="array" value="-32768..32767"/>
+ </i16>
+ <u8 b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+  <type b="array" value="i32"/>
+  <range b="array" value="0..255"/>
+ </u8>
+ <i8 b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+  <type b="array" value="i32"/>
+  <range b="array" value="-128..127"/>
+ </i8>
+ <boolean b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+  <type b="array" value="i32"/>
+  <range b="array" value="0,1"/>
+ </boolean>
+ <interface b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="1">
+  <type b="array" value="hash"/>
+ </interface>
+ <component b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="1">
+  <type b="array" value="hash"/>
+ </component>
+ <PIFWidths b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+  <type b="array" value="i32"/>
+  <range b="array" value="0x20,0x40,0x80"/>
+ </PIFWidths>
+ <CacheAccessWidths b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+  <type b="array" value="i32"/>
+  <range b="array" value="0x100,0x200,0x400,0x20,0x40,0x80"/>
+ </CacheAccessWidths>
+ <Range_16_32 b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+  <type b="array" value="i32"/>
+  <range b="array" value="16..32"/>
+ </Range_16_32>
+ <AddressBitsRange b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+  <type b="array" value="i32"/>
+  <range b="array" value="12..32"/>
+ </AddressBitsRange>
+ <MemoryOrder b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+  <type b="array" value="string"/>
+  <range b="array" value="LittleEndian,BigEndian"/>
+ </MemoryOrder>
+ <UnalignedActions b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+  <type b="array" value="string"/>
+  <range b="array" value="Align,Exception,HandledByHardware,HandledBySystem"/>
+ </UnalignedActions>
+ <AddressingType b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+  <type b="array" value="string"/>
+  <range b="array" value="physical,virtual"/>
+ </AddressingType>
+ <MemoryAttributes b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+  <type b="array" value="set"/>
+  <range b="array" value="destructive,executable,unaligned,writable"/>
+ </MemoryAttributes>
+ <signal b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+  <type b="array" value="hash"/>
+  <entries b="hash">
+   <dir b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="in,out,inout,rin,rout"/>
+   </dir>
+   <width b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..1024"/>
+   </width>
+   <lsb b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..1023"/>
+   </lsb>
+  </entries>
+ </signal>
+ <modulemaps b="hash" range="*" entries="*" subtypes="*" sizerange="*" objmodel="2">
+  <type b="array" value="hash"/>
+  <default b="hash" range="*" entries="*" default="*" sizerange="*" objmodel="*">
+   <type b="array" value="array"/>
+   <subtypes b="array" value="component"/>
+  </default>
+ </modulemaps>
+ <GlobalIntfc b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="*" packagePrefix="IntfcLib">
+  <type b="array" value="interface"/>
+  <entries b="hash">
+   <dir b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="in,inout,out"/>
+   </dir>
+   <testComp b="refh" link="types.string"/>
+   <insertTestComp b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="ifNotPresent"/>
+   </insertTestComp>
+   <testCompLevel b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="top"/>
+   </testCompLevel>
+   <CLK b="refh" link="types.signal"/>
+   <Reset b="refh" link="types.signal"/>
+  </entries>
+  <string n="PIFGUI:parameters:dir:visible:no"/>
+  <string n="PIFGUI:parameters:testComp:visible:no"/>
+  <string n="PIFGUI:parameters:insertTestComp:visible:no"/>
+  <string n="PIFGUI:parameters:testCompLevel:visible:no"/>
+ </GlobalIntfc>
+ <ClkIntfc b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" packagePrefix="IntfcLib">
+  <type b="array" value="interface"/>
+  <entries b="hash">
+   <dir b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="in,inout,out"/>
+   </dir>
+   <CLK b="refh" link="types.signal"/>
+  </entries>
+  <string n="PIFGUI:parameters:dir:visible:no"/>
+ </ClkIntfc>
+ <SRamIntfcOut b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="*" version="0.001" packagePrefix="IntfcLib">
+  <type b="array" value="interface"/>
+  <entries b="hash">
+   <addrWidth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..32"/>
+   </addrWidth>
+   <ramWidth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..1024"/>
+   </ramWidth>
+   <numBytes b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0,4,8,0x10,0x20,0x40,0x80"/>
+   </numBytes>
+   <numWords b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0,2,4,8,0x10,0x20"/>
+   </numWords>
+   <testComp b="refh" link="types.string"/>
+   <insertTestComp b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="ifNotPresent"/>
+   </insertTestComp>
+   <testCompLevel b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="top"/>
+   </testCompLevel>
+   <Addr b="refh" link="types.signal"/>
+   <En b="refh" link="types.signal"/>
+   <Wr b="refh" link="types.signal"/>
+   <ByteEn b="refh" link="types.signal"/>
+   <WordEn b="refh" link="types.signal"/>
+   <WrData b="refh" link="types.signal"/>
+   <Data b="refh" link="types.signal"/>
+  </entries>
+  <string n="PIFGUI:parameters:testComp:visible:no"/>
+  <string n="PIFGUI:parameters:insertTestComp:visible:no"/>
+  <string n="PIFGUI:parameters:testCompLevel:visible:no"/>
+ </SRamIntfcOut>
+ <SRamIntfcIn b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" version="0.001" packagePrefix="IntfcLib">
+  <type b="array" value="interface"/>
+  <entries b="hash">
+   <addrWidth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..31"/>
+   </addrWidth>
+   <ramWidth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..1024"/>
+   </ramWidth>
+   <numBytes b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0,4,8,0x10,0x20,0x40,0x80"/>
+   </numBytes>
+   <numWords b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0,2,4,8,0x10,0x20"/>
+   </numWords>
+   <testComp b="refh" link="types.string"/>
+   <insertTestComp b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="ifNotPresent"/>
+   </insertTestComp>
+   <testCompLevel b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="top"/>
+   </testCompLevel>
+   <Addr b="refh" link="types.signal"/>
+   <En b="refh" link="types.signal"/>
+   <Wr b="refh" link="types.signal"/>
+   <ByteEn b="refh" link="types.signal"/>
+   <WordEn b="refh" link="types.signal"/>
+   <WrData b="refh" link="types.signal"/>
+   <Data b="refh" link="types.signal"/>
+  </entries>
+  <string n="PIFGUI:parameters:testComp:visible:no"/>
+  <string n="PIFGUI:parameters:insertTestComp:visible:no"/>
+  <string n="PIFGUI:parameters:testCompLevel:visible:no"/>
+ </SRamIntfcIn>
+ <RomIntfcOut b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="*" version="0.001" packagePrefix="IntfcLib">
+  <type b="array" value="interface"/>
+  <entries b="hash">
+   <addrWidth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..32"/>
+   </addrWidth>
+   <ramWidth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..1024"/>
+   </ramWidth>
+   <testComp b="refh" link="types.string"/>
+   <insertTestComp b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="ifNotPresent"/>
+   </insertTestComp>
+   <testCompLevel b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="top"/>
+   </testCompLevel>
+   <Addr b="refh" link="types.signal"/>
+   <En b="refh" link="types.signal"/>
+   <Data b="refh" link="types.signal"/>
+  </entries>
+  <string n="PIFGUI:parameters:testComp:visible:no"/>
+  <string n="PIFGUI:parameters:insertTestComp:visible:no"/>
+  <string n="PIFGUI:parameters:testCompLevel:visible:no"/>
+ </RomIntfcOut>
+ <RomIntfcIn b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="*" version="0.001" packagePrefix="IntfcLib">
+  <type b="array" value="interface"/>
+  <entries b="hash">
+   <addrWidth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..31"/>
+   </addrWidth>
+   <ramWidth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..1024"/>
+   </ramWidth>
+   <testComp b="refh" link="types.string"/>
+   <insertTestComp b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="ifNotPresent"/>
+   </insertTestComp>
+   <testCompLevel b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="top"/>
+   </testCompLevel>
+   <Addr b="refh" link="types.signal"/>
+   <En b="refh" link="types.signal"/>
+   <Data b="refh" link="types.signal"/>
+  </entries>
+  <string n="PIFGUI:parameters:testComp:visible:no"/>
+  <string n="PIFGUI:parameters:insertTestComp:visible:no"/>
+  <string n="PIFGUI:parameters:testCompLevel:visible:no"/>
+ </RomIntfcIn>
+ <BitIntfcOut b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="*" version="0.001" packagePrefix="IntfcLib">
+  <type b="array" value="interface"/>
+  <entries b="hash">
+   <width b="refh" link="types.u32"/>
+   <testComp b="refh" link="types.string"/>
+   <insertTestComp b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="ifNotPresent"/>
+   </insertTestComp>
+   <testCompLevel b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="top"/>
+   </testCompLevel>
+   <bit b="refh" link="types.signal"/>
+  </entries>
+  <string n="PIFGUI:parameters:testComp:visible:no"/>
+  <string n="PIFGUI:parameters:insertTestComp:visible:no"/>
+  <string n="PIFGUI:parameters:testCompLevel:visible:no"/>
+ </BitIntfcOut>
+ <BitIntfcIn b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="*" version="0.001" packagePrefix="IntfcLib">
+  <type b="array" value="interface"/>
+  <entries b="hash">
+   <width b="refh" link="types.u32"/>
+   <testComp b="refh" link="types.string"/>
+   <insertTestComp b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="ifNotPresent"/>
+   </insertTestComp>
+   <testCompLevel b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="top"/>
+   </testCompLevel>
+   <bit b="refh" link="types.signal"/>
+  </entries>
+  <string n="PIFGUI:parameters:testComp:visible:no"/>
+  <string n="PIFGUI:parameters:insertTestComp:visible:no"/>
+  <string n="PIFGUI:parameters:testCompLevel:visible:no"/>
+ </BitIntfcIn>
+ <PifCommon b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" version="0.001" packagePrefix="IntfcLib">
+  <type b="array" value="interface"/>
+  <entries b="hash">
+   <id b="refh" link="types.u32"/>
+   <master b="refh" link="types.boolean"/>
+   <slave b="refh" link="types.boolean"/>
+   <burst b="refh" link="types.boolean"/>
+   <reqAttribute b="refh" link="types.boolean"/>
+   <poData b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0x100,0x20,0x40,0x80"/>
+   </poData>
+   <piData b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0x100,0x20,0x40,0x80"/>
+   </piData>
+   <testComp b="refh" link="types.string"/>
+   <insertTestComp b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="ifNotPresent"/>
+   </insertTestComp>
+   <testCompLevel b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="top"/>
+   </testCompLevel>
+  </entries>
+  <string n="PIFGUI:OverrideRequired:PifMaster:PifSlave:PifMasterSlave"/>
+  <string n="PIFGUI:parameters:master:visible:no"/>
+  <string n="PIFGUI:parameters:slave:visible:no"/>
+  <string n="PIFGUI:parameters:id:visible:no"/>
+  <string n="PIFGUI:parameters:testComp:visible:no"/>
+  <string n="PIFGUI:parameters:insertTestComp:visible:no"/>
+  <string n="PIFGUI:parameters:testCompLevel:visible:no"/>
+ </PifCommon>
+ <PifMaster b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" version="0.001" packagePrefix="IntfcLib">
+  <type b="array" value="PifCommon"/>
+  <entries b="hash">
+   <poAddr b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0x20"/>
+   </poAddr>
+   <poId b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..32"/>
+   </poId>
+   <piId b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..32"/>
+   </piId>
+   <poRouteId b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..32"/>
+   </poRouteId>
+   <piRouteId b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..32"/>
+   </piRouteId>
+   <poCohCntl b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0,2"/>
+   </poCohCntl>
+   <poCohVAdrsIndex b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0,6"/>
+   </poCohVAdrsIndex>
+   <byteEnable b="refh" link="types.u32"/>
+   <POReqValid b="refh" link="types.signal"/>
+   <POReqCntl b="refh" link="types.signal"/>
+   <POReqCohCntl b="refh" link="types.signal"/>
+   <POReqCohVAdrsIndex b="refh" link="types.signal"/>
+   <POReqAdrs b="refh" link="types.signal"/>
+   <POReqData b="refh" link="types.signal"/>
+   <POReqDataBE b="refh" link="types.signal"/>
+   <POReqId b="refh" link="types.signal"/>
+   <POReqPriority b="refh" link="types.signal"/>
+   <POReqRouteId b="refh" link="types.signal"/>
+   <PIReqRdy b="refh" link="types.signal"/>
+   <PIRespValid b="refh" link="types.signal"/>
+   <PIRespCntl b="refh" link="types.signal"/>
+   <PIRespCohCntl b="refh" link="types.signal"/>
+   <PIRespId b="refh" link="types.signal"/>
+   <PIRespData b="refh" link="types.signal"/>
+   <PIRespPriority b="refh" link="types.signal"/>
+   <PIRespRouteId b="refh" link="types.signal"/>
+   <PORespRdy b="refh" link="types.signal"/>
+  </entries>
+  <string n="PIFGUI:parameters:poAddr:visible:no"/>
+  <string n="PIFGUI:parameters:poRouteId:visible:no"/>
+  <string n="PIFGUI:parameters:piRouteId:visible:no"/>
+  <string n="PIFGUI:parameters:poCohCntl:visible:no"/>
+ </PifMaster>
+ <PifSlave b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="*" version="0.001" packagePrefix="IntfcLib">
+  <type b="array" value="PifCommon"/>
+  <entries b="hash">
+   <piAddr b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0x20"/>
+   </piAddr>
+   <poId b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..32"/>
+   </poId>
+   <piId b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..32"/>
+   </piId>
+   <poRouteId b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..32"/>
+   </poRouteId>
+   <piRouteId b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..32"/>
+   </piRouteId>
+   <poCohCntl b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0,2"/>
+   </poCohCntl>
+   <poCohVAdrsIndex b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0,6"/>
+   </poCohVAdrsIndex>
+   <byteEnable b="refh" link="types.u32"/>
+   <PIReqValid b="refh" link="types.signal"/>
+   <PIReqCntl b="refh" link="types.signal"/>
+   <PIReqCohCntl b="refh" link="types.signal"/>
+   <PIReqCohVAdrsIndex b="refh" link="types.signal"/>
+   <PIReqAdrs b="refh" link="types.signal"/>
+   <PIReqData b="refh" link="types.signal"/>
+   <PIReqDataBE b="refh" link="types.signal"/>
+   <PIReqId b="refh" link="types.signal"/>
+   <PIReqPriority b="refh" link="types.signal"/>
+   <PIReqRouteId b="refh" link="types.signal"/>
+   <POReqRdy b="refh" link="types.signal"/>
+   <PORespValid b="refh" link="types.signal"/>
+   <PORespCntl b="refh" link="types.signal"/>
+   <PORespCohCntl b="refh" link="types.signal"/>
+   <PORespId b="refh" link="types.signal"/>
+   <PORespData b="refh" link="types.signal"/>
+   <PORespPriority b="refh" link="types.signal"/>
+   <PORespRouteId b="refh" link="types.signal"/>
+   <PIRespRdy b="refh" link="types.signal"/>
+  </entries>
+  <string n="PIFGUI:parameters:piAddr:visible:no"/>
+  <string n="PIFGUI:parameters:piRouteId:visible:no"/>
+  <string n="PIFGUI:parameters:poRouteId:visible:no"/>
+  <string n="PIFGUI:parameters:poCohCntl:visible:no"/>
+ </PifSlave>
+ <SysIntfc b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="*" packagePrefix="IntfcLib" perlPostInitRoutine="initialize">
+  <type b="array" value="interface"/>
+  <entries b="hash">
+   <type b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="ACE,ACELite,AHBLite,APB,AXI3,AXI4,PIF"/>
+   </type>
+   <master b="refh" link="types.boolean"/>
+   <slave b="refh" link="types.boolean"/>
+   <width b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0x100,0x200,0x20,0x40,0x80"/>
+   </width>
+   <addrWidth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0x20,0x24,0x28"/>
+   </addrWidth>
+   <reqCntlDepth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1,2,4,8,0x10"/>
+   </reqCntlDepth>
+   <reqDataDepth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1,2,4,8,0x10"/>
+   </reqDataDepth>
+   <respDepth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1,2,4,8,0x10"/>
+   </respDepth>
+   <idWidth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="4..24"/>
+   </idWidth>
+   <error b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="ecc,none,parity"/>
+   </error>
+   <errorWidth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1,4,8"/>
+   </errorWidth>
+   <servesUnits b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="set"/>
+    <range b="array" value="data,dataidma,inst,instidma"/>
+   </servesUnits>
+   <security b="refh" link="types.boolean"/>
+   <registerInputs b="refh" link="types.boolean"/>
+   <registerOutputs b="refh" link="types.boolean"/>
+   <asyncClock b="refh" link="types.boolean"/>
+   <addressMapped b="refh" link="types.boolean"/>
+   <startPAddrInitVal b="refh" link="types.u32"/>
+   <sizeInitVal b="refh" link="types.u32"/>
+  </entries>
+  <perlCodeFile b="string" value="IntfcLib/SysIntfc_include"/>
+  <perlClassVariables b="string" value="
+                            $_name
+                            $_writeChannelsConfigured
+                            $cdnaxi_spec_subtype
+                            $cdnaxi_spec_interface
+                            $cdnaxi_interface_type
+                            $arm_monitor_module
+                            @_all_signals
+                           "/>
+ </SysIntfc>
+ <AXI3MasterIntfc b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*" packagePrefix="IntfcLib">
+  <type b="array" value="SysIntfc"/>
+ </AXI3MasterIntfc>
+ <AXI3SlaveIntfc b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*" packagePrefix="IntfcLib">
+  <type b="array" value="SysIntfc"/>
+ </AXI3SlaveIntfc>
+ <AXI4MasterIntfc b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*" packagePrefix="IntfcLib">
+  <type b="array" value="SysIntfc"/>
+ </AXI4MasterIntfc>
+ <AXI4SlaveIntfc b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*" packagePrefix="IntfcLib">
+  <type b="array" value="SysIntfc"/>
+ </AXI4SlaveIntfc>
+ <ACELiteMasterIntfc b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*" packagePrefix="IntfcLib">
+  <type b="array" value="SysIntfc"/>
+ </ACELiteMasterIntfc>
+ <ACELiteSlaveIntfc b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*" packagePrefix="IntfcLib">
+  <type b="array" value="SysIntfc"/>
+ </ACELiteSlaveIntfc>
+ <ACEMasterIntfc b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*" packagePrefix="IntfcLib">
+  <type b="array" value="SysIntfc"/>
+ </ACEMasterIntfc>
+ <ACESlaveIntfc b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*" packagePrefix="IntfcLib">
+  <type b="array" value="SysIntfc"/>
+ </ACESlaveIntfc>
+ <AHBLiteMasterIntfc b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*" packagePrefix="IntfcLib">
+  <type b="array" value="SysIntfc"/>
+ </AHBLiteMasterIntfc>
+ <APBMasterIntfc b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*" packagePrefix="IntfcLib">
+  <type b="array" value="SysIntfc"/>
+ </APBMasterIntfc>
+ <CacheCommonIntfcOut b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="*" version="0.001" packagePrefix="IntfcLib">
+  <type b="array" value="interface"/>
+  <entries b="hash">
+   <addrWidth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..31"/>
+   </addrWidth>
+   <ramWidth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..1024"/>
+   </ramWidth>
+   <numBytes b="refh" link="types.u8"/>
+   <testComp b="refh" link="types.string"/>
+   <insertTestComp b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="ifNotPresent"/>
+   </insertTestComp>
+   <testCompLevel b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="top"/>
+   </testCompLevel>
+   <Addr b="refh" link="types.signal"/>
+   <ByteEn b="refh" link="types.signal"/>
+   <WrData b="refh" link="types.signal"/>
+  </entries>
+  <string n="PIFGUI:parameters:testComp:visible:no"/>
+  <string n="PIFGUI:parameters:insertTestComp:visible:no"/>
+  <string n="PIFGUI:parameters:testCompLevel:visible:no"/>
+ </CacheCommonIntfcOut>
+ <CacheCommonIntfcIn b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" version="0.001" packagePrefix="IntfcLib">
+  <type b="array" value="interface"/>
+  <entries b="hash">
+   <addrWidth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..31"/>
+   </addrWidth>
+   <ramWidth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..1024"/>
+   </ramWidth>
+   <numBytes b="refh" link="types.u8"/>
+   <testComp b="refh" link="types.string"/>
+   <insertTestComp b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="ifNotPresent"/>
+   </insertTestComp>
+   <testCompLevel b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="top"/>
+   </testCompLevel>
+   <Addr b="refh" link="types.signal"/>
+   <ByteEn b="refh" link="types.signal"/>
+   <WrData b="refh" link="types.signal"/>
+  </entries>
+  <string n="PIFGUI:parameters:testComp:visible:no"/>
+  <string n="PIFGUI:parameters:insertTestComp:visible:no"/>
+  <string n="PIFGUI:parameters:testCompLevel:visible:no"/>
+ </CacheCommonIntfcIn>
+ <CacheWayIntfcOut b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="*" version="0.001" packagePrefix="IntfcLib">
+  <type b="array" value="interface"/>
+  <entries b="hash">
+   <ramWidth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..1024"/>
+   </ramWidth>
+   <testComp b="refh" link="types.string"/>
+   <insertTestComp b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="ifNotPresent"/>
+   </insertTestComp>
+   <testCompLevel b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="top"/>
+   </testCompLevel>
+   <En b="refh" link="types.signal"/>
+   <Wr b="refh" link="types.signal"/>
+   <Data b="refh" link="types.signal"/>
+  </entries>
+  <string n="PIFGUI:parameters:testComp:visible:no"/>
+  <string n="PIFGUI:parameters:insertTestComp:visible:no"/>
+  <string n="PIFGUI:parameters:testCompLevel:visible:no"/>
+ </CacheWayIntfcOut>
+ <CacheWayIntfcIn b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="*" version="0.001" packagePrefix="IntfcLib">
+  <type b="array" value="interface"/>
+  <entries b="hash">
+   <ramWidth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..1024"/>
+   </ramWidth>
+   <testComp b="refh" link="types.string"/>
+   <insertTestComp b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="ifNotPresent"/>
+   </insertTestComp>
+   <testCompLevel b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="top"/>
+   </testCompLevel>
+   <En b="refh" link="types.signal"/>
+   <Wr b="refh" link="types.signal"/>
+   <Data b="refh" link="types.signal"/>
+  </entries>
+  <string n="PIFGUI:parameters:testComp:visible:no"/>
+  <string n="PIFGUI:parameters:insertTestComp:visible:no"/>
+  <string n="PIFGUI:parameters:testCompLevel:visible:no"/>
+ </CacheWayIntfcIn>
+ <TieOutQueueIntfcOut b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="*" version="0.001" packagePrefix="IntfcLib">
+  <type b="array" value="interface"/>
+  <entries b="hash">
+   <width b="refh" link="types.u32"/>
+   <Full b="refh" link="types.signal"/>
+   <PushReq b="refh" link="types.signal"/>
+   <Data b="refh" link="types.signal"/>
+  </entries>
+  <string n="PIFGUI:parameters:testComp:visible:no"/>
+  <string n="PIFGUI:parameters:insertTestComp:visible:no"/>
+  <string n="PIFGUI:parameters:testCompLevel:visible:no"/>
+ </TieOutQueueIntfcOut>
+ <TieOutQueueIntfcIn b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="*" version="0.001" packagePrefix="IntfcLib">
+  <type b="array" value="interface"/>
+  <entries b="hash">
+   <width b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="u32"/>
+   </width>
+   <Full b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="signal"/>
+   </Full>
+   <PushReq b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="signal"/>
+   </PushReq>
+   <Data b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="signal"/>
+   </Data>
+  </entries>
+  <string n="PIFGUI:parameters:testComp:visible:no"/>
+  <string n="PIFGUI:parameters:insertTestComp:visible:no"/>
+  <string n="PIFGUI:parameters:testCompLevel:visible:no"/>
+ </TieOutQueueIntfcIn>
+ <TieInQueueIntfcOut b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="*" version="0.001" packagePrefix="IntfcLib">
+  <type b="array" value="interface"/>
+  <entries b="hash">
+   <width b="refh" link="types.u32"/>
+   <Empty b="refh" link="types.signal"/>
+   <PopReq b="refh" link="types.signal"/>
+   <Data b="refh" link="types.signal"/>
+  </entries>
+  <string n="PIFGUI:parameters:testComp:visible:no"/>
+  <string n="PIFGUI:parameters:insertTestComp:visible:no"/>
+  <string n="PIFGUI:parameters:testCompLevel:visible:no"/>
+ </TieInQueueIntfcOut>
+ <TieInQueueIntfcIn b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="*" version="0.001" packagePrefix="IntfcLib">
+  <type b="array" value="interface"/>
+  <entries b="hash">
+   <width b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="u32"/>
+   </width>
+   <Empty b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="signal"/>
+   </Empty>
+   <PopReq b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="signal"/>
+   </PopReq>
+   <Data b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="signal"/>
+   </Data>
+  </entries>
+  <string n="PIFGUI:parameters:testComp:visible:no"/>
+  <string n="PIFGUI:parameters:insertTestComp:visible:no"/>
+  <string n="PIFGUI:parameters:testCompLevel:visible:no"/>
+ </TieInQueueIntfcIn>
+ <JTagIntfcOut b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="*" version="0.001" packagePrefix="IntfcLib">
+  <type b="array" value="interface"/>
+  <entries b="hash">
+   <JTCK b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="signal"/>
+   </JTCK>
+   <JTMS b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="signal"/>
+   </JTMS>
+   <JTRST b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="signal"/>
+   </JTRST>
+  </entries>
+ </JTagIntfcOut>
+ <JTagIntfcIn b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="*" version="0.001" packagePrefix="IntfcLib">
+  <type b="array" value="interface"/>
+  <entries b="hash">
+   <JTCK b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="signal"/>
+   </JTCK>
+   <JTMS b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="signal"/>
+   </JTMS>
+   <JTRST b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="signal"/>
+   </JTRST>
+  </entries>
+ </JTagIntfcIn>
+ <TapOCDIntfcOut b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="*" version="0.001" packagePrefix="IntfcLib">
+  <type b="array" value="interface"/>
+  <entries b="hash">
+   <jtagInstWidth b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="u8"/>
+   </jtagInstWidth>
+   <TResetB b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="signal"/>
+   </TResetB>
+   <TShiftDR b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="signal"/>
+   </TShiftDR>
+   <TUpdateDR b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="signal"/>
+   </TUpdateDR>
+   <TClockDR b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="signal"/>
+   </TClockDR>
+   <TInst b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="signal"/>
+   </TInst>
+   <TUpdateIR b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="signal"/>
+   </TUpdateIR>
+   <XTDO b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="signal"/>
+   </XTDO>
+   <XTDV b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="signal"/>
+   </XTDV>
+  </entries>
+ </TapOCDIntfcOut>
+ <TapOCDIntfcIn b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="*" version="0.001" packagePrefix="IntfcLib">
+  <type b="array" value="interface"/>
+  <entries b="hash">
+   <jtagInstWidth b="refh" link="types.u8"/>
+   <TResetB b="refh" link="types.signal"/>
+   <TShiftDR b="refh" link="types.signal"/>
+   <TUpdateDR b="refh" link="types.signal"/>
+   <TClockDR b="refh" link="types.signal"/>
+   <TInst b="refh" link="types.signal"/>
+   <TUpdateIR b="refh" link="types.signal"/>
+   <XTDO b="refh" link="types.signal"/>
+   <XTDV b="refh" link="types.signal"/>
+  </entries>
+ </TapOCDIntfcIn>
+ <CompTraceIntfcOut b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="*" version="0.001" packagePrefix="IntfcLib">
+  <type b="array" value="interface"/>
+  <entries b="hash">
+   <dataWidth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="8,0x10,0x20,0x40,0x80"/>
+   </dataWidth>
+   <PDebugData b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="signal"/>
+   </PDebugData>
+  </entries>
+ </CompTraceIntfcOut>
+ <TraceIntfcOut b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="*" version="0.001" packagePrefix="IntfcLib">
+  <type b="array" value="interface"/>
+  <entries b="hash">
+   <dataTrace b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0,1"/>
+   </dataTrace>
+   <dataWidth b="refh" link="types.u8"/>
+   <statusWidth b="refh" link="types.u8"/>
+   <PDebugData b="refh" link="types.signal"/>
+   <PDebugStatus b="refh" link="types.signal"/>
+  </entries>
+ </TraceIntfcOut>
+ <TraceIntfcIn b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="*" version="0.001" packagePrefix="IntfcLib">
+  <type b="array" value="interface"/>
+  <entries b="hash">
+   <dir b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="in,out"/>
+   </dir>
+   <dataTrace b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="boolean"/>
+   </dataTrace>
+   <loadStoreWidth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0x20,0x40,0x80"/>
+   </loadStoreWidth>
+   <loadStoreUnitsCount b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1..3"/>
+   </loadStoreUnitsCount>
+   <portTrace b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="boolean"/>
+   </portTrace>
+   <portCount b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..1024"/>
+   </portCount>
+   <portWidth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..1024"/>
+   </portWidth>
+   <dataWidth b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="u32"/>
+   </dataWidth>
+   <statusWidth b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="u8"/>
+   </statusWidth>
+   <PDebugStatus b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="signal"/>
+   </PDebugStatus>
+   <PDebugData b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="signal"/>
+   </PDebugData>
+   <PDebugPC b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="signal"/>
+   </PDebugPC>
+   <PDebugLS0Addr b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="signal"/>
+   </PDebugLS0Addr>
+   <PDebugLS0Data b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="signal"/>
+   </PDebugLS0Data>
+   <PDebugLS1Addr b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="signal"/>
+   </PDebugLS1Addr>
+   <PDebugLS1Data b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="signal"/>
+   </PDebugLS1Data>
+   <PDebugPortValid b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="signal"/>
+   </PDebugPortValid>
+   <PDebugPortData b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="signal"/>
+   </PDebugPortData>
+  </entries>
+ </TraceIntfcIn>
+ <Build b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" packagePrefix="Xtensa::Environment">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <buildXTBoard b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="AvnetLX110,AvnetLX200,AvnetLX60,XT1000,XT2000A,XT2000X,XilinxKC705,XilinxML605,no,xthifi2"/>
+   </buildXTBoard>
+   <buildEmul b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="EmulationStratix2,Xilinx_Virtex2,Xilinx_Virtex4,Xilinx_Virtex5,Xilinx_Virtex6,Xilinx_Virtex7,Zebu,no"/>
+   </buildEmul>
+   <buildXTBoardFreq b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0x1e,0x28,0x32,0x42,0x50"/>
+   </buildXTBoardFreq>
+   <buildHW b="refh" link="types.boolean"/>
+   <buildDiags b="refh" link="types.boolean"/>
+   <useCoware b="refh" link="types.boolean"/>
+   <useSeamless b="refh" link="types.boolean"/>
+   <useXTOS b="refh" link="types.boolean"/>
+   <useVxworks b="refh" link="types.boolean"/>
+   <useLinux b="refh" link="types.boolean"/>
+   <useNucleus b="refh" link="types.boolean"/>
+   <useRedboot b="refh" link="types.boolean"/>
+   <uniqueID b="refh" link="types.u32"/>
+   <userCID b="refh" link="types.u64"/>
+   <expirationDate b="refh" link="types.u64"/>
+   <licenseID b="refh" link="types.u64"/>
+   <mode b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="Emulation,Emulation2,Evaluation,Production,Test"/>
+   </mode>
+   <compatSeamless b="refh" link="types.boolean"/>
+   <compatCoware b="refh" link="types.boolean"/>
+   <compatVxworks b="refh" link="types.boolean"/>
+   <compatNucleus b="refh" link="types.boolean"/>
+   <compatRedboot b="refh" link="types.boolean"/>
+   <compatLinux b="refh" link="types.boolean"/>
+   <compatXTOS b="refh" link="types.boolean"/>
+   <compatCustomer b="refh" link="types.boolean"/>
+  </entries>
+  <evalMessage b="string" value="CAUTION:
+This Synthesis, Verification or Layout run is invalid for implementation in
+silicon because it is based on an evaluation build. Evaluation builds will
+not operate properly in silicon. Evaluation builds are for analysis only.
+If this run is for production you should return to the Xtensa Processor
+Generator and perform a production build. Only a production build will
+operate properly in silicon.\n\n"/>
+  <perlCodeFile b="string" value="Xtensa/Environment/Build_include"/>
+  <perlClassVariables b="string" value="$version $configReg0 $configReg1 $configReg2"/>
+  <perlIncludePackages b="string" value="
+use Xtensa::Version;"/>
+ </Build>
+ <DesignImplementation b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" packagePrefix="Xtensa::Environment">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <ImplTargetSpeed b="refh" link="types.u32"/>
+   <ImplTargetSize b="refh" link="types.u32"/>
+   <ImplTargetPower b="refh" link="types.u32"/>
+   <ImplSpeedPriority b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="High,Low,Medium"/>
+   </ImplSpeedPriority>
+   <ImplPowerPriority b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="High,Low,Medium"/>
+   </ImplPowerPriority>
+   <ImplSizePriority b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="High,Low,Medium"/>
+   </ImplSizePriority>
+   <ImplTargetTechnology b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="130g,130lp,130lv,130lvlk,130lvlkod,180g,180lv,28hl,28hm,28hp,40lp,45gs,55lp,65gp,65lp,90g,90gt,90lp,arm_28hp_cdm4nm_lvt,arm_28hp_hvt,arm_28hp_lvt,arm_28hp_rvt,arm_40g_rvt,arm_gf_28hpp_c30_12t,arm_gf_28hpp_c30_9t,arm_gf_28hpp_c34_12t,arm_gf_28hpp_c34_9t,tsmc40lp_hvt,tsmc40lp_hvt_12t,tsmc40lp_lvt,tsmc40lp_lvt_12t,tsmc40lp_rvt,tsmc40lp_rvt_12t,tsmc45gs_hvt,tsmc45gs_hvt_12t,tsmc45gs_lvt,tsmc45gs_lvt_12t,tsmc45gs_rvt,tsmc45gs_rvt_12t,tsmc_10nm_10_8d5t,tsmc_16ffcll_16_9t_cpd,tsmc_16ffcll_16_9t_cpd_XNNE,tsmc_16ffcll_16_9t_cpd_XNNE_13lm,tsmc_16ffcll_16_9t_cpd_aocv,tsmc_16ffcll_16_9t_cpd_lvt,tsmc_16gl_16_7d5t_cpd,tsmc_16gl_16_9t,tsmc_16gl_16_9t_cpd,tsmc_16gl_16_9t_cpd_hd_lvt_Atlanta,tsmc_16gl_16_9t_cpd_hd_lvt_BB5000,tsmc_16gl_16_9t_cpd_hd_lvt_Ball,tsmc_16gl_16_9t_cpd_hd_lvt_Boston,tsmc_16gl_16_9t_cpd_hs_rvt_Ball,tsmc_16ll_16_7d5t_cpd,tsmc_16ll_16_9t,tsmc_16ll_16_9t_cpd,tsmc_20soc_20_9t,tsmc_20soc_22_9t,tsmc_20soc_24_9t,tsmc_28hl_hvt,tsmc_28hl_hvt_12t,tsmc_28hl_lvt,tsmc_28hl_lvt_12t,tsmc_28hl_rvt,tsmc_28hl_rvt_12t,tsmc_28hl_ulvt,tsmc_28hl_ulvt_12t,tsmc_28hm_cd3nm_rvt,tsmc_28hm_cd3nm_rvt_12t,tsmc_28hm_cdm4nm_rvt,tsmc_28hm_cdm4nm_rvt_12t,tsmc_28hm_hvt,tsmc_28hm_hvt_12t,tsmc_28hm_lvt,tsmc_28hm_lvt_12t,tsmc_28hm_rvt,tsmc_28hm_rvt_12t,tsmc_28hm_uhvt,tsmc_28hm_uhvt_12t,tsmc_28hm_ulvt,tsmc_28hm_ulvt_12t,tsmc_28hp_cd3nm_rvt,tsmc_28hp_cd3nm_rvt_12t,tsmc_28hp_cdm4nm_rvt,tsmc_28hp_cdm4nm_rvt_12t,tsmc_28hp_hvt,tsmc_28hp_hvt_12t,tsmc_28hp_lvt,tsmc_28hp_lvt_12t,tsmc_28hp_rvt,tsmc_28hp_rvt_12t,tsmc_28hp_rvt_12t_wcz,tsmc_28hpc_30_12t,tsmc_28hpc_30_7t,tsmc_28hpc_30_9t,tsmc_28hpc_35_12t,tsmc_28hpc_35_12t_hvt,tsmc_28hpc_35_12t_lvt,tsmc_28hpc_35_12t_uhvt,tsmc_28hpc_35_12t_ulvt,tsmc_28hpc_35_7t,tsmc_28hpc_35_7t_hvt,tsmc_28hpc_35_7t_lvt,tsmc_28hpc_35_9t,tsmc_28hpc_35_9t_hvt,tsmc_28hpc_35_9t_lvt,tsmc_28hpc_40_12t,tsmc_28hpc_40_12t_hvt,tsmc_28hpc_40_12t_lvt,tsmc_28hpc_40_7t,tsmc_28hpc_40_9t,tsmc_28hpcplus_35_9t,tsmc_28hpcplus_35_9t_Silvertip,tsmc_55lp_rvt_12t,tsmc_55lp_rvt_7t,tsmc_55lp_rvt_9t,tsmc_65lp_rvt_12t,tsmc_65lp_rvt_7t,tsmc_65lp_rvt_9t,tsmc_7g_8_240_XNNE,tsmc_7g_8_240_lvt_Atlanta,tsmc_7g_8_240_lvt_Phoenix,tsmc_7g_8_240_rvt,tsmc_7g_8_240_rvt_aocv,tsmc_7g_8_240_rvt_socv,tsmc_7g_8_300_rvt,tsmc_7g_8_300_rvt_aocv,tsmc_7g_8_300_rvt_socv,tsmc_7g_QX_char,tsmc_7g_QX_dev,tsmc_7g_ludicrous_H240,tsmc_7g_ludicrous_H300,tsmc_7g_plaid_H240,tsmc_7g_plaid_H300,tsmc_7p_8_240_rvt_socv"/>
+   </ImplTargetTechnology>
+   <ImplTargetLibraryType b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="TENSILICA_STD,USER_DEFINED"/>
+   </ImplTargetLibraryType>
+   <ImplOperatingCondition b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="Typical,WCL,WCZ,Worst"/>
+   </ImplOperatingCondition>
+   <ImplVoltageCondition b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="Nominal,OD,UD"/>
+   </ImplVoltageCondition>
+   <ImplRegFileBuildingBlock b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="Latch,FlipFlop"/>
+   </ImplRegFileBuildingBlock>
+   <ImplFloorplan b="refh" link="types.string"/>
+   <ImplResetFlops b="refh" link="types.boolean"/>
+   <ImplAsyncReset b="refh" link="types.boolean"/>
+   <ImplCDCSyncStages b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="2..8"/>
+   </ImplCDCSyncStages>
+   <ImplDecoder b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="and_or_mux,case0,espresso"/>
+   </ImplDecoder>
+   <ImplTimingExperiment b="refh" link="types.u32"/>
+  </entries>
+  <perlCodeFile b="string" value="Xtensa/Environment/DesignImplementation_include"/>
+ </DesignImplementation>
+ <CadTools b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" packagePrefix="Xtensa::Environment">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <CadHDL b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="Verilog,VHDL"/>
+   </CadHDL>
+   <CadParUseAstro b="refh" link="types.boolean"/>
+   <CadSimUseVCS b="refh" link="types.boolean"/>
+   <CadSimUseVerilogXL b="refh" link="types.boolean"/>
+   <CadSimUseVerilogNC b="refh" link="types.boolean"/>
+   <CadSimUseVantage b="refh" link="types.boolean"/>
+   <CadSimUseMTI b="refh" link="types.boolean"/>
+   <CadStvUseMotive b="refh" link="types.boolean"/>
+   <CadStvUsePrimeTime b="refh" link="types.boolean"/>
+   <CadSiUseCeltic b="refh" link="types.boolean"/>
+   <CadSynUseDesignCompiler b="refh" link="types.boolean"/>
+   <CadPsynUsePhysicalCompiler b="refh" link="types.boolean"/>
+   <CadExtractUseQX b="refh" link="types.boolean"/>
+  </entries>
+  <perlCodeFile b="string" value="Xtensa/Environment/CadTools_include"/>
+ </CadTools>
+ <DesignVerification b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" perlPostInitRoutine="initialize" packagePrefix="Xtensa::Environment">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <dvarch b="refh" link="types.boolean"/>
+   <pageTableVAddr b="refh" link="types.u32"/>
+   <pageTableBytes b="refh" link="types.u32"/>
+   <pageTableLinkVAddr b="refh" link="types.u32"/>
+   <pageTableLinkBytes b="refh" link="types.u32"/>
+   <clockPeriod b="refh" link="types.u32"/>
+   <clockDutyCycle b="refh" link="types.float"/>
+  </entries>
+  <perlCodeFile b="string" value="Xtensa/Environment/DesignVerification_include"/>
+  <perlClassVariables b="string" value="
+		%_real_memories
+		$_derived_performed
+		%magic
+		$magicSize
+		$myproc
+		$_real_memRange_data
+		$_real_memRange_inst
+		@_real_alternate_vecbases"/>
+  <perlIncludePackages b="string" value="
+use Utilities;
+use Xtensa::Environment::DVMemory;
+use AddrRange;"/>
+ </DesignVerification>
+ <FPGABoard b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" packagePrefix="Xtensa::System">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <ioCachedPAddr b="refh" link="types.u32"/>
+   <ioCachedBytes b="refh" link="types.u32"/>
+   <ioNonCachedPAddr b="refh" link="types.u32"/>
+   <ioNonCachedBytes b="refh" link="types.u32"/>
+  </entries>
+  <perlCodeFile b="string" value="Xtensa/System/FPGABoard_include"/>
+ </FPGABoard>
+ <Environment b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" perlPostInitRoutine="initialize" packagePrefix="Xtensa">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <build b="refh" link="types.Build"/>
+   <implementation b="refh" link="types.DesignImplementation"/>
+   <cadTools b="refh" link="types.CadTools"/>
+   <verification b="refh" link="types.DesignVerification"/>
+   <fpga b="refh" link="types.FPGABoard"/>
+  </entries>
+  <perlCodeFile b="string" value="Xtensa/Environment_include"/>
+  <perlClassVariables b="string" value="$testbench"/>
+ </Environment>
+ <hifi4_MockingBird_PROD_Environment b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1">
+  <type b="array" value="Environment"/>
+  <entries b="hash"/>
+ </hifi4_MockingBird_PROD_Environment>
+ <SRam b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" packagePrefix="CompLib" version="0.001">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <addrWidth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..31"/>
+   </addrWidth>
+   <ramWidth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..1024"/>
+   </ramWidth>
+   <numBytes b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0,4,8,0x10,0x20,0x40,0x80"/>
+   </numBytes>
+   <numWords b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0,2,4,8,0x10,0x20"/>
+   </numWords>
+   <hardwareModel b="refh" link="types.string"/>
+   <sramPort b="refh" link="types.SRamIntfcIn"/>
+   <global b="refh" link="types.ClkIntfc"/>
+  </entries>
+  <simulationHardware b="string"/>
+  <netlistVisible b="string"/>
+  <string n="PIFGUI:abrev:SRam"/>
+ </SRam>
+ <Memory b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" packagePrefix="Xtensa::System" perlPostInitRoutine="initialize">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <type b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="dataPort,dataRam,dataRom,device,generic,instRam,instRom,sysram,sysrom,sysssram,unifiedRam"/>
+   </type>
+   <psize b="refh" link="types.u32"/>
+   <basePAddr b="refh" link="types.u32"/>
+   <accessWidth b="refh" link="types.u32"/>
+   <extraBits b="refh" link="types.u32"/>
+   <attributes b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="set"/>
+    <range b="array" value="destructive,executable,unaligned,writable"/>
+   </attributes>
+   <name b="refh" link="types.string"/>
+   <id b="refh" link="types.u32"/>
+   <assoc b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1..4"/>
+   </assoc>
+   <banks b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1,2,4"/>
+   </banks>
+   <highOrderBanking b="refh" link="types.boolean"/>
+   <latency b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1..31"/>
+   </latency>
+   <busy b="refh" link="types.boolean"/>
+   <dma b="refh" link="types.boolean"/>
+   <udma b="refh" link="types.boolean"/>
+   <tieLS b="refh" link="types.boolean"/>
+   <error b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="ecc,none,parity"/>
+   </error>
+   <errorWidth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1,4,8,0x10"/>
+   </errorWidth>
+   <rcw b="refh" link="types.boolean"/>
+   <cbox b="refh" link="types.boolean"/>
+   <fake b="refh" link="types.boolean"/>
+   <subbanks b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1,2,4,8,0x10,0x20,0x40,0x80"/>
+   </subbanks>
+   <physicalSlices b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1,2,4,8"/>
+   </physicalSlices>
+   <sramWidth b="refh" link="types.u32"/>
+   <sramWords b="refh" link="types.u32"/>
+   <sramName b="refh" link="types.string"/>
+   <lsAccess b="refh" link="types.boolean"/>
+   <splitReadWritePort b="refh" link="types.boolean"/>
+   <attributeWidth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0,0xa0"/>
+   </attributeWidth>
+   <initPattern b="refh" link="types.u32"/>
+   <dynamicBaseAddr b="refh" link="types.boolean"/>
+   <softwareModel b="refh" link="types.string"/>
+   <size b="refh" link="types.u32"/>
+   <addressWidth b="refh" link="types.u32"/>
+   <numbytes b="refh" link="types.u32"/>
+   <numwords b="refh" link="types.u32"/>
+   <vsize b="refh" link="types.u32"/>
+   <baseVAddr b="refh" link="types.u32"/>
+  </entries>
+  <perlCodeFile b="string" value="Xtensa/System/Memory_include"/>
+  <perlClassVariables b="string" value="@segments @_instances $pipetype"/>
+ </Memory>
+ <DataRam b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="*" packagePrefix="Xtensa::System">
+  <type b="array" value="Memory"/>
+  <entries b="hash">
+   <dram b="refh" link="types.SRam"/>
+   <global b="refh" link="types.ClkIntfc"/>
+   <dataIntfc b="refh" link="types.SRamIntfcIn"/>
+   <loadIntfc b="refh" link="types.BitIntfcIn"/>
+  </entries>
+  <netlistVisible b="string"/>
+  <netlistGenerateModule b="string"/>
+ </DataRam>
+ <UnifiedRam b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="*" packagePrefix="Xtensa::System">
+  <type b="array" value="Memory"/>
+  <entries b="hash">
+   <uram b="refh" link="types.SRam"/>
+   <global b="refh" link="types.GlobalIntfc"/>
+   <dataIntfc b="refh" link="types.SRamIntfcIn"/>
+   <loadIntfc b="refh" link="types.BitIntfcIn"/>
+  </entries>
+  <netlistVisible b="string"/>
+  <netlistGenerateModule b="string"/>
+ </UnifiedRam>
+ <DataRom b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="*" packagePrefix="Xtensa::System">
+  <type b="array" value="Memory"/>
+  <entries b="hash">
+   <drom b="refh" link="types.SRam"/>
+   <global b="refh" link="types.GlobalIntfc"/>
+   <dataIntfc b="refh" link="types.RomIntfcIn"/>
+   <loadIntfc b="refh" link="types.BitIntfcIn"/>
+  </entries>
+  <netlistVisible b="string"/>
+  <netlistGenerateModule b="string"/>
+ </DataRom>
+ <DataPort b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="*" packagePrefix="Xtensa::System">
+  <type b="array" value="Memory"/>
+  <entries b="hash">
+   <destructive b="refh" link="types.boolean"/>
+   <global b="refh" link="types.GlobalIntfc"/>
+   <dataIntfc b="refh" link="types.SRamIntfcIn"/>
+   <loadIntfc b="refh" link="types.BitIntfcIn"/>
+  </entries>
+ </DataPort>
+ <InstRam b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="*" packagePrefix="Xtensa::System">
+  <type b="array" value="Memory"/>
+  <entries b="hash">
+   <iram b="refh" link="types.SRam"/>
+   <global b="refh" link="types.ClkIntfc"/>
+   <dataIntfc b="refh" link="types.SRamIntfcIn"/>
+   <loadIntfc b="refh" link="types.BitIntfcIn"/>
+   <busyIntfc b="refh" link="types.BitIntfcOut"/>
+  </entries>
+  <netlistVisible b="string"/>
+  <netlistGenerateModule b="string"/>
+ </InstRam>
+ <InstRom b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="*" packagePrefix="Xtensa::System">
+  <type b="array" value="Memory"/>
+  <entries b="hash">
+   <irom b="refh" link="types.SRam"/>
+   <global b="refh" link="types.GlobalIntfc"/>
+   <dataIntfc b="refh" link="types.RomIntfcIn"/>
+   <loadIntfc b="refh" link="types.BitIntfcIn"/>
+   <busyIntfc b="refh" link="types.BitIntfcOut"/>
+  </entries>
+  <netlistVisible b="string"/>
+  <netlistGenerateModule b="string"/>
+ </InstRom>
+ <Core b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" packagePrefix="Xtensa::Processor" perlPostInitRoutine="initialize">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <memoryOrder b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="LittleEndian,BigEndian"/>
+   </memoryOrder>
+   <addressWidth b="refh" link="types.u32"/>
+   <exceptionArch b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="XEA1,XEA2,XEA3,XEAX,XEA_UNKNOWN,XHA"/>
+   </exceptionArch>
+   <newExceptionArch b="refh" link="types.boolean"/>
+   <externalExceptionArch b="refh" link="types.boolean"/>
+   <haltArch b="refh" link="types.boolean"/>
+   <exceptions b="refh" link="types.boolean"/>
+   <exceptionDetails b="refh" link="types.boolean"/>
+   <impreciseExceptions b="refh" link="types.boolean"/>
+   <pageableStack b="refh" link="types.boolean"/>
+   <pageableStackLimit b="refh" link="types.boolean"/>
+   <kernelStackLimit b="refh" link="types.boolean"/>
+   <interruptStackLimit b="refh" link="types.boolean"/>
+   <Loops b="refh" link="types.boolean"/>
+   <L0IBuffer b="refh" link="types.boolean"/>
+   <L0IBufferSize b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0x100,0x200,0x400,0x800,0x1000,0x2000,8,0x10,0x20,0x40,0x80"/>
+   </L0IBufferSize>
+   <maxInstructionSize b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="3,4,5,6,7,8,9,0xa,0xb,0xc,0xd,0xe,0xf,0x10,0x14,0x18,0x1c,0x20"/>
+   </maxInstructionSize>
+   <wideInstHoldingBuffer b="refh" link="types.boolean"/>
+   <tieUnrestrictedInstrWidths b="refh" link="types.boolean"/>
+   <Synchronization b="refh" link="types.boolean"/>
+   <ConditionalStore b="refh" link="types.boolean"/>
+   <masterExclusiveAccess b="refh" link="types.boolean"/>
+   <slaveExclusiveAccess b="refh" link="types.boolean"/>
+   <numExternalExclusiveMasters b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0,1,2,4,8,0x10"/>
+   </numExternalExclusiveMasters>
+   <earlyRestart b="refh" link="types.boolean"/>
+   <virtualAddressWidth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="16..32"/>
+   </virtualAddressWidth>
+   <physicalAddressWidth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="16..32"/>
+   </physicalAddressWidth>
+   <pifReadDataBits b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0x20,0x40,0x80"/>
+   </pifReadDataBits>
+   <pifWriteDataBits b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0x20,0x40,0x80"/>
+   </pifWriteDataBits>
+   <pifWriteResponse b="refh" link="types.boolean"/>
+   <pifInboundWriteResponse b="refh" link="types.boolean"/>
+   <dataUsePIF b="refh" link="types.boolean"/>
+   <instUsePIF b="refh" link="types.boolean"/>
+   <pifInReqRouteIdBits b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0,9"/>
+   </pifInReqRouteIdBits>
+   <pifCriticalWordFirst b="refh" link="types.boolean"/>
+   <pifArbitraryByteEnables b="refh" link="types.boolean"/>
+   <numMaxPifWriteRequests b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1,2,4,8,0xc,0x10"/>
+   </numMaxPifWriteRequests>
+   <writeBufferBypassAddrBits b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..32"/>
+   </writeBufferBypassAddrBits>
+   <pifTracePort b="refh" link="types.boolean"/>
+   <pifDataTracePort b="refh" link="types.boolean"/>
+   <TIETracePort b="refh" link="types.boolean"/>
+   <usePerformanceCounter b="refh" link="types.boolean"/>
+   <usePerformanceCounterER b="refh" link="types.boolean"/>
+   <perfCounterCount b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="2,4,8,0x10"/>
+   </perfCounterCount>
+   <numOfMiscRegs b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..4"/>
+   </numOfMiscRegs>
+   <threadptr b="refh" link="types.boolean"/>
+   <tieUseStoreByteDisable b="refh" link="types.boolean"/>
+   <tieUseWideStore b="refh" link="types.boolean"/>
+   <ifetchLatency b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1..31"/>
+   </ifetchLatency>
+   <pipeAStage b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..29"/>
+   </pipeAStage>
+   <pipeBStage b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..29"/>
+   </pipeBStage>
+   <pipeEStage b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..29"/>
+   </pipeEStage>
+   <pipeMStage b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1..30"/>
+   </pipeMStage>
+   <pipeWStage b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1..31"/>
+   </pipeWStage>
+   <pipeDStage b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1..10"/>
+   </pipeDStage>
+   <numContexts b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1,2,4,8,0x10,0x20"/>
+   </numContexts>
+   <contextStateList b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="set"/>
+    <range b="array" value="AR,WINDOWBASE,WINDOWSTART"/>
+   </contextStateList>
+   <BranchPredictedTaken b="refh" link="types.boolean"/>
+   <DEPBITS b="refh" link="types.boolean"/>
+   <L32R b="refh" link="types.boolean"/>
+   <ExtL32R b="refh" link="types.boolean"/>
+   <Const16replacesMac16 b="refh" link="types.boolean"/>
+   <Abs b="refh" link="types.boolean"/>
+   <Addx b="refh" link="types.boolean"/>
+   <Call4and12 b="refh" link="types.boolean"/>
+   <InterruptDistributor b="refh" link="types.boolean"/>
+   <MPRunStall b="refh" link="types.boolean"/>
+   <ExportCoreStatesToUserTIE b="refh" link="types.boolean"/>
+   <SWExtL32R b="refh" link="types.boolean"/>
+   <SW_ABI b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="call0,windowed"/>
+   </SW_ABI>
+   <SW_CLibrary b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="newlib,uclibc,xclib"/>
+   </SW_CLibrary>
+   <SW_UseFloatingPoint b="refh" link="types.boolean"/>
+   <SW_FloatingPointABI b="refh" link="types.boolean"/>
+   <SW_Erratum_Fix b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="set"/>
+    <range b="array" value="0,0x1e7"/>
+   </SW_Erratum_Fix>
+   <SW_Const32 b="refh" link="types.boolean"/>
+   <SW_memmap_cacheattr_reset b="refh" link="types.string"/>
+   <Const16 b="refh" link="types.boolean"/>
+   <instructionWidth b="refh" link="types.u32"/>
+   <WideInstr b="refh" link="types.boolean"/>
+   <pifReadDataBytes b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="4,8,0x10"/>
+   </pifReadDataBytes>
+   <pifWriteDataBytes b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="4,8,0x10"/>
+   </pifWriteDataBytes>
+   <instfetchsize b="refh" link="types.u32"/>
+   <numExclusiveMonitors b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1,2,3,5,9,0x11"/>
+   </numExclusiveMonitors>
+  </entries>
+  <string n="PIFGUI:abrev:XT"/>
+  <perlClassVariables b="string" value="
+	$pr
+	$dataWidth
+        $pifOutReqIdBits
+	$byteEnableWidth
+	$layout_statements
+	"/>
+  <perlCodeFile b="string" value="Xtensa/Processor/Core_include"/>
+ </Core>
+ <RegisterFile b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" packagePrefix="Xtensa::Processor">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <nareg b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0x10,0x20,0x40"/>
+   </nareg>
+   <windowsConfigured b="refh" link="types.boolean"/>
+  </entries>
+  <perlCodeFile b="string" value="Xtensa/Processor/RegisterFile_include"/>
+ </RegisterFile>
+ <Interrupt b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" packagePrefix="Xtensa::Processor">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <type b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="BreakIn,CorrEccErr,DebugRequest,ExtEdge,ExtLevel,L2Err,L2Status,NMI,Profiling,ScatterGatherErr,Software,Timer,Trax,UDmaDone,UDmaErr,WriteErr"/>
+   </type>
+   <level b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1..255"/>
+   </level>
+   <number b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..255"/>
+   </number>
+   <mask b="refh" link="types.u32"/>
+  </entries>
+ </Interrupt>
+ <Interrupts b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" perlClassVariables="" perlPostInitRoutine="initialize" packagePrefix="Xtensa::Processor">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <count b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..32"/>
+   </count>
+   <levelmax b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1,2,3,4,5,6,7,0xf,0x1f,0x3f,0x7f,0xff"/>
+   </levelmax>
+   <highLevel b="refh" link="types.boolean"/>
+   <excmLevel b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1..6"/>
+   </excmLevel>
+   <swModifiable b="refh" link="types.boolean"/>
+   <numOfSWInt b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..256"/>
+   </numOfSWInt>
+   <numOfExtInt b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..256"/>
+   </numOfExtInt>
+   <interruptStackEnd b="refh" link="types.u32"/>
+   <relocatableISB b="refh" link="types.boolean"/>
+   <interruptStackBase b="refh" link="types.u32"/>
+   <relocatableITB b="refh" link="types.boolean"/>
+   <interruptTableBase b="refh" link="types.u32"/>
+   <interrupt b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="Interrupt"/>
+    <sizerange b="array" value="0..32"/>
+   </interrupt>
+  </entries>
+  <perlCodeFile b="string" value="Xtensa/Processor/Interrupts_include"/>
+ </Interrupts>
+ <Timer b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" packagePrefix="Xtensa::Processor">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <interrupt b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..31"/>
+   </interrupt>
+   <number b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..31"/>
+   </number>
+  </entries>
+ </Timer>
+ <Timers b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" packagePrefix="Xtensa::Processor">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <count b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..3"/>
+   </count>
+   <timer b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="Timer"/>
+    <sizerange b="array" value="0..3"/>
+   </timer>
+  </entries>
+  <perlCodeFile b="string" value="Xtensa/Processor/Timers_include"/>
+ </Timers>
+ <Debug b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" packagePrefix="Xtensa::Processor">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <ivaTrapCount b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..2"/>
+   </ivaTrapCount>
+   <dvaTrapCount b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..2"/>
+   </dvaTrapCount>
+   <interruptLevel b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..6"/>
+   </interruptLevel>
+  </entries>
+ </Debug>
+ <OCD b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" packagePrefix="Xtensa::Processor">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <DebugExternalInterrupt b="refh" link="types.boolean"/>
+   <DebugUseDIRArray b="refh" link="types.boolean"/>
+   <DebugLoadStoreDDR b="refh" link="types.boolean"/>
+  </entries>
+ </OCD>
+ <IDMA b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="*" packagePrefix="Xtensa::Processor">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <transpose b="refh" link="types.boolean"/>
+   <bufferDepth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1,2,4,8,0x10"/>
+   </bufferDepth>
+   <outstandingRows b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="2,4,8,0x10,0x20,0x40"/>
+   </outstandingRows>
+   <reorderBuffer b="refh" link="types.boolean"/>
+   <reorderBufOutstandingReq b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0x10,0x20,0x30,0x40,0x80"/>
+   </reorderBufOutstandingReq>
+   <reorderBufNumRamPorts b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1,2"/>
+   </reorderBufNumRamPorts>
+   <AXIDataBits b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0x100,0x20,0x40,0x80"/>
+   </AXIDataBits>
+   <maxOutstandingReq b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0x100,0x10,0x20,0x40"/>
+   </maxOutstandingReq>
+   <numChannels b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1..16"/>
+   </numChannels>
+  </entries>
+  <perlCodeFile b="string" value="Xtensa/Processor/IDMA_include"/>
+ </IDMA>
+ <BTB b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="*" packagePrefix="Xtensa::Processor" perlPostInitRoutine="initNumOfTagBits">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <numOfEntries b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0x100,0x10,0x20,0x40,0x80"/>
+   </numOfEntries>
+   <assoc b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="2,4"/>
+   </assoc>
+   <RASEntries b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0,2,3,4,5,6,7,8"/>
+   </RASEntries>
+   <instInclude b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="set"/>
+    <range b="array" value="CallX,JX,Loops,Return_Jumps,notTakenBranch"/>
+   </instInclude>
+   <numOfTagBits b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="2..29"/>
+   </numOfTagBits>
+  </entries>
+  <perlCodeFile b="string" value="Xtensa/Processor/BTB_include"/>
+ </BTB>
+ <Prefetch b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" packagePrefix="Xtensa::Processor">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <prefetchEntries b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="2,4,8,0x10"/>
+   </prefetchEntries>
+   <prefetchCastoutCacheLines b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1,2,4,8"/>
+   </prefetchCastoutCacheLines>
+   <prefetch2L1 b="refh" link="types.boolean"/>
+   <prefetchBlock b="refh" link="types.boolean"/>
+   <prefetchBlockEntries b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="2,4,8,0x10"/>
+   </prefetchBlockEntries>
+   <error b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="ecc,none,parity"/>
+   </error>
+   <fixPbufRAM b="refh" link="types.boolean"/>
+   <CMEDowngrades b="refh" link="types.boolean"/>
+  </entries>
+  <perlCodeFile b="string" value="Xtensa/Processor/Prefetch_include"/>
+ </Prefetch>
+ <AXI b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" packagePrefix="Xtensa::Processor">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <axitype b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="AXI3,AXI4"/>
+   </axitype>
+   <axiwidth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0x20,0x40,0x80"/>
+   </axiwidth>
+   <slaveReqCntlDepth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1,2,4,8,0x10"/>
+   </slaveReqCntlDepth>
+   <slaveReqDataDepth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1,2,4,8,0x10"/>
+   </slaveReqDataDepth>
+   <slaveRespDepth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1,2,4,8,0x10"/>
+   </slaveRespDepth>
+   <slaveIDwidth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="4,8,0xc,0x10,0x14,0x18"/>
+   </slaveIDwidth>
+   <registerPIF b="refh" link="types.boolean"/>
+   <aceLite b="refh" link="types.boolean"/>
+   <fullAce b="refh" link="types.boolean"/>
+   <axiSecInterface b="refh" link="types.boolean"/>
+   <axiECC b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="32bit,64bit,none"/>
+   </axiECC>
+  </entries>
+ </AXI>
+ <AHB b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="*" packagePrefix="Xtensa::Processor">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <ahbwidth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0x20,0x40,0x80"/>
+   </ahbwidth>
+   <reqDepth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1,2,4,8,0x10"/>
+   </reqDepth>
+   <respDepth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1,2,4,8,0x10"/>
+   </respDepth>
+   <flopReq b="refh" link="types.boolean"/>
+   <flopResp b="refh" link="types.boolean"/>
+  </entries>
+ </AHB>
+ <AsyncPif b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="*" packagePrefix="Xtensa::Processor">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <reqFIFODepth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1,2,4,8,0x10"/>
+   </reqFIFODepth>
+   <respFIFODepth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1,2,4,8,0x10"/>
+   </respFIFODepth>
+  </entries>
+ </AsyncPif>
+ <ScatterGather b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="*" packagePrefix="Xtensa::Processor">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <scatter b="refh" link="types.boolean"/>
+   <gather b="refh" link="types.boolean"/>
+   <unalign b="refh" link="types.boolean"/>
+   <numGatherRegs b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1,2,4,8"/>
+   </numGatherRegs>
+   <numScatterRegs b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1,2,4"/>
+   </numScatterRegs>
+   <elementsPerCycle b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="8,0x10,0x20,0x40"/>
+   </elementsPerCycle>
+  </entries>
+ </ScatterGather>
+ <SNOOP b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="*" packagePrefix="Xtensa::Processor" perlPostInitRoutine="initSnoop">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <numOfSHTE b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1..16"/>
+   </numOfSHTE>
+   <minMemOps b="refh" link="types.boolean"/>
+   <numOfSnpCastoutBuffs b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1..3"/>
+   </numOfSnpCastoutBuffs>
+   <cdDataWaitCRResp b="refh" link="types.boolean"/>
+   <dvCovSmallBufs b="refh" link="types.boolean"/>
+  </entries>
+  <perlCodeFile b="string" value="Xtensa/Processor/Snoop_include"/>
+ </SNOOP>
+ <TRAX b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" packagePrefix="CompLib">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <internalFifoSize b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0x100,0x10,0x18,0x20,0x40,0x80"/>
+   </internalFifoSize>
+   <outputMemory b="refh" link="types.boolean"/>
+   <memorySize b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0x10000,0x20000,0x40000,0x200,0x400,0x800,0x1000,0x2000,0x4000,0x8000,0x40,0x80"/>
+   </memorySize>
+   <memoryWidth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0x20,0x40,0x80"/>
+   </memoryWidth>
+   <memoryShared b="refh" link="types.boolean"/>
+   <outputATB b="refh" link="types.boolean"/>
+   <atbDataWidth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0x20,0x40,0x80"/>
+   </atbDataWidth>
+   <atbIdWidth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="2..8"/>
+   </atbIdWidth>
+   <timestamps b="refh" link="types.boolean"/>
+   <timeWidth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0x18,0x1e,0x24,0x2a,0x30,0x36,0x3c,0x40"/>
+   </timeWidth>
+   <intTimeWidth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0,0xc"/>
+   </intTimeWidth>
+   <grayTimeBus b="refh" link="types.boolean"/>
+   <asynchTimeBus b="refh" link="types.boolean"/>
+   <numILAentries b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0,0x20,0x40"/>
+   </numILAentries>
+  </entries>
+ </TRAX>
+ <LoadStore b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" packagePrefix="Xtensa::Processor" perlPostInitRoutine="initLoadStore">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <id b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0,1,2"/>
+   </id>
+   <type b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="Load,LoadStore,Store"/>
+   </type>
+   <vaddrBits b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="12..32"/>
+   </vaddrBits>
+   <paddrBits b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="12..32"/>
+   </paddrBits>
+   <numOfStoreBuffers b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="2,3"/>
+   </numOfStoreBuffers>
+   <numOfStoreTagBuffers b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="2,3,4"/>
+   </numOfStoreTagBuffers>
+   <lsInterfaces b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="set"/>
+    <range b="array" value="DataCache,DataPIF,DataPort0,DataRAM0,DataRAM1,DataROM0,UnifiedRAM0"/>
+   </lsInterfaces>
+  </entries>
+  <perlCodeFile b="string" value="Xtensa/Processor/LoadStore_include"/>
+  <perlClassVariables b="string" value="$cache
+    			    $memAccessLatency
+			    $cacheAccessWidth
+			    $cacheSize
+			    @rams
+			    @roms
+			    @ports
+			    @interfaces
+			    %connected"/>
+ </LoadStore>
+ <Cache b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" perlPostInitRoutine="init" packagePrefix="Xtensa::Processor">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <type b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="Data,Inst,Unified"/>
+   </type>
+   <size b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0,0x10000,0x20000,0x30000,0x40000,0x60000,0x80000,0xc0000,0x100000,0x200000,0x400000,0x400,0x600,0x800,0xc00,0x1000,0x1800,0x2000,0x3000,0x4000,0x6000,0x8000,0x18000,0xc000"/>
+   </size>
+   <pipetype b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="both,scalar,vector"/>
+   </pipetype>
+   <lineSize b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0x100,0x10,0x20,0x40,0x80"/>
+   </lineSize>
+   <accessWidth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0x100,0x200,0x400,0x20,0x40,0x80"/>
+   </accessWidth>
+   <assoc b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1..16"/>
+   </assoc>
+   <banks b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1,2,4"/>
+   </banks>
+   <latency b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1..31"/>
+   </latency>
+   <indexLock b="refh" link="types.boolean"/>
+   <error b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="ecc,none,parity"/>
+   </error>
+   <errorWidth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1,4,8,0x10"/>
+   </errorWidth>
+   <physicalSlices b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1,2,4,8"/>
+   </physicalSlices>
+   <wayLock b="refh" link="types.boolean"/>
+   <dynamicWayDisable b="refh" link="types.boolean"/>
+   <indexType b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="physical"/>
+   </indexType>
+   <maxMissCount b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1..8"/>
+   </maxMissCount>
+   <missStart b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0x20"/>
+   </missStart>
+   <linesPerTag b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1,2,4,8"/>
+   </linesPerTag>
+   <tagType b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="physical"/>
+   </tagType>
+   <isWriteBack b="refh" link="types.boolean"/>
+   <coherence b="refh" link="types.boolean"/>
+   <testInstr b="refh" link="types.boolean"/>
+   <busy b="refh" link="types.boolean"/>
+   <initDataPattern b="refh" link="types.u32"/>
+   <initTagPattern b="refh" link="types.u32"/>
+   <resetTCMBasePAddr b="refh" link="types.u32"/>
+   <splitsIntoRAM b="refh" link="types.boolean"/>
+   <numBytes b="refh" link="types.u32"/>
+   <global b="refh" link="types.ClkIntfc"/>
+   <dataIntfc b="refh" link="types.CacheCommonIntfcIn"/>
+   <dataWayIntfc b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="CacheWayIntfcIn"/>
+    <sizerange b="array" value="1..16"/>
+   </dataWayIntfc>
+   <tagIntfc b="refh" link="types.CacheCommonIntfcIn"/>
+   <tagWayIntfc b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="CacheWayIntfcIn"/>
+    <sizerange b="array" value="1..16"/>
+   </tagWayIntfc>
+  </entries>
+  <perlClassVariables b="string" value="
+	$tlb
+	$totalSize
+	$_tag
+        @_instances
+        $_dvConfig
+	"/>
+  <perlIncludePackages b="string" value="use Xtensa::System::Memory;"/>
+  <perlCodeFile b="string" value="Xtensa/Processor/Cache_include"/>
+ </Cache>
+ <CacheHW b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1">
+  <type b="array" value="Cache"/>
+  <entries b="hash">
+   <tagRamWidth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..128"/>
+   </tagRamWidth>
+   <dataAddrWidth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..32"/>
+   </dataAddrWidth>
+   <tagAddrWidth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..32"/>
+   </tagAddrWidth>
+  </entries>
+  <netlistVisible b="string"/>
+  <netlistGenerateModule b="string"/>
+ </CacheHW>
+ <DataCache b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1">
+  <type b="array" value="CacheHW"/>
+  <entries b="hash">
+   <addrLatency b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1..31"/>
+   </addrLatency>
+   <dataBanks b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="SRam"/>
+    <sizerange b="array" value="1..16"/>
+   </dataBanks>
+   <tagBanks b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="SRam"/>
+    <sizerange b="array" value="1..16"/>
+   </tagBanks>
+  </entries>
+ </DataCache>
+ <L2Cache b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+  <type b="array" value="CacheHW"/>
+  <entries b="hash">
+   <addrLatency b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1,2"/>
+   </addrLatency>
+   <dataBanks b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="SRam"/>
+    <sizerange b="array" value="1..16"/>
+   </dataBanks>
+   <tagBanks b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="SRam"/>
+    <sizerange b="array" value="1..16"/>
+   </tagBanks>
+  </entries>
+ </L2Cache>
+ <InstCache b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1">
+  <type b="array" value="CacheHW"/>
+  <entries b="hash">
+   <dataBanks b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="SRam"/>
+    <sizerange b="array" value="1..16"/>
+   </dataBanks>
+   <tagBanks b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="SRam"/>
+    <sizerange b="array" value="1..16"/>
+   </tagBanks>
+  </entries>
+ </InstCache>
+ <MiscOperations b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" packagePrefix="Xtensa::Processor">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <NormShiftAmount b="refh" link="types.boolean"/>
+   <MinMax b="refh" link="types.boolean"/>
+   <SignExtend b="refh" link="types.boolean"/>
+   <Clamps b="refh" link="types.boolean"/>
+   <CRC b="refh" link="types.boolean"/>
+   <PopCount b="refh" link="types.boolean"/>
+  </entries>
+ </MiscOperations>
+ <TLBAssoc b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" version="0.001" packagePrefix="Xtensa::Processor" perlPostInitRoutine="initTLBAssoc">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <id b="refh" link="types.u32"/>
+   <numOfEntries b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1,2,4,8,0x10,0x20"/>
+   </numOfEntries>
+   <autoRefill b="refh" link="types.boolean"/>
+   <sizeRestrictionBits b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..3"/>
+   </sizeRestrictionBits>
+   <pageSizes b="hash" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <range b="array" value="12..31"/>
+    <subtypes b="array" value="i32"/>
+    <sizerange b="array" value="8"/>
+   </pageSizes>
+   <ASIDConstValues b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="u32"/>
+    <sizerange b="array" value="8"/>
+   </ASIDConstValues>
+   <VPNConstValues b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="u32"/>
+    <sizerange b="array" value="8"/>
+   </VPNConstValues>
+   <VPNMsb b="refh" link="types.u16"/>
+   <VPNLsb b="refh" link="types.u16"/>
+   <PPNConstValues b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="u32"/>
+    <sizerange b="array" value="8"/>
+   </PPNConstValues>
+   <PPNMsb b="refh" link="types.u16"/>
+   <PPNLsb b="refh" link="types.u16"/>
+   <CAConstValues b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="u32"/>
+    <sizerange b="array" value="8"/>
+   </CAConstValues>
+   <ASIDResetValues b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="u32"/>
+    <sizerange b="array" value="8"/>
+   </ASIDResetValues>
+   <VPNResetValues b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="u32"/>
+    <sizerange b="array" value="8"/>
+   </VPNResetValues>
+   <PPNResetValues b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="u32"/>
+    <sizerange b="array" value="8"/>
+   </PPNResetValues>
+   <CAResetValues b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="u32"/>
+    <sizerange b="array" value="8"/>
+   </CAResetValues>
+  </entries>
+  <hardware b="string"/>
+  <perlClassVariables b="string" value="$tlb
+			  $minPageSize
+			  $maxPageSize
+			  $minPageMask
+			  %_pageSizeEncodings
+			  %encodePageSize
+			  @storedVpns
+			  @storedPpns
+			  $pageSizeEncodingBits"/>
+  <perlCodeFile b="string" value="Xtensa/Processor/TLBAssoc_include"/>
+ </TLBAssoc>
+ <TLBWay b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" version="0.001" packagePrefix="Xtensa::Processor" perlPostInitRoutine="initTLBWay">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <id b="refh" link="types.u32"/>
+   <assoc b="refh" link="types.TLBAssoc"/>
+  </entries>
+  <hardware b="string"/>
+  <perlClassVariables b="string" value="$tlb"/>
+  <perlCodeFile b="string" value="Xtensa/Processor/TLBWay_include"/>
+ </TLBWay>
+ <TLB b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" version="0.001" packagePrefix="Xtensa::Processor" perlPostInitRoutine="initTLB">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <id b="refh" link="types.u32"/>
+   <type b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="Data,Inst"/>
+   </type>
+   <wayCount b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..16"/>
+   </wayCount>
+   <vaddrBits b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0x20"/>
+   </vaddrBits>
+   <paddrBits b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0x20"/>
+   </paddrBits>
+   <ways b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="TLBWay"/>
+    <sizerange b="array" value="0..16"/>
+   </ways>
+  </entries>
+  <hardware b="string"/>
+  <perlClassVariables b="string" value="$minPageSize
+			  $maxPageSize
+			  $vaddrMask
+			  $paddrMask
+			  $wayCountMask
+			  @associativities"/>
+  <perlCodeFile b="string" value="Xtensa/Processor/TLB_include"/>
+ </TLB>
+ <MMU b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" version="0.001" packagePrefix="Xtensa::Processor" perlPreInitRoutine="initMMU1" perlPostInitRoutine="initMMU2">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <id b="refh" link="types.u32"/>
+   <asidBits b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..8"/>
+   </asidBits>
+   <ringCount b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1..4"/>
+   </ringCount>
+   <pageSizes b="hash" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <range b="array" value="12..31"/>
+    <subtypes b="array" value="i32"/>
+    <sizerange b="array" value="8"/>
+   </pageSizes>
+   <pteEntrySize b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="4,8"/>
+   </pteEntrySize>
+   <sizeRestrictionBits b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..3"/>
+   </sizeRestrictionBits>
+   <noMatchAction b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="Exception"/>
+   </noMatchAction>
+   <_invalidAsid b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..255"/>
+   </_invalidAsid>
+   <_kernelAsid b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..255"/>
+   </_kernelAsid>
+   <kernelAsid b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..255"/>
+   </kernelAsid>
+   <invalidAsid b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..255"/>
+   </invalidAsid>
+   <itlb b="refh" link="types.TLB"/>
+   <dtlb b="refh" link="types.TLB"/>
+  </entries>
+  <hardware b="string"/>
+  <perlClassVariables b="string" value="$minPTEPageSize
+			  $maxPTEPageSize
+			  %_pageSizeEncodings
+			  %encodePageSize
+			  $resetRASID
+			  $rasidMask
+			  $isRasidConstant
+			  $_current_tlbmap_state_is_reset
+			  $_current_vector_state_is_reset
+			  %_config_map_state
+			  $access_mode_mgr
+			  %magicInstrOpcodes"/>
+  <perlCodeFile b="string" value="Xtensa/Processor/MMU_include"/>
+ </MMU>
+ <MPUbgMap b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" packagePrefix="Xtensa::Processor">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <address b="refh" link="types.u32"/>
+   <size b="refh" link="types.u32"/>
+   <accessRights b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..15"/>
+   </accessRights>
+   <memoryType b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..511"/>
+   </memoryType>
+  </entries>
+  <perlCodeFile b="string" value="Xtensa/Processor/MPUbgMap_include"/>
+ </MPUbgMap>
+ <IMMU b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" packagePrefix="Xtensa::Processor" perlPostInitRoutine="initIMMU">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <numOfMPUbgMapEntries b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="2..32"/>
+   </numOfMPUbgMapEntries>
+   <numOfMPUEntries b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..32"/>
+   </numOfMPUEntries>
+   <MPUvasLsb b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="5..31"/>
+   </MPUvasLsb>
+   <numOfMTUEntries b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..16"/>
+   </numOfMTUEntries>
+   <MPUbgMapList b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="MPUbgMap"/>
+    <sizerange b="array" value="2..32"/>
+   </MPUbgMapList>
+  </entries>
+  <perlClassVariables b="string" value="$pr $memory_type_mgr"/>
+  <perlCodeFile b="string" value="Xtensa/Processor/IMMU_include"/>
+ </IMMU>
+ <VTMMU b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="*" packagePrefix="Xtensa::Processor" perlPostInitRoutine="initVTMMU">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <numOfL1ITLBEntries b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="8,0x10,0x20,0x40"/>
+   </numOfL1ITLBEntries>
+   <numOfL1DTLBEntries b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="8,0x10,0x20,0x40"/>
+   </numOfL1DTLBEntries>
+   <numOfL1MTLBEntries b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0,8,0x10,0x20,0x40"/>
+   </numOfL1MTLBEntries>
+   <physicalAddressWidth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0x20,0x24,0x28,0x30"/>
+   </physicalAddressWidth>
+  </entries>
+  <perlClassVariables b="string" value="$pr $itlb $dtlb $_current_map_state_is_reset $memory_type_mgr $access_mode_mgr"/>
+  <perlCodeFile b="string" value="Xtensa/Processor/VTMMU_include"/>
+ </VTMMU>
+ <CacheAttribute b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" version="0.001" packagePrefix="Xtensa::Processor" perlPostInitRoutine="initCacheAttribute">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <id b="refh" link="types.u32"/>
+   <fetchAttrMap b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="u16"/>
+    <sizerange b="array" value="16"/>
+   </fetchAttrMap>
+   <loadAttrMap b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="u16"/>
+    <sizerange b="array" value="16"/>
+   </loadAttrMap>
+   <storeAttrMap b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="u16"/>
+    <sizerange b="array" value="16"/>
+   </storeAttrMap>
+   <pifAttrMap b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="u16"/>
+    <sizerange b="array" value="16"/>
+   </pifAttrMap>
+  </entries>
+  <hardware b="string"/>
+  <perlClassVariables b="string" value="%amBitsMap 
+			  %fetchAccessModes 
+			  %loadAccessModes 
+			  %storeAccessModes
+			  %pifAttrBits
+			  %pifAttrValids
+			  @fetchAttrRawMap
+			  @loadAttrRawMap
+			  @storeAttrRawMap"/>
+  <perlCodeFile b="string" value="Xtensa/Processor/CacheAttribute_include"/>
+ </CacheAttribute>
+ <TestOptions b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" packagePrefix="Xtensa::Processor">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <fullScan b="refh" link="types.boolean"/>
+   <latchesTransparent b="refh" link="types.boolean"/>
+  </entries>
+  <perlCodeFile b="string" value="Xtensa/Processor/TestOptions_include"/>
+ </TestOptions>
+ <Vector b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" packagePrefix="Xtensa::Processor">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <name b="refh" link="types.string"/>
+   <baseAddress b="refh" link="types.u32"/>
+   <size b="refh" link="types.u32"/>
+   <alignment b="refh" link="types.u32"/>
+   <level b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1..31"/>
+   </level>
+   <hasHandler b="refh" link="types.boolean"/>
+   <group b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="stationary,relocatable"/>
+   </group>
+   <offset b="refh" link="types.u32"/>
+  </entries>
+  <perlCodeFile b="string" value="Xtensa/Processor/Vector_include"/>
+ </Vector>
+ <Vectors b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" packagePrefix="Xtensa::Processor">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <numOfVectors b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..32"/>
+   </numOfVectors>
+   <relocatableVectorOption b="refh" link="types.boolean"/>
+   <relocatableVectorBaseResetVal b="refh" link="types.u32"/>
+   <stationaryVectorBase0 b="refh" link="types.u32"/>
+   <stationaryVectorBase1 b="refh" link="types.u32"/>
+   <SW_stationaryVectorBaseSelect b="refh" link="types.u32"/>
+   <vecBase1FromPins b="refh" link="types.boolean"/>
+   <vectorList b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="Vector"/>
+    <sizerange b="array" value="0..32"/>
+   </vectorList>
+  </entries>
+  <perlClassVariables b="string" value="
+          $swInitialized
+          @swvecs
+          $vecbase_align
+          $min_offset
+          $max_offset
+          $max_size
+          $total_size
+          "/>
+  <perlCodeFile b="string" value="Xtensa/Processor/Vectors_include"/>
+  <perlIncludePackages b="string" value="use Xtensa::Processor::Vector;"/>
+ </Vectors>
+ <TIE b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" packagePrefix="Xtensa::Processor" perlPostInitRoutine="initialize" perlParentPackage="Xtensa::Processor::TIECoprocessor">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <sourceFile b="refh" link="types.string"/>
+   <internal b="refh" link="types.boolean"/>
+   <rename_tie b="refh" link="types.boolean"/>
+   <renamerFile b="refh" link="types.string"/>
+   <renameMapFile b="refh" link="types.string"/>
+   <_implements b="refh" link="types.string"/>
+  </entries>
+  <perlClassVariables b="string" value="
+         @coprocessors
+	"/>
+  <perlCodeFile b="string" value="Xtensa/Processor/TIE_include"/>
+ </TIE>
+ <Processor b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" packagePrefix="Xtensa" perlPostInitRoutine="initialize">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <arch b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="Xtensa24,XtensaRISCV"/>
+   </arch>
+   <uarchName b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="Athens,Barcelona,Cairo,Greenwood"/>
+   </uarchName>
+   <tieCheckLinuxNoPorts b="refh" link="types.boolean"/>
+   <debugOption b="refh" link="types.boolean"/>
+   <timersOption b="refh" link="types.boolean"/>
+   <interruptsOption b="refh" link="types.boolean"/>
+   <mac16Option b="refh" link="types.boolean"/>
+   <MAC16ImplementsMul16 b="refh" link="types.boolean"/>
+   <userImplementsMul b="refh" link="types.boolean"/>
+   <userMul16ReadStage b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1..4"/>
+   </userMul16ReadStage>
+   <userMul16WriteStage b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1..8"/>
+   </userMul16WriteStage>
+   <userMul32ReadStage b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1..4"/>
+   </userMul32ReadStage>
+   <userMul32WriteStage b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1..8"/>
+   </userMul32WriteStage>
+   <ocdOption b="refh" link="types.boolean"/>
+   <mmuOption b="refh" link="types.boolean"/>
+   <density b="refh" link="types.boolean"/>
+   <TargetHWVersion b="refh" link="types.string"/>
+   <TargetHWEarliestVersion b="refh" link="types.string"/>
+   <TargetHWConfigID0 b="refh" link="types.u32"/>
+   <TargetHWConfigID1 b="refh" link="types.u32"/>
+   <TargetHWUniqueID b="refh" link="types.u32"/>
+   <ConfigKey0 b="refh" link="types.u32"/>
+   <ConfigKey1 b="refh" link="types.u32"/>
+   <taskEngine b="refh" link="types.boolean"/>
+   <smallCore b="refh" link="types.boolean"/>
+   <bootLoader b="refh" link="types.boolean"/>
+   <MPCoherencySupport b="refh" link="types.boolean"/>
+   <name b="refh" link="types.string"/>
+   <usePRID b="refh" link="types.boolean"/>
+   <prid b="refh" link="types.u32"/>
+   <loadStoreUnitsCount b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1..3"/>
+   </loadStoreUnitsCount>
+   <speculation b="refh" link="types.boolean"/>
+   <coprocessorCount b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..16"/>
+   </coprocessorCount>
+   <booleans b="refh" link="types.boolean"/>
+   <Mul16 b="refh" link="types.boolean"/>
+   <Mul32 b="refh" link="types.boolean"/>
+   <Mulh b="refh" link="types.boolean"/>
+   <VectorFPU2005 b="refh" link="types.boolean"/>
+   <SW_Assumes_SPFPU b="refh" link="types.boolean"/>
+   <SW_Assumes_DPFPU b="refh" link="types.boolean"/>
+   <functionalSafetyLicensed b="refh" link="types.boolean"/>
+   <SW_FunctionalSafety b="refh" link="types.boolean"/>
+   <unalignedLoadAction b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="Align,Exception,HandledByHardware,HandledBySystem"/>
+   </unalignedLoadAction>
+   <unalignedStoreAction b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="Align,Exception,HandledByHardware,HandledBySystem"/>
+   </unalignedStoreAction>
+   <ClkGateFuncUnit b="refh" link="types.boolean"/>
+   <ClkGateGlobal b="refh" link="types.boolean"/>
+   <lowPower b="refh" link="types.boolean"/>
+   <PSODomains b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="core_debug,core_debug_mem,none,single"/>
+   </PSODomains>
+   <PSOCoreRetention b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="full,none,partial"/>
+   </PSOCoreRetention>
+   <semDataGating b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="all,none,user_defined"/>
+   </semDataGating>
+   <memDataGating b="refh" link="types.boolean"/>
+   <IRdropPort b="refh" link="types.boolean"/>
+   <Div32 b="refh" link="types.boolean"/>
+   <writeBufferEntries b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1,2,4,8,0x10,0x20"/>
+   </writeBufferEntries>
+   <numOfTieModules b="refh" link="types.u32"/>
+   <numROMPatchRegs b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..32"/>
+   </numROMPatchRegs>
+   <udmaTranspose b="refh" link="types.boolean"/>
+   <udmaBufferDepth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1,2,4,8,0x10"/>
+   </udmaBufferDepth>
+   <udmaOutstandingRows b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="2,4,8,0x10,0x20,0x40"/>
+   </udmaOutstandingRows>
+   <udmaReorderBuffer b="refh" link="types.boolean"/>
+   <udmaReorderBufOutstandingReq b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0x10,0x20,0x30,0x40,0x80"/>
+   </udmaReorderBufOutstandingReq>
+   <udmaReorderBufNumRamPorts b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1,2"/>
+   </udmaReorderBufNumRamPorts>
+   <udmaNumChannels b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="1..16"/>
+   </udmaNumChannels>
+   <udmaMaxOutstandingReq b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0x100,0x10,0x20,0x40"/>
+   </udmaMaxOutstandingReq>
+   <inboundRequestBufferDepth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="2,4,8,0x10"/>
+   </inboundRequestBufferDepth>
+   <pifBridgeType b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="AHBLite,AXI,none"/>
+   </pifBridgeType>
+   <pifAsync b="refh" link="types.boolean"/>
+   <traxEnabled b="refh" link="types.boolean"/>
+   <apbAccess b="refh" link="types.boolean"/>
+   <apbAccessIsSynchronous b="refh" link="types.boolean"/>
+   <jtagAccess b="refh" link="types.boolean"/>
+   <erDebugAccess b="refh" link="types.boolean"/>
+   <coresightDAP b="refh" link="types.boolean"/>
+   <ArithmeticExceptionInterface b="refh" link="types.boolean"/>
+   <numOfDCacheIntfs b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..4"/>
+   </numOfDCacheIntfs>
+   <numOfUnifiedRamsIntfs b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..4"/>
+   </numOfUnifiedRamsIntfs>
+   <numOfDataRamsIntfs b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..4"/>
+   </numOfDataRamsIntfs>
+   <numOfDataRomsIntfs b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..4"/>
+   </numOfDataRomsIntfs>
+   <numOfDataPortsIntfs b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..4"/>
+   </numOfDataPortsIntfs>
+   <numOfICacheIntfs b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..4"/>
+   </numOfICacheIntfs>
+   <numOfInstRamIntfs b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..4"/>
+   </numOfInstRamIntfs>
+   <numOfInstRomIntfs b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..4"/>
+   </numOfInstRomIntfs>
+   <numOfTieOutQueueIntfs b="refh" link="types.u32"/>
+   <numOfTieInQueueIntfs b="refh" link="types.u32"/>
+   <numOfTieOutPortIntfs b="refh" link="types.u32"/>
+   <numOfTieInPortIntfs b="refh" link="types.u32"/>
+   <numOfSysInterfaces b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..8"/>
+   </numOfSysInterfaces>
+   <vectorPipe b="refh" link="types.boolean"/>
+   <env b="refh" link="types.Environment"/>
+   <core b="refh" link="types.Core"/>
+   <registerFile b="refh" link="types.RegisterFile"/>
+   <cacheAttribute b="refh" link="types.CacheAttribute"/>
+   <interrupts b="refh" link="types.Interrupts"/>
+   <debug b="refh" link="types.Debug"/>
+   <timers b="refh" link="types.Timers"/>
+   <OCD b="refh" link="types.OCD"/>
+   <btb b="refh" link="types.BTB"/>
+   <snoop b="refh" link="types.SNOOP"/>
+   <trax b="refh" link="types.TRAX"/>
+   <prefetch b="refh" link="types.Prefetch"/>
+   <prefetchI b="refh" link="types.Prefetch"/>
+   <miscOperations b="refh" link="types.MiscOperations"/>
+   <vectors b="refh" link="types.Vectors"/>
+   <_loadStoreUnits b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="LoadStore"/>
+    <sizerange b="array" value="1..3"/>
+   </_loadStoreUnits>
+   <mmu b="refh" link="types.MMU"/>
+   <immu b="refh" link="types.IMMU"/>
+   <vtmmu b="refh" link="types.VTMMU"/>
+   <testOptions b="refh" link="types.TestOptions"/>
+   <tie b="refh" link="types.TIE"/>
+   <tie_modules b="hash" range="*" entries="*" default="*" sizerange="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="TIE"/>
+   </tie_modules>
+   <axi b="refh" link="types.AXI"/>
+   <ahb b="refh" link="types.AHB"/>
+   <asyncPif b="refh" link="types.AsyncPif"/>
+   <scattergather b="refh" link="types.ScatterGather"/>
+   <idma b="refh" link="types.IDMA"/>
+   <sysInterfaces b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="SysIntfc"/>
+    <sizerange b="array" value="0..8"/>
+   </sysInterfaces>
+   <global b="refh" link="types.GlobalIntfc"/>
+   <pifMasterIntfc b="refh" link="types.PifMaster"/>
+   <pifSlaveIntfc b="refh" link="types.PifSlave"/>
+   <icacheCommonIntfc b="refh" link="types.CacheCommonIntfcOut"/>
+   <icacheWayIntfc b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="CacheWayIntfcOut"/>
+    <sizerange b="array" value="0..4"/>
+   </icacheWayIntfc>
+   <itagCommonIntfc b="refh" link="types.CacheCommonIntfcOut"/>
+   <itagWayIntfc b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="CacheWayIntfcOut"/>
+    <sizerange b="array" value="0..4"/>
+   </itagWayIntfc>
+   <dcacheCommonIntfc b="refh" link="types.CacheCommonIntfcOut"/>
+   <dcacheWayIntfc b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="CacheWayIntfcOut"/>
+    <sizerange b="array" value="0..4"/>
+   </dcacheWayIntfc>
+   <dtagCommonIntfc b="refh" link="types.CacheCommonIntfcOut"/>
+   <dtagWayIntfc b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="CacheWayIntfcOut"/>
+    <sizerange b="array" value="0..4"/>
+   </dtagWayIntfc>
+   <unifiedRamIntfc b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="SRamIntfcOut"/>
+    <sizerange b="array" value="0..4"/>
+   </unifiedRamIntfc>
+   <dataRamIntfc b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="SRamIntfcOut"/>
+    <sizerange b="array" value="0..4"/>
+   </dataRamIntfc>
+   <dataRamBusy b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="BitIntfcIn"/>
+    <sizerange b="array" value="0..4"/>
+   </dataRamBusy>
+   <dataRomIntfc b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="RomIntfcOut"/>
+    <sizerange b="array" value="0..4"/>
+   </dataRomIntfc>
+   <dataRomBusy b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="BitIntfcIn"/>
+    <sizerange b="array" value="0..4"/>
+   </dataRomBusy>
+   <dataPortIntfc b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="SRamIntfcOut"/>
+    <sizerange b="array" value="0..4"/>
+   </dataPortIntfc>
+   <dataPortLoad b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="BitIntfcOut"/>
+    <sizerange b="array" value="0..4"/>
+   </dataPortLoad>
+   <dataPortLoadRetired b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="BitIntfcOut"/>
+    <sizerange b="array" value="0..4"/>
+   </dataPortLoadRetired>
+   <dataPortRetireFlush b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="BitIntfcOut"/>
+    <sizerange b="array" value="0..4"/>
+   </dataPortRetireFlush>
+   <dataortBusy b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="BitIntfcIn"/>
+    <sizerange b="array" value="0..4"/>
+   </dataortBusy>
+   <instRamIntfc b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="SRamIntfcOut"/>
+    <sizerange b="array" value="0..4"/>
+   </instRamIntfc>
+   <instRamLoadStore b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="BitIntfcOut"/>
+    <sizerange b="array" value="0..4"/>
+   </instRamLoadStore>
+   <instRamBusy b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="BitIntfcIn"/>
+    <sizerange b="array" value="0..4"/>
+   </instRamBusy>
+   <instRomIntfc b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="RomIntfcOut"/>
+    <sizerange b="array" value="0..4"/>
+   </instRomIntfc>
+   <instRomLoad b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="BitIntfcOut"/>
+    <sizerange b="array" value="0..4"/>
+   </instRomLoad>
+   <instRomBusy b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="BitIntfcIn"/>
+    <sizerange b="array" value="0..4"/>
+   </instRomBusy>
+   <tieOutQueueIntfc b="hash" range="*" entries="*" default="*" sizerange="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="TieOutQueueIntfcOut"/>
+   </tieOutQueueIntfc>
+   <tieInQueueIntfc b="hash" range="*" entries="*" default="*" sizerange="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="TieInQueueIntfcOut"/>
+   </tieInQueueIntfc>
+   <tieOutPortIntfc b="hash" range="*" entries="*" default="*" sizerange="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="BitIntfcOut"/>
+   </tieOutPortIntfc>
+   <tieInPortIntfc b="hash" range="*" entries="*" default="*" sizerange="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="BitIntfcIn"/>
+   </tieInPortIntfc>
+   <traceIntfc b="refh" link="types.TraceIntfcOut"/>
+   <tmodeIntfc b="refh" link="types.BitIntfcIn"/>
+   <pwaitmodeIntfc b="refh" link="types.BitIntfcOut"/>
+   <tapocdIntfc b="refh" link="types.TapOCDIntfcIn"/>
+   <jtdiIntfc b="refh" link="types.BitIntfcIn"/>
+   <jtckIntfc b="refh" link="types.BitIntfcIn"/>
+   <xocdmodeIntfc b="refh" link="types.BitIntfcOut"/>
+   <tdebuginterruptIntfc b="refh" link="types.BitIntfcIn"/>
+   <xocdmodepulseIntfc b="refh" link="types.BitIntfcOut"/>
+   <interruptsIntfc b="refh" link="types.BitIntfcIn"/>
+   <stallIntfc b="refh" link="types.BitIntfcIn"/>
+  </entries>
+  <netlistVisible b="string"/>
+  <perlClassVariables b="string" value="
+	$system
+	%state
+	%regFile
+	%tieAttributes
+	%tieCoprocessor
+	%optionNames
+	@specialRegs_real
+	@externalRegs_real
+	%srHash
+	$TargetHW_Major
+	$TargetHW_Minor
+	$TargetHW_Micro
+	$TargetHW_EarliestMajor
+	$TargetHW_EarliestMinor
+	$TargetHW_EarliestMicro
+
+	%tieModules
+	%tieModulesParams
+	$_TargetISA
+	$fp
+	"/>
+  <perlIncludePackages b="string" value="
+use Carp;
+
+use Xtensa::GenerateSpecialRegs;
+use Xtensa::GenerateExternalRegs;
+use Xtensa::Processor::FPU;
+use Xtensa::Processor::TIE;
+"/>
+  <perlCodeFile b="string" value="Xtensa/Processor_include"/>
+ </Processor>
+ <Module b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" packagePrefix="Xtensa::System">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <type b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="string"/>
+    <range b="array" value="BusIntRegs,EDM,Ethernet,FpgaRegs,Led,TraceBuffer,Uart,V3"/>
+   </type>
+   <name b="refh" link="types.string"/>
+   <size b="refh" link="types.u32"/>
+   <baseVAddr b="refh" link="types.u32"/>
+   <basePAddr b="refh" link="types.u32"/>
+   <accessWidth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0x20,0x40,0x80"/>
+   </accessWidth>
+   <cmodel b="refh" link="types.string"/>
+   <psize b="refh" link="types.u32"/>
+   <vsize b="refh" link="types.u32"/>
+  </entries>
+ </Module>
+ <Uart b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1">
+  <type b="array" value="Module"/>
+  <entries b="hash"/>
+ </Uart>
+ <EDM b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+  <type b="array" value="Module"/>
+ </EDM>
+ <TraceBuffer b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+  <type b="array" value="Module"/>
+ </TraceBuffer>
+ <Led b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+  <type b="array" value="Module"/>
+ </Led>
+ <Ethernet b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+  <type b="array" value="Module"/>
+ </Ethernet>
+ <FpgaRegs b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+  <type b="array" value="Module"/>
+ </FpgaRegs>
+ <BusIntRegs b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+  <type b="array" value="Module"/>
+ </BusIntRegs>
+ <V3 b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+  <type b="array" value="Module"/>
+ </V3>
+ <Xtbench b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" packagePrefix="Xtensa::System">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <sysRomCount b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..4"/>
+   </sysRomCount>
+   <sysRamCount b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..4"/>
+   </sysRamCount>
+   <uartAccessWidth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0x20,0x40,0x80"/>
+   </uartAccessWidth>
+   <SysIONonCachedPAddr b="refh" link="types.u32"/>
+   <pr b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" packagePrefix="Xtensa" perlPostInitRoutine="procInit">
+    <type b="array" value="component"/>
+    <entries b="hash">
+     <dcacheOption b="refh" link="types.boolean"/>
+     <icacheOption b="refh" link="types.boolean"/>
+     <numOfUnifiedRams b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+      <type b="array" value="i32"/>
+      <range b="array" value="0..1"/>
+     </numOfUnifiedRams>
+     <numOfDataRams b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+      <type b="array" value="i32"/>
+      <range b="array" value="0..2"/>
+     </numOfDataRams>
+     <numOfDataRoms b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+      <type b="array" value="i32"/>
+      <range b="array" value="0..1"/>
+     </numOfDataRoms>
+     <numOfDataPorts b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+      <type b="array" value="i32"/>
+      <range b="array" value="0..1"/>
+     </numOfDataPorts>
+     <numOfInstRams b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+      <type b="array" value="i32"/>
+      <range b="array" value="0..2"/>
+     </numOfInstRams>
+     <numOfInstRoms b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+      <type b="array" value="i32"/>
+      <range b="array" value="0..1"/>
+     </numOfInstRoms>
+     <l2cc b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="*" packagePrefix="Xtensa::Processor" perlPostInitRoutine="initL2CC">
+      <type b="array" value="component"/>
+      <entries b="hash">
+       <numOfCores b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+        <type b="array" value="i32"/>
+        <range b="array" value="1,2,3,4"/>
+       </numOfCores>
+       <numOfSystemInterfaces b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+        <type b="array" value="i32"/>
+        <range b="array" value="1,2"/>
+       </numOfSystemInterfaces>
+       <numOfTids b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+        <type b="array" value="i32"/>
+        <range b="array" value="8,0x10,0x20"/>
+       </numOfTids>
+       <numOfSlaveRdFsms b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+        <type b="array" value="i32"/>
+        <range b="array" value="1..16"/>
+       </numOfSlaveRdFsms>
+       <numOfSlaveWrFsms b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+        <type b="array" value="i32"/>
+        <range b="array" value="1..16"/>
+       </numOfSlaveWrFsms>
+       <masterWrQueueDepth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+        <type b="array" value="i32"/>
+        <range b="array" value="2,4,8,0x10,0x20"/>
+       </masterWrQueueDepth>
+       <masterWrBufferDepth b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+        <type b="array" value="i32"/>
+        <range b="array" value="1,2,4,8"/>
+       </masterWrBufferDepth>
+       <controlRegAddr b="refh" link="types.u32"/>
+       <dvCovSmallBufs b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+        <type b="array" value="i32"/>
+        <range b="array" value="0,1,2,3"/>
+       </dvCovSmallBufs>
+       <numExternalExclusiveMasters b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+        <type b="array" value="i32"/>
+        <range b="array" value="0,1,2,4,8,0x10"/>
+       </numExternalExclusiveMasters>
+       <perfCounterCount b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+        <type b="array" value="i32"/>
+        <range b="array" value="2,4,8"/>
+       </perfCounterCount>
+       <cache b="refh" link="types.L2Cache"/>
+       <sysInterfaces b="hash" range="*" entries="*" default="*" objmodel="*">
+        <type b="array" value="array"/>
+        <subtypes b="array" value="SysIntfc"/>
+        <sizerange b="array" value="1,2"/>
+       </sysInterfaces>
+      </entries>
+      <perlCodeFile b="string" value="Xtensa/Processor/L2_CC_include"/>
+      <perlClassVariables b="string" value="$numTids
+                          $mrqDepth
+                          $mwqDepth
+                          $mwqwidDepth
+                          $crqDepth
+                          $cwqDepth
+                          $cwbDepth
+                          $srqDepth
+                          $swqDepth
+                          $swrqDepth
+                          $slbDepth
+                          $swbDepth
+                          $mwbDepth
+                          $mlbDepth
+                          $aximlbDepth
+                          $lbDepth
+                          $numSlaversms
+                          $numSlavewsms
+                          $masterIdcompress"/>
+     </l2cc>
+     <coreconnect b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="*" packagePrefix="Xtensa::Processor" perlPostInitRoutine="initCoreConnect">
+      <type b="array" value="component"/>
+      <entries b="hash">
+       <reorderBuffer b="refh" link="types.boolean"/>
+       <inboundInterconnect b="refh" link="types.boolean"/>
+       <outboundInterconnect b="refh" link="types.boolean"/>
+       <idmaboundInterconnect b="refh" link="types.boolean"/>
+       <inboundInterconnectAddrMapEntries b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+        <type b="array" value="i32"/>
+        <range b="array" value="0,1,2,3,4,6,8,0x10"/>
+       </inboundInterconnectAddrMapEntries>
+       <apbAccessIsSynchronous b="refh" link="types.boolean"/>
+       <numOfCores b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+        <type b="array" value="i32"/>
+        <range b="array" value="1,2,3,4"/>
+       </numOfCores>
+       <numOfBroadcastIntPins b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+        <type b="array" value="i32"/>
+        <range b="array" value="0,4"/>
+       </numOfBroadcastIntPins>
+       <numOfSystemInterfaces b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+        <type b="array" value="i32"/>
+        <range b="array" value="0,1,2,3,4,5"/>
+       </numOfSystemInterfaces>
+       <setsOfIntercoreInterrupts b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+        <type b="array" value="i32"/>
+        <range b="array" value="0,4"/>
+       </setsOfIntercoreInterrupts>
+       <dvCovSmallBufs b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+        <type b="array" value="i32"/>
+        <range b="array" value="0,1,2,3"/>
+       </dvCovSmallBufs>
+       <l2cc b="refh" link="types.Xtbench.entries.pr.entries.l2cc"/>
+       <inboundInterconnectAddrMap b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="*" packagePrefix="CompLib">
+        <type b="array" value="component"/>
+        <entries b="hash">
+         <numOfAddressMaps b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+          <type b="array" value="i32"/>
+          <range b="array" value="0..8"/>
+         </numOfAddressMaps>
+         <addressMaps b="hash" range="*" entries="*" default="*" objmodel="*">
+          <type b="array" value="array"/>
+          <subtypes b="array" value="AddressMap"/>
+          <sizerange b="array" value="0..8"/>
+         </addressMaps>
+        </entries>
+       </inboundInterconnectAddrMap>
+       <sysInterfaces b="hash" range="*" entries="*" default="*" objmodel="*">
+        <type b="array" value="array"/>
+        <subtypes b="array" value="SysIntfc"/>
+        <sizerange b="array" value="0,1,2,3,4,5"/>
+       </sysInterfaces>
+      </entries>
+      <perlCodeFile b="string" value="Xtensa/Processor/CoreConnect_include"/>
+      <perlClassVariables b="string" value=" $numOfDedicatedIntPins
+                           $numOfDemuxPRTAREntry
+                           $numOfDemuxPRTAWEntry
+                           $numOfDemuxIORARstm
+                           $numOfDemuxIORAWstm
+                           $numOfDemuxDECERRARstm
+                           $numOfDemuxDECERRAWstm
+                           $numOfDemuxGntAWdepth
+                          "/>
+     </coreconnect>
+     <xnne b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="*" packagePrefix="Xtensa::Processor">
+      <type b="array" value="component"/>
+      <entries b="hash">
+       <numOfSystemInterfaces b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+        <type b="array" value="i32"/>
+        <range b="array" value="2,3,5"/>
+       </numOfSystemInterfaces>
+       <numSblks b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+        <type b="array" value="i32"/>
+        <range b="array" value="1,2,4"/>
+       </numSblks>
+       <numMblksPerSblk b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+        <type b="array" value="i32"/>
+        <range b="array" value="1,2,4"/>
+       </numMblksPerSblk>
+       <dmaInAxiMultTransPerARID b="refh" link="types.boolean"/>
+       <baseAddress b="refh" link="types.u32"/>
+       <IBUFsize b="refh" link="types.u32"/>
+       <CBUFsize b="refh" link="types.u32"/>
+       <OBUFsize b="refh" link="types.u32"/>
+       <sysInterfaces b="hash" range="*" entries="*" default="*" objmodel="*">
+        <type b="array" value="array"/>
+        <subtypes b="array" value="SysIntfc"/>
+        <sizerange b="array" value="2,3,5"/>
+       </sysInterfaces>
+      </entries>
+      <perlCodeFile b="string" value="Xtensa/Processor/XNNE_include"/>
+     </xnne>
+     <xt b="refh" link="types.Processor"/>
+     <dcache b="refh" link="types.DataCache"/>
+     <icache b="refh" link="types.InstCache"/>
+     <dcacheS b="refh" link="types.DataCache"/>
+     <dcacheV b="refh" link="types.DataCache"/>
+     <unifiedRams b="hash" range="*" entries="*" default="*" objmodel="*">
+      <type b="array" value="array"/>
+      <subtypes b="array" value="UnifiedRam"/>
+      <sizerange b="array" value="0..1"/>
+     </unifiedRams>
+     <dataRams b="hash" range="*" entries="*" default="*" objmodel="*">
+      <type b="array" value="array"/>
+      <subtypes b="array" value="DataRam"/>
+      <sizerange b="array" value="0..2"/>
+     </dataRams>
+     <dataRoms b="hash" range="*" entries="*" default="*" objmodel="*">
+      <type b="array" value="array"/>
+      <subtypes b="array" value="DataRom"/>
+      <sizerange b="array" value="0..1"/>
+     </dataRoms>
+     <dataPorts b="hash" range="*" entries="*" default="*" objmodel="*">
+      <type b="array" value="array"/>
+      <subtypes b="array" value="DataPort"/>
+      <sizerange b="array" value="0..1"/>
+     </dataPorts>
+     <instRams b="hash" range="*" entries="*" default="*" objmodel="*">
+      <type b="array" value="array"/>
+      <subtypes b="array" value="InstRam"/>
+      <sizerange b="array" value="0..2"/>
+     </instRams>
+     <instRoms b="hash" range="*" entries="*" default="*" objmodel="*">
+      <type b="array" value="array"/>
+      <subtypes b="array" value="InstRom"/>
+      <sizerange b="array" value="0..1"/>
+     </instRoms>
+    </entries>
+    <perlClassVariables b="string" value="
+	$system
+	$memoryMap
+	$realMemoryMap
+	$tie_full_filename
+	$tie_module_full_filenames
+	$tie_module_renamers
+	$tie_module_rename_maps
+        $tie_module_rename_tie
+	"/>
+    <perlIncludePackages b="string" value="
+use Carp;
+"/>
+    <perlCodeFile b="string" value="Xtensa/ProcessorModule_include"/>
+    <netlistVisible b="string"/>
+    <netlistGenerateModule b="string"/>
+    <dvPifLeaf b="string"/>
+   </pr>
+   <sysrom b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="Memory"/>
+    <sizerange b="array" value="0..4"/>
+   </sysrom>
+   <sysram b="hash" range="*" entries="*" default="*" objmodel="*">
+    <type b="array" value="array"/>
+    <subtypes b="array" value="Memory"/>
+    <sizerange b="array" value="0..4"/>
+   </sysram>
+   <Uart b="refh" link="types.Uart"/>
+  </entries>
+ </Xtbench>
+ <hifi4_MockingBird_PROD_Xtbench b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1">
+  <type b="array" value="Xtbench"/>
+  <entries b="hash"/>
+ </hifi4_MockingBird_PROD_Xtbench>
+ <L2_CC b="refh" link="types.Xtbench.entries.pr.entries.l2cc"/>
+ <AddressMap b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="*" packagePrefix="CompLib">
+  <type b="array" value="component"/>
+  <entries b="hash">
+   <id b="refh" link="types.u16"/>
+   <type b="refh" link="types.string"/>
+   <name b="refh" link="types.string"/>
+   <addrConst b="refh" link="types.u64"/>
+   <tAddrConst b="refh" link="types.u64"/>
+   <msb b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..31"/>
+   </msb>
+   <lsb b="hash" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*">
+    <type b="array" value="i32"/>
+    <range b="array" value="0..31"/>
+   </lsb>
+   <size b="refh" link="types.u64"/>
+   <configSpace b="refh" link="types.boolean"/>
+  </entries>
+  <string n="PIFGUI:parameters:id:visible:no"/>
+ </AddressMap>
+ <AddressMapSet b="refh" link="types.Xtbench.entries.pr.entries.coreconnect.entries.inboundInterconnectAddrMap"/>
+ <CoreConnect b="refh" link="types.Xtbench.entries.pr.entries.coreconnect"/>
+ <XNNE b="refh" link="types.Xtbench.entries.pr.entries.xnne"/>
+ <ProcessorModule b="refh" link="types.Xtbench.entries.pr"/>
+ <hifi4_MockingBird_PROD_XT b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1">
+  <type b="array" value="ProcessorModule"/>
+  <entries b="hash"/>
+ </hifi4_MockingBird_PROD_XT>
+ <DCPortsQueues b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" packagePrefix="Xtensa::Processor">
+  <type b="array" value="TIE"/>
+  <entries b="hash">
+   <ports b="refh" link="types.boolean"/>
+   <queues b="refh" link="types.boolean"/>
+  </entries>
+ </DCPortsQueues>
+ <MUL32 b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" packagePrefix="Xtensa::Processor">
+  <type b="array" value="TIE"/>
+  <entries b="hash">
+   <mulh b="refh" link="types.boolean"/>
+   <mul16 b="refh" link="types.boolean"/>
+   <iterativeMul32 b="refh" link="types.boolean"/>
+  </entries>
+ </MUL32>
+ <HiFi4 b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" packagePrefix="Xtensa::Processor">
+  <type b="array" value="TIE"/>
+  <entries b="hash">
+   <partialRegfileBypass b="refh" link="types.boolean"/>
+   <fp b="refh" link="types.boolean"/>
+  </entries>
+ </HiFi4>
+ <mpu_nowndw b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*" packagePrefix="Xtensa::Processor::MPU_stubs">
+  <type b="array" value="IMMU"/>
+ </mpu_nowndw>
+ <mpu_nowndw_bm b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*" packagePrefix="Xtensa::Processor::MPU_stubs">
+  <type b="array" value="IMMU"/>
+ </mpu_nowndw_bm>
+ <mpu_wndw b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*" packagePrefix="Xtensa::Processor::MPU_stubs">
+  <type b="array" value="IMMU"/>
+ </mpu_wndw>
+ <mpu_ca_4kpg b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" packagePrefix="Xtensa::Processor::MPU_stubs">
+  <type b="array" value="IMMU"/>
+  <entries b="hash"/>
+ </mpu_ca_4kpg>
+ <mpu_nowndw_pdx4 b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*" packagePrefix="Xtensa::Processor::MPU_stubs">
+  <type b="array" value="IMMU"/>
+ </mpu_nowndw_pdx4>
+ <mpu_nowndw_bm_pdx4 b="hash" range="*" entries="*" default="*" subtypes="*" sizerange="*" objmodel="*" packagePrefix="Xtensa::Processor::MPU_stubs">
+  <type b="array" value="IMMU"/>
+ </mpu_nowndw_bm_pdx4>
+ <xpg_hifi4_MockingBird_PROD b="hash" range="*" default="*" subtypes="*" sizerange="*" objmodel="1" moduleName="xpg_hifi4_MockingBird_PROD">
+  <type b="array" value="Processor"/>
+  <entries b="hash"/>
+  <netlistVisible b="string"/>
+ </xpg_hifi4_MockingBird_PROD>
+</types>
+
+<xtb b="hash" t="hifi4_MockingBird_PROD_Xtbench" sysRomCount="0" sysRamCount="1" uartAccessWidth="0x20" SysIONonCachedPAddr="0" sysrom="*">
+ <pr b="hash" t="hifi4_MockingBird_PROD_XT" dcacheOption="1" icacheOption="1" numOfUnifiedRams="0" numOfDataRams="0" numOfDataRoms="0" numOfDataPorts="0" numOfInstRams="0" numOfInstRoms="0" l2cc="*" coreconnect="*" xnne="*" dcacheS="*" dcacheV="*" unifiedRams="*" dataRams="*" dataRoms="*" dataPorts="*" instRams="*" instRoms="*">
+  <xt b="hash" t="xpg_hifi4_MockingBird_PROD" arch="Xtensa24" uarchName="Barcelona" tieCheckLinuxNoPorts="1" debugOption="1" timersOption="1" interruptsOption="1" mac16Option="0" MAC16ImplementsMul16="0" userImplementsMul="0" userMul16ReadStage="1" userMul16WriteStage="1" userMul32ReadStage="1" userMul32WriteStage="1" ocdOption="1" mmuOption="0" density="1" TargetHWVersion="LX7.1.1" TargetHWEarliestVersion="LX7.1.1" TargetHWConfigID0="0" TargetHWConfigID1="0" TargetHWUniqueID="0" ConfigKey0="0" ConfigKey1="0" taskEngine="0" smallCore="0" bootLoader="0" MPCoherencySupport="0" name="Xm_hifi4_MockingBird_PROD" usePRID="1" prid="0" loadStoreUnitsCount="2" speculation="0" coprocessorCount="2" booleans="1" Mul16="1" Mul32="1" Mulh="0" VectorFPU2005="0" SW_Assumes_SPFPU="1" SW_Assumes_DPFPU="0" functionalSafetyLicensed="0" SW_FunctionalSafety="0" unalignedLoadAction="Exception" unalignedStoreAction="Exception" ClkGateFuncUnit="1" ClkGateGlobal="1" lowPower="0" PSODomains="none" PSOCoreRetention="none" semDataGating="user_defined" memDataGating="0" IRdropPort="0" Div32="1" writeBufferEntries="0x20" numOfTieModules="3" numROMPatchRegs="0" udmaTranspose="0" udmaBufferDepth="4" udmaOutstandingRows="2" udmaReorderBuffer="0" udmaReorderBufOutstandingReq="0x20" udmaReorderBufNumRamPorts="2" udmaNumChannels="1" udmaMaxOutstandingReq="0x20" inboundRequestBufferDepth="2" pifBridgeType="AXI" pifAsync="0" traxEnabled="1" apbAccess="1" apbAccessIsSynchronous="0" jtagAccess="1" erDebugAccess="1" coresightDAP="0" ArithmeticExceptionInterface="0" numOfDCacheIntfs="1" numOfUnifiedRamsIntfs="0" numOfDataRamsIntfs="0" numOfDataRomsIntfs="0" numOfDataPortsIntfs="0" numOfICacheIntfs="1" numOfInstRamIntfs="1" numOfInstRomIntfs="1" numOfTieOutQueueIntfs="0" numOfTieInQueueIntfs="0" numOfTieOutPortIntfs="0" numOfTieInPortIntfs="0" numOfSysInterfaces="0" vectorPipe="0" btb="*" snoop="*" prefetchI="*" vtmmu="*" ahb="*" asyncPif="*" scattergather="*" idma="*" sysInterfaces="*" global="*" pifSlaveIntfc="*" icacheCommonIntfc="*" icacheWayIntfc="*" itagCommonIntfc="*" itagWayIntfc="*" dcacheCommonIntfc="*" dcacheWayIntfc="*" dtagCommonIntfc="*" dtagWayIntfc="*" unifiedRamIntfc="*" dataRamIntfc="*" dataRamBusy="*" dataRomIntfc="*" dataRomBusy="*" dataPortIntfc="*" dataPortLoad="*" dataPortLoadRetired="*" dataPortRetireFlush="*" dataortBusy="*" instRamIntfc="*" instRamLoadStore="*" instRamBusy="*" instRomIntfc="*" instRomLoad="*" instRomBusy="*" tieOutQueueIntfc="*" tieInQueueIntfc="*" tieOutPortIntfc="*" tieInPortIntfc="*" traceIntfc="*" tmodeIntfc="*" pwaitmodeIntfc="*" tapocdIntfc="*" jtdiIntfc="*" jtckIntfc="*" xocdmodeIntfc="*" tdebuginterruptIntfc="*" xocdmodepulseIntfc="*" interruptsIntfc="*" stallIntfc="*">
+   <env b="hash" t="hifi4_MockingBird_PROD_Environment">
+    <build b="hash" buildXTBoard="no" buildEmul="no" buildXTBoardFreq="0x1e" buildHW="1" buildDiags="1" useCoware="0" useSeamless="0" useXTOS="1" useVxworks="0" useLinux="0" useNucleus="0" useRedboot="0" uniqueID="0x87a3c" userCID="0x39ca" expirationDate="0" licenseID="0" mode="Production" compatSeamless="0" compatCoware="0" compatVxworks="0" compatNucleus="1" compatRedboot="0" compatLinux="0" compatXTOS="1" compatCustomer="0"/>
+    <implementation b="hash" ImplTargetSpeed="0x380" ImplTargetSize="0xbc067" ImplTargetPower="0x4b" ImplSpeedPriority="High" ImplPowerPriority="Medium" ImplSizePriority="Low" ImplTargetTechnology="28hm" ImplTargetLibraryType="TENSILICA_STD" ImplOperatingCondition="Worst" ImplVoltageCondition="Nominal" ImplRegFileBuildingBlock="FlipFlop" ImplFloorplan="" ImplResetFlops="1" ImplAsyncReset="1" ImplCDCSyncStages="3" ImplDecoder="and_or_mux" ImplTimingExperiment="0"/>
+    <cadTools b="hash" CadHDL="Verilog" CadParUseAstro="1" CadSimUseVCS="1" CadSimUseVerilogXL="1" CadSimUseVerilogNC="1" CadSimUseVantage="0" CadSimUseMTI="0" CadStvUseMotive="0" CadStvUsePrimeTime="1" CadSiUseCeltic="1" CadSynUseDesignCompiler="1" CadPsynUsePhysicalCompiler="1" CadExtractUseQX="1"/>
+    <verification b="hash" dvarch="0" pageTableVAddr="0x20000000" pageTableBytes="0" pageTableLinkVAddr="0" pageTableLinkBytes="0" clockPeriod="0xa" clockDutyCycle="0.500000"/>
+    <fpga b="hash" ioCachedPAddr="0x70000000" ioCachedBytes="0xe000000" ioNonCachedPAddr="0x90000000" ioNonCachedBytes="0xe000000"/>
+   </env>
+   <core b="hash" memoryOrder="LittleEndian" addressWidth="0x20" exceptionArch="XEA_UNKNOWN" newExceptionArch="1" externalExceptionArch="0" haltArch="0" exceptions="1" exceptionDetails="1" impreciseExceptions="0" pageableStack="0" pageableStackLimit="0" kernelStackLimit="0" interruptStackLimit="0" Loops="1" L0IBuffer="1" L0IBufferSize="0x100" maxInstructionSize="0xb" wideInstHoldingBuffer="1" tieUnrestrictedInstrWidths="0" Synchronization="1" ConditionalStore="0" masterExclusiveAccess="1" slaveExclusiveAccess="0" numExternalExclusiveMasters="0" earlyRestart="1" virtualAddressWidth="0x20" physicalAddressWidth="0x20" pifReadDataBits="0x40" pifWriteDataBits="0x40" pifWriteResponse="1" pifInboundWriteResponse="0" dataUsePIF="1" instUsePIF="1" pifInReqRouteIdBits="0" pifCriticalWordFirst="1" pifArbitraryByteEnables="1" numMaxPifWriteRequests="0x10" writeBufferBypassAddrBits="8" pifTracePort="1" pifDataTracePort="1" TIETracePort="0" usePerformanceCounter="0" usePerformanceCounterER="1" perfCounterCount="8" numOfMiscRegs="4" threadptr="1" tieUseStoreByteDisable="1" tieUseWideStore="1" ifetchLatency="2" pipeAStage="1" pipeBStage="1" pipeEStage="1" pipeMStage="3" pipeWStage="4" pipeDStage="9" numContexts="1" BranchPredictedTaken="0" DEPBITS="0" L32R="1" ExtL32R="0" Const16replacesMac16="0" Abs="1" Addx="1" Call4and12="1" InterruptDistributor="0" MPRunStall="0" ExportCoreStatesToUserTIE="0" SWExtL32R="0" SW_ABI="windowed" SW_CLibrary="xclib" SW_UseFloatingPoint="1" SW_FloatingPointABI="1" SW_Const32="0" SW_memmap_cacheattr_reset="default" Const16="0" instructionWidth="0x58" WideInstr="1" pifReadDataBytes="8" pifWriteDataBytes="8" instfetchsize="0x10" numExclusiveMonitors="1">
+    <contextStateList b="hash" AR="1" WINDOWSTART="1" WINDOWBASE="1"/>
+    <SW_Erratum_Fix b="hash" 0="1"/>
+   </core>
+   <registerFile b="hash" nareg="0x40" windowsConfigured="1"/>
+   <cacheAttribute b="hash" id="0">
+    <fetchAttrMap b="array" value="*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*"/>
+    <loadAttrMap b="array" value="*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*"/>
+    <storeAttrMap b="array" value="*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*"/>
+    <pifAttrMap b="array" value="*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*"/>
+   </cacheAttribute>
+   <interrupts b="hash" count="0x19" levelmax="4" highLevel="1" excmLevel="2" swModifiable="0" numOfSWInt="0" numOfExtInt="0" interruptStackEnd="0" relocatableISB="1" interruptStackBase="0" relocatableITB="0" interruptTableBase="0">
+    <interrupt b="array">
+     <hash type="ExtLevel" level="1" number="0" mask="1"/>
+     <hash type="ExtLevel" level="1" number="1" mask="2"/>
+     <hash type="ExtLevel" level="1" number="2" mask="4"/>
+     <hash type="ExtLevel" level="1" number="3" mask="8"/>
+     <hash type="ExtLevel" level="1" number="4" mask="0x10"/>
+     <hash type="ExtLevel" level="1" number="5" mask="0x20"/>
+     <hash type="ExtEdge" level="1" number="6" mask="0x40"/>
+     <hash type="ExtEdge" level="1" number="7" mask="0x80"/>
+     <hash type="ExtLevel" level="2" number="8" mask="0x100"/>
+     <hash type="ExtLevel" level="2" number="9" mask="0x200"/>
+     <hash type="ExtLevel" level="2" number="0xa" mask="0x400"/>
+     <hash type="ExtLevel" level="2" number="0xb" mask="0x800"/>
+     <hash type="ExtLevel" level="2" number="0xc" mask="0x1000"/>
+     <hash type="ExtLevel" level="2" number="0xd" mask="0x2000"/>
+     <hash type="ExtEdge" level="2" number="0xe" mask="0x4000"/>
+     <hash type="ExtEdge" level="2" number="0xf" mask="0x8000"/>
+     <hash type="Timer" level="1" number="0x10" mask="0x10000"/>
+     <hash type="Timer" level="2" number="0x11" mask="0x20000"/>
+     <hash type="Timer" level="3" number="0x12" mask="0x40000"/>
+     <hash type="WriteErr" level="1" number="0x13" mask="0x80000"/>
+     <hash type="Profiling" level="1" number="0x14" mask="0x100000"/>
+     <hash type="Software" level="1" number="0x15" mask="0x200000"/>
+     <hash type="Software" level="2" number="0x16" mask="0x400000"/>
+     <hash type="ExtLevel" level="1" number="0x17" mask="0x800000"/>
+     <hash type="ExtLevel" level="2" number="0x18" mask="0x1000000"/>
+    </interrupt>
+   </interrupts>
+   <debug b="hash" ivaTrapCount="2" dvaTrapCount="2" interruptLevel="4"/>
+   <timers b="hash" count="3">
+    <timer b="array">
+     <hash interrupt="0x10" number="0"/>
+     <hash interrupt="0x11" number="1"/>
+     <hash interrupt="0x12" number="2"/>
+    </timer>
+   </timers>
+   <OCD b="hash" DebugExternalInterrupt="1" DebugUseDIRArray="0" DebugLoadStoreDDR="1"/>
+   <trax b="hash" internalFifoSize="0x80" outputMemory="1" memorySize="0x1000" memoryWidth="0x20" memoryShared="1" outputATB="1" atbDataWidth="0x20" atbIdWidth="7" timestamps="0" timeWidth="0x40" intTimeWidth="0" grayTimeBus="0" asynchTimeBus="0" numILAentries="0"/>
+   <prefetch b="hash" prefetchEntries="0x10" prefetchCastoutCacheLines="1" prefetch2L1="0" prefetchBlock="0" prefetchBlockEntries="2" error="none" fixPbufRAM="0" CMEDowngrades="0"/>
+   <miscOperations b="hash" NormShiftAmount="1" MinMax="1" SignExtend="1" Clamps="1" CRC="0" PopCount="0"/>
+   <vectors b="hash" numOfVectors="8" relocatableVectorOption="1" relocatableVectorBaseResetVal="0xa0000400" stationaryVectorBase0="0xa0000000" stationaryVectorBase1="0xa0000640" SW_stationaryVectorBaseSelect="1" vecBase1FromPins="1">
+    <vectorList b="array">
+     <hash name="ResetVector" baseAddress="0xa0000640" size="0x2e0" alignment="4" level="1" hasHandler="0" group="stationary" offset="0"/>
+     <hash name="KernelExceptionVector" baseAddress="0xa00005dc" size="0x1c" alignment="4" level="1" hasHandler="1" group="relocatable" offset="0x1dc"/>
+     <hash name="UserExceptionVector" baseAddress="0xa00005fc" size="0x1c" alignment="4" level="1" hasHandler="1" group="relocatable" offset="0x1fc"/>
+     <hash name="DoubleExceptionVector" baseAddress="0xa000061c" size="0x1c" alignment="8" level="1" hasHandler="1" group="relocatable" offset="0x21c"/>
+     <hash name="WindowVectors" baseAddress="0xa0000400" size="0x178" alignment="0x200" level="1" hasHandler="0" group="relocatable" offset="0"/>
+     <hash name="Level2InterruptVector" baseAddress="0xa000057c" size="0x1c" alignment="4" level="2" hasHandler="1" group="relocatable" offset="0x17c"/>
+     <hash name="Level3InterruptVector" baseAddress="0xa000059c" size="0x1c" alignment="4" level="3" hasHandler="1" group="relocatable" offset="0x19c"/>
+     <hash name="DebugExceptionVector" baseAddress="0xa00005bc" size="0x1c" alignment="4" level="4" hasHandler="1" group="relocatable" offset="0x1bc"/>
+    </vectorList>
+   </vectors>
+   <_loadStoreUnits b="array">
+    <hash id="0" type="LoadStore" vaddrBits="0x20" paddrBits="0x20" numOfStoreBuffers="*" numOfStoreTagBuffers="4">
+     <lsInterfaces b="hash" DataCache="1" DataPIF="1" DataPort0="1" DataRAM0="1" DataRAM1="1" DataROM0="1" UnifiedRAM0="1"/>
+    </hash>
+    <hash id="1" type="LoadStore" vaddrBits="0x20" paddrBits="0x20" numOfStoreBuffers="*" numOfStoreTagBuffers="4">
+     <lsInterfaces b="hash" DataCache="1" DataPIF="1" DataPort0="1" DataRAM0="1" DataRAM1="1" DataROM0="1" UnifiedRAM0="1"/>
+    </hash>
+   </_loadStoreUnits>
+   <mmu b="hash" id="0" asidBits="0" ringCount="1" pteEntrySize="4" sizeRestrictionBits="0" noMatchAction="Exception" _invalidAsid="0" _kernelAsid="1" kernelAsid="0" invalidAsid="0">
+    <pageSizes b="array" value="0x1d,*,*,*,*,*,*,*"/>
+    <itlb b="hash" id="0" type="Inst" wayCount="1" vaddrBits="0x20" paddrBits="0x20">
+     <ways b="array">
+      <hash id="0">
+       <assoc b="hash" id="0" numOfEntries="8" autoRefill="0" sizeRestrictionBits="0" VPNMsb="0x1f" VPNLsb="0x1d" PPNMsb="0x1f" PPNLsb="0x1d">
+        <pageSizes b="array" value="0x1d,*,*,*,*,*,*,*"/>
+        <ASIDConstValues b="array" value="*,*,*,*,*,*,*,*"/>
+        <VPNConstValues b="array" value="0,0x20000000,0x40000000,0x60000000,0x80000000,0xa0000000,0xc0000000,0xe0000000"/>
+        <PPNConstValues b="array" value="0,0x20000000,0x40000000,0x60000000,0x80000000,0xa0000000,0xc0000000,0xe0000000"/>
+        <CAConstValues b="array" value="*,*,*,*,*,*,*,*"/>
+        <ASIDResetValues b="array" value="*,*,*,*,*,*,*,*"/>
+        <VPNResetValues b="array" value="*,*,*,*,*,*,*,*"/>
+        <PPNResetValues b="array" value="*,*,*,*,*,*,*,*"/>
+        <CAResetValues b="array" value="2,2,2,2,2,2,2,2"/>
+       </assoc>
+      </hash>
+     </ways>
+    </itlb>
+    <dtlb b="hash" id="0" type="Data" wayCount="1" vaddrBits="0x20" paddrBits="0x20">
+     <ways b="array">
+      <hash id="0">
+       <assoc b="hash" id="0" numOfEntries="8" autoRefill="0" sizeRestrictionBits="0" VPNMsb="0x1f" VPNLsb="0x1d" PPNMsb="0x1f" PPNLsb="0x1d">
+        <pageSizes b="array" value="0x1d,*,*,*,*,*,*,*"/>
+        <ASIDConstValues b="array" value="*,*,*,*,*,*,*,*"/>
+        <VPNConstValues b="array" value="0,0x20000000,0x40000000,0x60000000,0x80000000,0xa0000000,0xc0000000,0xe0000000"/>
+        <PPNConstValues b="array" value="0,0x20000000,0x40000000,0x60000000,0x80000000,0xa0000000,0xc0000000,0xe0000000"/>
+        <CAConstValues b="array" value="*,*,*,*,*,*,*,*"/>
+        <ASIDResetValues b="array" value="*,*,*,*,*,*,*,*"/>
+        <VPNResetValues b="array" value="*,*,*,*,*,*,*,*"/>
+        <PPNResetValues b="array" value="*,*,*,*,*,*,*,*"/>
+        <CAResetValues b="array" value="2,2,2,2,2,2,2,2"/>
+       </assoc>
+      </hash>
+     </ways>
+    </dtlb>
+   </mmu>
+   <immu b="hash" t="mpu_ca_4kpg" numOfMPUbgMapEntries="2" numOfMPUEntries="0x20" MPUvasLsb="0xc" numOfMTUEntries="0">
+    <MPUbgMapList b="array">
+     <hash address="0" size="0x80000000" accessRights="7" memoryType="6"/>
+     <hash address="0x80000000" size="0x80000000" accessRights="7" memoryType="6"/>
+    </MPUbgMapList>
+   </immu>
+   <testOptions b="hash" fullScan="1" latchesTransparent="0"/>
+   <tie b="hash" sourceFile="MATHFUN_V4.tie" internal="0" rename_tie="0" renamerFile="" renameMapFile="">
+    <_implements b="string"/>
+   </tie>
+   <tie_modules b="array">
+    <hash t="HiFi4" internal="1" rename_tie="0" renamerFile="" renameMapFile="" partialRegfileBypass="0" fp="1">
+     <sourceFile b="string" value="/home/xpgcust/tree/RI-2019.1/ib/p4root/Xtensa/share/saridef/Processor/Coprocessor/../../../../../Coprocessors/HiFi3/Tie/HiFi4.tie"/>
+     <_implements b="string"/>
+    </hash>
+    <hash t="MUL32" internal="1" rename_tie="0" renamerFile="" renameMapFile="" _implements="mul16" mulh="0" mul16="1" iterativeMul32="0">
+     <sourceFile b="string" value="/home/xpgcust/tree/RI-2019.1/ib/p4root/Xtensa/share/saridef/Processor/Coprocessor/../../../../../Coprocessors/MUL32/mul32.tie"/>
+    </hash>
+    <hash t="DCPortsQueues" internal="1" rename_tie="0" renamerFile="" renameMapFile="" ports="1" queues="0">
+     <sourceFile b="string" value="/home/xpgcust/tree/RI-2019.1/ib/p4root/Xtensa/share/saridef/Processor/Coprocessor/../../../../../Coprocessors/DCPortsQueues/DCPortsQueues.tie.tpp"/>
+     <_implements b="string"/>
+    </hash>
+   </tie_modules>
+   <axi b="hash" axitype="AXI4" axiwidth="0x20" slaveReqCntlDepth="4" slaveReqDataDepth="8" slaveRespDepth="8" slaveIDwidth="0x10" registerPIF="0" aceLite="0" fullAce="0" axiSecInterface="0" axiECC="none"/>
+   <pifMasterIntfc b="hash" id="0" master="1" slave="0" burst="0" reqAttribute="1" poData="0x20" piData="0x20" testComp="VeraPifSlave" insertTestComp="ifNotPresent" testCompLevel="top" poAddr="0x20" poId="6" piId="6" poRouteId="0" piRouteId="0" poCohCntl="0" poCohVAdrsIndex="0" byteEnable="4" POReqValid="*" POReqCntl="*" POReqCohCntl="*" POReqCohVAdrsIndex="*" POReqAdrs="*" POReqData="*" POReqDataBE="*" POReqId="*" POReqPriority="*" POReqRouteId="*" PIReqRdy="*" PIRespValid="*" PIRespCntl="*" PIRespCohCntl="*" PIRespId="*" PIRespData="*" PIRespPriority="*" PIRespRouteId="*" PORespRdy="*"/>
+  </xt>
+  <dcache b="hash" type="Data" size="0x10000" pipetype="both" lineSize="0x80" accessWidth="0x40" assoc="4" banks="2" latency="2" indexLock="1" error="none" errorWidth="1" physicalSlices="1" wayLock="0" dynamicWayDisable="1" indexType="physical" maxMissCount="1" missStart="0x20" linesPerTag="1" tagType="physical" isWriteBack="1" coherence="0" testInstr="1" busy="0" initDataPattern="0x1a2b3c4d" initTagPattern="0xbecada00" resetTCMBasePAddr="0" splitsIntoRAM="0" numBytes="8" dataWayIntfc="*" tagWayIntfc="*" tagRamWidth="0" dataAddrWidth="0xb" tagAddrWidth="7" addrLatency="1">
+   <global b="hash" dir="in" CLK="*"/>
+   <dataIntfc b="hash" addrWidth="0xb" ramWidth="0x40" numBytes="8" testComp="none" insertTestComp="ifNotPresent" testCompLevel="top" Addr="*" ByteEn="*" WrData="*"/>
+   <tagIntfc b="hash" addrWidth="7" ramWidth="0" numBytes="0" testComp="none" insertTestComp="ifNotPresent" testCompLevel="top" Addr="*" ByteEn="*" WrData="*"/>
+   <dataBanks b="array">
+    <hash addrWidth="0xb" ramWidth="0x40" numBytes="8" numWords="0">
+     <hardwareModel b="string" value="Xtensa/Hardware/common/verilog/SRam.v.tpp"/>
+     <sramPort b="hash" addrWidth="0xb" ramWidth="0x40" numBytes="8" numWords="0" testComp="none" insertTestComp="ifNotPresent" testCompLevel="top" Addr="*" En="*" Wr="*" ByteEn="*" WordEn="*" WrData="*" Data="*"/>
+     <global b="hash" dir="in" CLK="*"/>
+    </hash>
+    <hash addrWidth="0xb" ramWidth="0x40" numBytes="8" numWords="0">
+     <hardwareModel b="string" value="Xtensa/Hardware/common/verilog/SRam.v.tpp"/>
+     <sramPort b="hash" addrWidth="0xb" ramWidth="0x40" numBytes="8" numWords="0" testComp="none" insertTestComp="ifNotPresent" testCompLevel="top" Addr="*" En="*" Wr="*" ByteEn="*" WordEn="*" WrData="*" Data="*"/>
+     <global b="hash" dir="in" CLK="*"/>
+    </hash>
+    <hash addrWidth="0xb" ramWidth="0x40" numBytes="8" numWords="0">
+     <hardwareModel b="string" value="Xtensa/Hardware/common/verilog/SRam.v.tpp"/>
+     <sramPort b="hash" addrWidth="0xb" ramWidth="0x40" numBytes="8" numWords="0" testComp="none" insertTestComp="ifNotPresent" testCompLevel="top" Addr="*" En="*" Wr="*" ByteEn="*" WordEn="*" WrData="*" Data="*"/>
+     <global b="hash" dir="in" CLK="*"/>
+    </hash>
+    <hash addrWidth="0xb" ramWidth="0x40" numBytes="8" numWords="0">
+     <hardwareModel b="string" value="Xtensa/Hardware/common/verilog/SRam.v.tpp"/>
+     <sramPort b="hash" addrWidth="0xb" ramWidth="0x40" numBytes="8" numWords="0" testComp="none" insertTestComp="ifNotPresent" testCompLevel="top" Addr="*" En="*" Wr="*" ByteEn="*" WordEn="*" WrData="*" Data="*"/>
+     <global b="hash" dir="in" CLK="*"/>
+    </hash>
+   </dataBanks>
+   <tagBanks b="array">
+    <hash addrWidth="7" ramWidth="0" numBytes="0" numWords="0">
+     <hardwareModel b="string" value="Xtensa/Hardware/common/verilog/SRam.v.tpp"/>
+     <sramPort b="hash" addrWidth="7" ramWidth="0" numBytes="0" numWords="0" testComp="none" insertTestComp="ifNotPresent" testCompLevel="top" Addr="*" En="*" Wr="*" ByteEn="*" WordEn="*" WrData="*" Data="*"/>
+     <global b="hash" dir="in" CLK="*"/>
+    </hash>
+    <hash addrWidth="7" ramWidth="0" numBytes="0" numWords="0">
+     <hardwareModel b="string" value="Xtensa/Hardware/common/verilog/SRam.v.tpp"/>
+     <sramPort b="hash" addrWidth="7" ramWidth="0" numBytes="0" numWords="0" testComp="none" insertTestComp="ifNotPresent" testCompLevel="top" Addr="*" En="*" Wr="*" ByteEn="*" WordEn="*" WrData="*" Data="*"/>
+     <global b="hash" dir="in" CLK="*"/>
+    </hash>
+    <hash addrWidth="7" ramWidth="0" numBytes="0" numWords="0">
+     <hardwareModel b="string" value="Xtensa/Hardware/common/verilog/SRam.v.tpp"/>
+     <sramPort b="hash" addrWidth="7" ramWidth="0" numBytes="0" numWords="0" testComp="none" insertTestComp="ifNotPresent" testCompLevel="top" Addr="*" En="*" Wr="*" ByteEn="*" WordEn="*" WrData="*" Data="*"/>
+     <global b="hash" dir="in" CLK="*"/>
+    </hash>
+    <hash addrWidth="7" ramWidth="0" numBytes="0" numWords="0">
+     <hardwareModel b="string" value="Xtensa/Hardware/common/verilog/SRam.v.tpp"/>
+     <sramPort b="hash" addrWidth="7" ramWidth="0" numBytes="0" numWords="0" testComp="none" insertTestComp="ifNotPresent" testCompLevel="top" Addr="*" En="*" Wr="*" ByteEn="*" WordEn="*" WrData="*" Data="*"/>
+     <global b="hash" dir="in" CLK="*"/>
+    </hash>
+   </tagBanks>
+  </dcache>
+  <icache b="hash" type="Inst" size="0x8000" pipetype="both" lineSize="0x80" accessWidth="0x80" assoc="4" banks="1" latency="2" indexLock="1" error="none" errorWidth="4" physicalSlices="1" wayLock="0" dynamicWayDisable="1" indexType="physical" maxMissCount="1" missStart="0x20" linesPerTag="1" tagType="physical" isWriteBack="0" coherence="0" testInstr="1" busy="0" initDataPattern="0xa5a5a5a5" initTagPattern="0xabcdef00" resetTCMBasePAddr="0" splitsIntoRAM="0" numBytes="0x10" dataWayIntfc="*" tagWayIntfc="*" tagRamWidth="0" dataAddrWidth="9" tagAddrWidth="6">
+   <global b="hash" dir="in" CLK="*"/>
+   <dataIntfc b="hash" addrWidth="9" ramWidth="0x80" numBytes="0" testComp="none" insertTestComp="ifNotPresent" testCompLevel="top" Addr="*" ByteEn="*" WrData="*"/>
+   <tagIntfc b="hash" addrWidth="6" ramWidth="0" numBytes="0" testComp="none" insertTestComp="ifNotPresent" testCompLevel="top" Addr="*" ByteEn="*" WrData="*"/>
+   <dataBanks b="array">
+    <hash addrWidth="9" ramWidth="0x80" numBytes="0" numWords="0">
+     <hardwareModel b="string" value="Xtensa/Hardware/common/verilog/SRam.v.tpp"/>
+     <sramPort b="hash" addrWidth="9" ramWidth="0x80" numBytes="0" numWords="0" testComp="none" insertTestComp="ifNotPresent" testCompLevel="top" Addr="*" En="*" Wr="*" ByteEn="*" WordEn="*" WrData="*" Data="*"/>
+     <global b="hash" dir="in" CLK="*"/>
+    </hash>
+    <hash addrWidth="9" ramWidth="0x80" numBytes="0" numWords="0">
+     <hardwareModel b="string" value="Xtensa/Hardware/common/verilog/SRam.v.tpp"/>
+     <sramPort b="hash" addrWidth="9" ramWidth="0x80" numBytes="0" numWords="0" testComp="none" insertTestComp="ifNotPresent" testCompLevel="top" Addr="*" En="*" Wr="*" ByteEn="*" WordEn="*" WrData="*" Data="*"/>
+     <global b="hash" dir="in" CLK="*"/>
+    </hash>
+    <hash addrWidth="9" ramWidth="0x80" numBytes="0" numWords="0">
+     <hardwareModel b="string" value="Xtensa/Hardware/common/verilog/SRam.v.tpp"/>
+     <sramPort b="hash" addrWidth="9" ramWidth="0x80" numBytes="0" numWords="0" testComp="none" insertTestComp="ifNotPresent" testCompLevel="top" Addr="*" En="*" Wr="*" ByteEn="*" WordEn="*" WrData="*" Data="*"/>
+     <global b="hash" dir="in" CLK="*"/>
+    </hash>
+    <hash addrWidth="9" ramWidth="0x80" numBytes="0" numWords="0">
+     <hardwareModel b="string" value="Xtensa/Hardware/common/verilog/SRam.v.tpp"/>
+     <sramPort b="hash" addrWidth="9" ramWidth="0x80" numBytes="0" numWords="0" testComp="none" insertTestComp="ifNotPresent" testCompLevel="top" Addr="*" En="*" Wr="*" ByteEn="*" WordEn="*" WrData="*" Data="*"/>
+     <global b="hash" dir="in" CLK="*"/>
+    </hash>
+   </dataBanks>
+   <tagBanks b="array">
+    <hash addrWidth="6" ramWidth="0" numBytes="0" numWords="0">
+     <hardwareModel b="string" value="Xtensa/Hardware/common/verilog/SRam.v.tpp"/>
+     <sramPort b="hash" addrWidth="6" ramWidth="0" numBytes="0" numWords="0" testComp="none" insertTestComp="ifNotPresent" testCompLevel="top" Addr="*" En="*" Wr="*" ByteEn="*" WordEn="*" WrData="*" Data="*"/>
+     <global b="hash" dir="in" CLK="*"/>
+    </hash>
+    <hash addrWidth="6" ramWidth="0" numBytes="0" numWords="0">
+     <hardwareModel b="string" value="Xtensa/Hardware/common/verilog/SRam.v.tpp"/>
+     <sramPort b="hash" addrWidth="6" ramWidth="0" numBytes="0" numWords="0" testComp="none" insertTestComp="ifNotPresent" testCompLevel="top" Addr="*" En="*" Wr="*" ByteEn="*" WordEn="*" WrData="*" Data="*"/>
+     <global b="hash" dir="in" CLK="*"/>
+    </hash>
+    <hash addrWidth="6" ramWidth="0" numBytes="0" numWords="0">
+     <hardwareModel b="string" value="Xtensa/Hardware/common/verilog/SRam.v.tpp"/>
+     <sramPort b="hash" addrWidth="6" ramWidth="0" numBytes="0" numWords="0" testComp="none" insertTestComp="ifNotPresent" testCompLevel="top" Addr="*" En="*" Wr="*" ByteEn="*" WordEn="*" WrData="*" Data="*"/>
+     <global b="hash" dir="in" CLK="*"/>
+    </hash>
+    <hash addrWidth="6" ramWidth="0" numBytes="0" numWords="0">
+     <hardwareModel b="string" value="Xtensa/Hardware/common/verilog/SRam.v.tpp"/>
+     <sramPort b="hash" addrWidth="6" ramWidth="0" numBytes="0" numWords="0" testComp="none" insertTestComp="ifNotPresent" testCompLevel="top" Addr="*" En="*" Wr="*" ByteEn="*" WordEn="*" WrData="*" Data="*"/>
+     <global b="hash" dir="in" CLK="*"/>
+    </hash>
+   </tagBanks>
+  </icache>
+ </pr>
+ <sysram b="array">
+  <hash type="sysram" psize="0x10000000" basePAddr="0xa0000000" accessWidth="0x20" extraBits="0" name="sram" id="0" assoc="1" banks="1" highOrderBanking="0" latency="1" busy="0" dma="0" udma="0" tieLS="1" error="none" errorWidth="1" rcw="0" cbox="0" fake="0" subbanks="1" physicalSlices="1" sramWidth="0" sramWords="0" lsAccess="1" splitReadWritePort="0" attributeWidth="0" initPattern="0" dynamicBaseAddr="0" size="0x10000000" addressWidth="0x1a" numbytes="4" numwords="0" vsize="0x10000000" baseVAddr="0xa0000000">
+   <attributes b="hash" writable="1" executable="1"/>
+   <sramName b="string"/>
+   <softwareModel b="string"/>
+  </hash>
+ </sysram>
+ <Uart b="hash" type="Uart" name="UART_BASE" size="0x20" baseVAddr="*" basePAddr="*" accessWidth="0x20" psize="0x20" vsize="0x20">
+  <cmodel b="string"/>
+ </Uart>
+</xtb>
+
+<modulemap b="hash" t="modulemaps">
+ <hifi4_MockingBird_PROD_Xtbench b="array">
+  <refh link="xtb"/>
+ </hifi4_MockingBird_PROD_Xtbench>
+ <hifi4_MockingBird_PROD_XT b="array">
+  <refh link="xtb.pr"/>
+ </hifi4_MockingBird_PROD_XT>
+ <Memory b="array">
+  <refh link="xtb.sysram.0"/>
+ </Memory>
+ <Uart b="array">
+  <refh link="xtb.Uart"/>
+ </Uart>
+ <xpg_hifi4_MockingBird_PROD b="array">
+  <refh link="xtb.pr.xt"/>
+ </xpg_hifi4_MockingBird_PROD>
+ <DataCache b="array">
+  <refh link="xtb.pr.dcache"/>
+ </DataCache>
+ <InstCache b="array">
+  <refh link="xtb.pr.icache"/>
+ </InstCache>
+ <hifi4_MockingBird_PROD_Environment b="array">
+  <refh link="xtb.pr.xt.env"/>
+ </hifi4_MockingBird_PROD_Environment>
+ <Core b="array">
+  <refh link="xtb.pr.xt.core"/>
+ </Core>
+ <RegisterFile b="array">
+  <refh link="xtb.pr.xt.registerFile"/>
+ </RegisterFile>
+ <CacheAttribute b="array">
+  <refh link="xtb.pr.xt.cacheAttribute"/>
+ </CacheAttribute>
+ <Interrupts b="array">
+  <refh link="xtb.pr.xt.interrupts"/>
+ </Interrupts>
+ <Debug b="array">
+  <refh link="xtb.pr.xt.debug"/>
+ </Debug>
+ <Timers b="array">
+  <refh link="xtb.pr.xt.timers"/>
+ </Timers>
+ <OCD b="array">
+  <refh link="xtb.pr.xt.OCD"/>
+ </OCD>
+ <TRAX b="array">
+  <refh link="xtb.pr.xt.trax"/>
+ </TRAX>
+ <Prefetch b="array">
+  <refh link="xtb.pr.xt.prefetch"/>
+ </Prefetch>
+ <MiscOperations b="array">
+  <refh link="xtb.pr.xt.miscOperations"/>
+ </MiscOperations>
+ <Vectors b="array">
+  <refh link="xtb.pr.xt.vectors"/>
+ </Vectors>
+ <LoadStore b="array">
+  <refh link="xtb.pr.xt._loadStoreUnits.0"/>
+ </LoadStore>
+ <LoadStore_1 b="array">
+  <refh link="xtb.pr.xt._loadStoreUnits.1"/>
+ </LoadStore_1>
+ <MMU b="array">
+  <refh link="xtb.pr.xt.mmu"/>
+ </MMU>
+ <mpu_ca_4kpg b="array">
+  <refh link="xtb.pr.xt.immu"/>
+ </mpu_ca_4kpg>
+ <TestOptions b="array">
+  <refh link="xtb.pr.xt.testOptions"/>
+ </TestOptions>
+ <TIE b="array">
+  <refh link="xtb.pr.xt.tie"/>
+ </TIE>
+ <HiFi4 b="array">
+  <refh link="xtb.pr.xt.tie_modules.0"/>
+ </HiFi4>
+ <MUL32 b="array">
+  <refh link="xtb.pr.xt.tie_modules.1"/>
+ </MUL32>
+ <DCPortsQueues b="array">
+  <refh link="xtb.pr.xt.tie_modules.2"/>
+ </DCPortsQueues>
+ <AXI b="array">
+  <refh link="xtb.pr.xt.axi"/>
+ </AXI>
+ <SRam b="array">
+  <refh link="xtb.pr.dcache.dataBanks.0"/>
+  <refh link="xtb.pr.dcache.dataBanks.1"/>
+  <refh link="xtb.pr.dcache.dataBanks.2"/>
+  <refh link="xtb.pr.dcache.dataBanks.3"/>
+ </SRam>
+ <SRam_1 b="array">
+  <refh link="xtb.pr.dcache.tagBanks.0"/>
+  <refh link="xtb.pr.dcache.tagBanks.1"/>
+  <refh link="xtb.pr.dcache.tagBanks.2"/>
+  <refh link="xtb.pr.dcache.tagBanks.3"/>
+ </SRam_1>
+ <SRam_2 b="array">
+  <refh link="xtb.pr.icache.dataBanks.0"/>
+  <refh link="xtb.pr.icache.dataBanks.1"/>
+  <refh link="xtb.pr.icache.dataBanks.2"/>
+  <refh link="xtb.pr.icache.dataBanks.3"/>
+ </SRam_2>
+ <SRam_3 b="array">
+  <refh link="xtb.pr.icache.tagBanks.0"/>
+  <refh link="xtb.pr.icache.tagBanks.1"/>
+  <refh link="xtb.pr.icache.tagBanks.2"/>
+  <refh link="xtb.pr.icache.tagBanks.3"/>
+ </SRam_3>
+ <Build b="array">
+  <refh link="xtb.pr.xt.env.build"/>
+ </Build>
+ <DesignImplementation b="array">
+  <refh link="xtb.pr.xt.env.implementation"/>
+ </DesignImplementation>
+ <CadTools b="array">
+  <refh link="xtb.pr.xt.env.cadTools"/>
+ </CadTools>
+ <DesignVerification b="array">
+  <refh link="xtb.pr.xt.env.verification"/>
+ </DesignVerification>
+ <FPGABoard b="array">
+  <refh link="xtb.pr.xt.env.fpga"/>
+ </FPGABoard>
+ <Interrupt b="array">
+  <refh link="xtb.pr.xt.interrupts.interrupt.0"/>
+ </Interrupt>
+ <Interrupt_1 b="array">
+  <refh link="xtb.pr.xt.interrupts.interrupt.1"/>
+ </Interrupt_1>
+ <Interrupt_2 b="array">
+  <refh link="xtb.pr.xt.interrupts.interrupt.2"/>
+ </Interrupt_2>
+ <Interrupt_3 b="array">
+  <refh link="xtb.pr.xt.interrupts.interrupt.3"/>
+ </Interrupt_3>
+ <Interrupt_4 b="array">
+  <refh link="xtb.pr.xt.interrupts.interrupt.4"/>
+ </Interrupt_4>
+ <Interrupt_5 b="array">
+  <refh link="xtb.pr.xt.interrupts.interrupt.5"/>
+ </Interrupt_5>
+ <Interrupt_6 b="array">
+  <refh link="xtb.pr.xt.interrupts.interrupt.6"/>
+ </Interrupt_6>
+ <Interrupt_7 b="array">
+  <refh link="xtb.pr.xt.interrupts.interrupt.7"/>
+ </Interrupt_7>
+ <Interrupt_8 b="array">
+  <refh link="xtb.pr.xt.interrupts.interrupt.8"/>
+ </Interrupt_8>
+ <Interrupt_9 b="array">
+  <refh link="xtb.pr.xt.interrupts.interrupt.9"/>
+ </Interrupt_9>
+ <Interrupt_10 b="array">
+  <refh link="xtb.pr.xt.interrupts.interrupt.10"/>
+ </Interrupt_10>
+ <Interrupt_11 b="array">
+  <refh link="xtb.pr.xt.interrupts.interrupt.11"/>
+ </Interrupt_11>
+ <Interrupt_12 b="array">
+  <refh link="xtb.pr.xt.interrupts.interrupt.12"/>
+ </Interrupt_12>
+ <Interrupt_13 b="array">
+  <refh link="xtb.pr.xt.interrupts.interrupt.13"/>
+ </Interrupt_13>
+ <Interrupt_14 b="array">
+  <refh link="xtb.pr.xt.interrupts.interrupt.14"/>
+ </Interrupt_14>
+ <Interrupt_15 b="array">
+  <refh link="xtb.pr.xt.interrupts.interrupt.15"/>
+ </Interrupt_15>
+ <Interrupt_16 b="array">
+  <refh link="xtb.pr.xt.interrupts.interrupt.16"/>
+ </Interrupt_16>
+ <Interrupt_17 b="array">
+  <refh link="xtb.pr.xt.interrupts.interrupt.17"/>
+ </Interrupt_17>
+ <Interrupt_18 b="array">
+  <refh link="xtb.pr.xt.interrupts.interrupt.18"/>
+ </Interrupt_18>
+ <Interrupt_19 b="array">
+  <refh link="xtb.pr.xt.interrupts.interrupt.19"/>
+ </Interrupt_19>
+ <Interrupt_20 b="array">
+  <refh link="xtb.pr.xt.interrupts.interrupt.20"/>
+ </Interrupt_20>
+ <Interrupt_21 b="array">
+  <refh link="xtb.pr.xt.interrupts.interrupt.21"/>
+ </Interrupt_21>
+ <Interrupt_22 b="array">
+  <refh link="xtb.pr.xt.interrupts.interrupt.22"/>
+ </Interrupt_22>
+ <Interrupt_23 b="array">
+  <refh link="xtb.pr.xt.interrupts.interrupt.23"/>
+ </Interrupt_23>
+ <Interrupt_24 b="array">
+  <refh link="xtb.pr.xt.interrupts.interrupt.24"/>
+ </Interrupt_24>
+ <Timer b="array">
+  <refh link="xtb.pr.xt.timers.timer.0"/>
+ </Timer>
+ <Timer_1 b="array">
+  <refh link="xtb.pr.xt.timers.timer.1"/>
+ </Timer_1>
+ <Timer_2 b="array">
+  <refh link="xtb.pr.xt.timers.timer.2"/>
+ </Timer_2>
+ <Vector b="array">
+  <refh link="xtb.pr.xt.vectors.vectorList.0"/>
+ </Vector>
+ <Vector_1 b="array">
+  <refh link="xtb.pr.xt.vectors.vectorList.1"/>
+ </Vector_1>
+ <Vector_2 b="array">
+  <refh link="xtb.pr.xt.vectors.vectorList.2"/>
+ </Vector_2>
+ <Vector_3 b="array">
+  <refh link="xtb.pr.xt.vectors.vectorList.3"/>
+ </Vector_3>
+ <Vector_4 b="array">
+  <refh link="xtb.pr.xt.vectors.vectorList.4"/>
+ </Vector_4>
+ <Vector_5 b="array">
+  <refh link="xtb.pr.xt.vectors.vectorList.5"/>
+ </Vector_5>
+ <Vector_6 b="array">
+  <refh link="xtb.pr.xt.vectors.vectorList.6"/>
+ </Vector_6>
+ <Vector_7 b="array">
+  <refh link="xtb.pr.xt.vectors.vectorList.7"/>
+ </Vector_7>
+ <TLB b="array">
+  <refh link="xtb.pr.xt.mmu.itlb"/>
+ </TLB>
+ <TLB_1 b="array">
+  <refh link="xtb.pr.xt.mmu.dtlb"/>
+ </TLB_1>
+ <MPUbgMap b="array">
+  <refh link="xtb.pr.xt.immu.MPUbgMapList.0"/>
+ </MPUbgMap>
+ <MPUbgMap_1 b="array">
+  <refh link="xtb.pr.xt.immu.MPUbgMapList.1"/>
+ </MPUbgMap_1>
+ <TLBWay b="array">
+  <refh link="xtb.pr.xt.mmu.itlb.ways.0"/>
+  <refh link="xtb.pr.xt.mmu.dtlb.ways.0"/>
+ </TLBWay>
+ <TLBAssoc b="array">
+  <refh link="xtb.pr.xt.mmu.itlb.ways.0.assoc"/>
+  <refh link="xtb.pr.xt.mmu.dtlb.ways.0.assoc"/>
+ </TLBAssoc>
+</modulemap>
+
+</sysdoc>
+

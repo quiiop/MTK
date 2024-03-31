@@ -1,0 +1,27 @@
+var structuac__streaming =
+[
+    [ "cap_callback", "group__uac.html#ga9373aa7d3aab2661f0bb5299409c68c2", null ],
+    [ "capture_count", "group__uac.html#ga3b6e31eea5d1be831d7a3db4a193abaa", null ],
+    [ "ep", "group__uac.html#gad001a35bcc827d3a580c8b5420f0d130", null ],
+    [ "ep_att", "group__uac.html#gaded02f396e657f5758a3b309ebb69b87", null ],
+    [ "error", "group__uac.html#ga0e9d9d47133fce0cb42e2b8c009f0a33", null ],
+    [ "file_flag", "group__uac.html#gad75f296312c6814a7c60761c553db0c9", null ],
+    [ "file_name", "group__uac.html#ga4593a62154067499709bcff18defa44b", null ],
+    [ "frame_buf", "group__uac.html#gaffda6fb77dfde7a018d18c48cb9de3f7", null ],
+    [ "frame_len", "group__uac.html#ga1667e40ebf0102cec2a4f8ab09645f64", null ],
+    [ "intfnum", "group__uac.html#ga0a93dde4e4611d5843aaf170eb8d749c", null ],
+    [ "isoc_packet", "group__uac.html#ga7c52f8498f0cdef498a965d55053cbe0", null ],
+    [ "maxpsize", "group__uac.html#ga93aa9599bcdd16192be09efa5a3fe783", null ],
+    [ "pl_callback", "group__uac.html#gae319024b21993207c8d64afb72d7ad27", null ],
+    [ "play_status", "group__uac.html#gad8a441d9761e8e46b66d47c3f28ded77", null ],
+    [ "share_buf", "group__uac.html#ga21cfd7b012f2ea2056b01977d9c9dda9", null ],
+    [ "stop_callback", "group__uac.html#ga7b834e8d5a9730065a20b6575f136f47", null ],
+    [ "stream_desc", "group__uac.html#ga47e1e104438eecba8f46e95da3a01a15", null ],
+    [ "udev", "group__uac.html#gad6c78d9d767932316c4402513181d43e", null ],
+    [ "urb", "group__uac.html#gaa773620ba39588551d762c5726e4a81a", null ],
+    [ "urb_buffer", "group__uac.html#ga85d73c551022a419f783ec4ffc1462e6", null ],
+    [ "urb_num", "group__uac.html#ga38b6e1889502d7d40dcc885b6c580b0c", null ],
+    [ "urb_queue", "group__uac.html#ga463a5fb343ee0b091f33afb2f5ce57a3", null ],
+    [ "urb_size", "group__uac.html#gaf7d1ae7ee8267a337a8bf4195411849b", null ],
+    [ "xSemaphore", "group__uac.html#gadb38d8d595a3df747606484ab89b5c04", null ]
+];

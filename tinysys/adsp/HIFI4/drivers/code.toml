@@ -1,0 +1,22 @@
+# CodeStruct section will be used to define folder/file type
+#
+# CodeStruct section format:
+# [CodeStruct(.$foldername)*(.$filename)?]
+#
+# CodeStruct content
+# DecoupleType = "COMMON“ or "PLATFORM“ or "PROJECT" or "EXCLUDED" (choose one)
+#
+# Info Checker:
+# PLATFORM_INFO: \D+[258][0-9]{3}\D+
+# PROJECT_INFO: (AUD|AIV|BOX|SPM|STB)[258][0-9]{3}\D+
+#
+# Decouple Type:
+#     COMMON --> No PLATFORM_INFO and PROJECT_INFO
+#     PLATFORM --> No PROJECT_INFO
+#     PROJECT --> No Dependent Info Limitation
+#     EXCLUDED --> No MTK code and MTK does not modify it
+#
+# Example: LK
+
+[CodeStruct]
+DecoupleType = "COMMON"

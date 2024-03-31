@@ -1,0 +1,16 @@
+[RUSettings]
+Band = 0
+Segment0Count = 1
+
+Cat0-0 = 12
+Alloc0-0 = 1100000
+StaID0-0 = 0
+RUIdx0-0 = 53
+MCS0-0 = 0
+LDPC0-0 = 1
+NSS0-0 = 1
+Stream0-0 = 1
+Length0-0 = 128
+PWR0-0 = 0
+MUNSS0-0 = 1
+Segment1Count = 0

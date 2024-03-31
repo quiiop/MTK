@@ -1,0 +1,293 @@
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/verno/verno.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/project/mt7933_hdk/apps/hal_examples/src/system_mt7933.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/project/mt7933_hdk/apps/hal_examples/peripheral_ci/src/ci_i2s.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/project/mt7933_hdk/apps/hal_examples/peripheral_ci/src/ci_trng.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/project/mt7933_hdk/apps/hal_examples/peripheral_ci/src/ci_sd.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/project/mt7933_hdk/apps/hal_examples/peripheral_ci/src/ci_flash.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/project/mt7933_hdk/apps/hal_examples/peripheral_ci/src/ci_gpio.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/project/mt7933_hdk/apps/hal_examples/peripheral_ci/src/ci_mpu.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/project/mt7933_hdk/apps/hal_examples/peripheral_ci/src/ci_cache.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/project/mt7933_hdk/apps/hal_examples/peripheral_ci/src/ci_nvdm.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/project/mt7933_hdk/apps/hal_examples/peripheral_ci/src/ci_pmu.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/project/mt7933_hdk/apps/hal_examples/peripheral_ci/src/ci_sleepmanager.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/project/mt7933_hdk/apps/hal_examples/peripheral_ci/src/ci_wdt.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/project/mt7933_hdk/apps/hal_examples/peripheral_ci/src/ci_gpt.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/project/mt7933_hdk/apps/hal_examples/peripheral_ci/src/ci_pwm.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/project/mt7933_hdk/apps/hal_examples/peripheral_ci/src/ci_nvic.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/project/mt7933_hdk/apps/hal_examples/peripheral_ci/src/ci_adc.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/project/mt7933_hdk/apps/hal_examples/peripheral_ci/src/ci_gdma.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/project/mt7933_hdk/apps/hal_examples/peripheral_ci/src/ci_ecc.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/project/mt7933_hdk/apps/hal_examples/peripheral_ci/src/ci_gcpu.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/project/mt7933_hdk/apps/hal_examples/peripheral_ci/src/ci_eint.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/project/mt7933_hdk/apps/hal_examples/peripheral_ci/src/ci_rtc.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/project/mt7933_hdk/apps/hal_examples/peripheral_ci/src/ci_spi.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/project/mt7933_hdk/apps/hal_examples/peripheral_ci/src/ci_i2c.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/project/mt7933_hdk/apps/hal_examples/peripheral_ci/src/ci_usb_host.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/project/mt7933_hdk/apps/hal_examples/peripheral_ci/src/ci_usb_gadget.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/project/mt7933_hdk/apps/hal_examples/peripheral_ci/src/ci_sdios.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/project/mt7933_hdk/apps/hal_examples/peripheral_ci/src/ci_sdiom.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/project/mt7933_hdk/apps/hal_examples/peripheral_ci/src/ci_main.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/project/mt7933_hdk/apps/hal_examples/src/cli_cmds.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/project/mt7933_hdk/apps/hal_examples/src/cli_def.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/project/mt7933_hdk/apps/hal_examples/src/wifi_cfg_default_config.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/project/mt7933_hdk/apps/hal_examples/src/platform_default_config.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/project/mt7933_hdk/apps/hal_examples/src/network_default_config.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/project/mt7933_hdk/apps/hal_examples/src/nvdm_config.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/project/mt7933_hdk/apps/hal_examples/GCC/syscalls.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/project/mt7933_hdk/apps/hal_examples/src/sys_init.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/project/mt7933_hdk/apps/hal_examples/src/regions_init.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/project/mt7933_hdk/apps/hal_examples/src/main.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/third_party/lwprintf//lwprintf/src/lwprintf/lwprintf.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/hifi4dsp/hifi4dsp_ipi/src/adsp_ipi_queue.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/hifi4dsp/hifi4dsp_ipi/src/adsp_ipi.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/hifi4dsp/hifi4dsp_load/src/adsp_wdt.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/hifi4dsp/hifi4dsp_load/src/adsp_sema.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/hifi4dsp/hifi4dsp_load/src/adsp_plat.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/hifi4dsp/hifi4dsp_load/src/adsp_mem.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/hifi4dsp/hifi4dsp_load/src/adsp_helper.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/hifi4dsp/hifi4dsp_load/src/adsp_debug.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/hifi4dsp/hifi4dsp_load/src/adsp_clk.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/ssusb/gadget/src/u_serial.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/ssusb/gadget/src/mtu3_qmu.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/ssusb/gadget/src/mtu3.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/ssusb/gadget/src/mtu3_plat.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/ssusb/host/src/usbuvc_video.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/ssusb/host/src/usbuvc_driver.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/ssusb/host/src/usbhub.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/ssusb/host/src/usbhid.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/ssusb/host/src/usbmsc.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/ssusb/host/src/xhci_debug.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/ssusb/host/src/xhci_rh.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/ssusb/host/src/xhci_mtk_sch.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/ssusb/host/src/xhci_mtk.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/ssusb/host/src/xhci_events.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/ssusb/host/src/xhci_commands.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/ssusb/host/src/xhci_devconf.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/ssusb/host/src/xhci.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/ssusb/host/src/usb_dev.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/ssusb/host/src/usb.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/ssusb/host/src/quirks.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/ssusb/host/src/generic_hub.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/ssusb/phy/src/usb_phy.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/hal_service/adc/os_hal_adc.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/third_party/fatfs/source/portable/mt7933/src/diskio_usb.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/third_party/fatfs/source/portable/mt7933/src/diskio_sd.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/third_party/fatfs/source/portable/mt7933/src/diskio.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/third_party/fatfs/source/ffsystem.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/third_party/fatfs/source/ffunicode.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/third_party/fatfs/source/ff_cli.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/third_party/fatfs/source/ff.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/audio_services/driver/mt7933/test/va_golden_tone.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/audio_services/driver/mt7933/test/va.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/audio_services/driver/mt7933/mt7933/mt7933-adsp-utils.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/audio_services/driver/mt7933/mt7933/mt7933-adsp-pcm.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/audio_services/driver/mt7933/mt7933/mt7933-codec.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/audio_services/driver/mt7933/mt7933/audio_ipi/audio_ipi_driver.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/audio_services/driver/mt7933/mt7933/mt7933-afe-utils.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/audio_services/driver/mt7933/mt7933/mt7933-machine.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/audio_services/driver/mt7933/mt7933/mt7933-afe-pcm.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/audio_services/driver/mt7933/test/audio_test_model.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/audio_services/driver/mt7933/test/audio_test_utils.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/audio_services/driver/mt7933/test/audio_test.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/minicli/src/minicli_api.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/connsys/src/mt7933_lp.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/connsys/src/mt7933_connsys_dbg.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/connsys/src/mt7933_pos.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/board/mt7933_hdk/util/src/format.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/board/mt7933_hdk/util/src/io_def.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/board/mt7933_hdk/util/src/msdc_cli.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/board/mt7933_hdk/util/src/sdio_cli.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/board/mt7933_hdk/util/src/thermal_cli.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/board/mt7933_hdk/util/src/dvt_cli.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/board/mt7933_hdk/util/src/lp_dvt_cli_rtc.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/board/mt7933_hdk/util/src/lp_dvt_cli_spm.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/board/mt7933_hdk/util/src/lp_dvt_cli_pmu.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/board/mt7933_hdk/util/src/lp_dvt_cli_dsp.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/board/mt7933_hdk/util/src/lp_dvt_cli_dcm.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/board/mt7933_hdk/util/src/lp_dvt_cli_conn.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/board/mt7933_hdk/util/src/lp_dvt_cli_clk.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/board/mt7933_hdk/util/src/lp_dvt_cli_wf.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/board/mt7933_hdk/util/src/lp_dvt_cli_bt.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/board/mt7933_hdk/util/src/lp_dvt_cli_aud.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/board/mt7933_hdk/util/src/sleep_manager_cli.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/board/mt7933_hdk/util/src/board_cli.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/nvdm/src/nvdm_cli.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/nvdm/src/nvdm_ctrl.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/middleware/MTK/nvdm/src/nvdm_port.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/kernel/rtos/FreeRTOS-ext/FreeRTOS-Labs/Source/FreeRTOS-Plus-POSIX/FreeRTOS-Plus-POSIX/source/FreeRTOS_POSIX_pthread_local_storage.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/kernel/rtos/FreeRTOS-ext/FreeRTOS-Labs/Source/FreeRTOS-Plus-POSIX/FreeRTOS-Plus-POSIX/source/FreeRTOS_POSIX_utils.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/kernel/rtos/FreeRTOS-ext/FreeRTOS-Labs/Source/FreeRTOS-Plus-POSIX/FreeRTOS-Plus-POSIX/source/FreeRTOS_POSIX_unistd.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/kernel/rtos/FreeRTOS-ext/FreeRTOS-Labs/Source/FreeRTOS-Plus-POSIX/FreeRTOS-Plus-POSIX/source/FreeRTOS_POSIX_timer.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/kernel/rtos/FreeRTOS-ext/FreeRTOS-Labs/Source/FreeRTOS-Plus-POSIX/FreeRTOS-Plus-POSIX/source/FreeRTOS_POSIX_semaphore.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/kernel/rtos/FreeRTOS-ext/FreeRTOS-Labs/Source/FreeRTOS-Plus-POSIX/FreeRTOS-Plus-POSIX/source/FreeRTOS_POSIX_sched.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/kernel/rtos/FreeRTOS-ext/FreeRTOS-Labs/Source/FreeRTOS-Plus-POSIX/FreeRTOS-Plus-POSIX/source/FreeRTOS_POSIX_pthread_mutex.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/kernel/rtos/FreeRTOS-ext/FreeRTOS-Labs/Source/FreeRTOS-Plus-POSIX/FreeRTOS-Plus-POSIX/source/FreeRTOS_POSIX_pthread_cond.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/kernel/rtos/FreeRTOS-ext/FreeRTOS-Labs/Source/FreeRTOS-Plus-POSIX/FreeRTOS-Plus-POSIX/source/FreeRTOS_POSIX_pthread.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/kernel/rtos/FreeRTOS-ext/FreeRTOS-Labs/Source/FreeRTOS-Plus-POSIX/FreeRTOS-Plus-POSIX/source/FreeRTOS_POSIX_pthread_barrier.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/kernel/rtos/FreeRTOS-ext/FreeRTOS-Labs/Source/FreeRTOS-Plus-POSIX/FreeRTOS-Plus-POSIX/source/FreeRTOS_POSIX_mqueue.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/kernel/rtos/FreeRTOS-ext/FreeRTOS-Labs/Source/FreeRTOS-Plus-POSIX/FreeRTOS-Plus-POSIX/source/FreeRTOS_POSIX_clock.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/kernel/service/src/exception_handler.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/kernel/service/src/os_utils.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/kernel/service/src/os_sleep_callback.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/kernel/service/src/memextract.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/kernel/service/src/stdio_wrapper.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/kernel/service/src/swla.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/kernel/service/src/utils.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/kernel/service/src/toi.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/kernel/service/src/syslog_cli.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/kernel/service/src/syslog.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/kernel/service/src/os_trace_callback.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/kernel/service/src/os_port_callback.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/kernel/service/src/os_cli.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/kernel/service/src/mtk_HeapSizeGuard.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/kernel/service/src/context_info_save.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/kernel/service/system_daemon/src/system_daemon.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/kernel/rtos/FreeRTOS/SourceV10/portable/GCC/mt7933/port_tick.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/kernel/rtos/FreeRTOS/SourceV10/portable/GCC/ARM_CM33_NTZ/non_secure/portasm.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/kernel/rtos/FreeRTOS/SourceV10/portable/GCC/ARM_CM33_NTZ/non_secure/port.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/kernel/rtos/FreeRTOS/SourceV10/stream_buffer.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/kernel/rtos/FreeRTOS/SourceV10/portable/MemMang/heap_ext.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/kernel/rtos/FreeRTOS/SourceV10/event_groups.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/kernel/rtos/FreeRTOS/SourceV10/timers.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/kernel/rtos/FreeRTOS/SourceV10/queue.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/kernel/rtos/FreeRTOS/SourceV10/list.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/kernel/rtos/FreeRTOS/SourceV10/tasks.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/board/mt7933_hdk/hw_resource_assignment/src/hal_resource_assignment.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_ecc_api.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_log.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_top_thermal.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_dwt_internal.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_dwt.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_wdt_internal.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_wdt.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_uart.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_trng_internal.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_trng.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_sha.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_sdio_slave_internal.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_sdio_slave.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_mtk_sdio.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_sdio.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_msdc.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_mtk_sd.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_sd.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_spi_slave_internal.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_spi_slave.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_spi_master_internal.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_spi_master.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_rtc.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/pwm/hal_pwm.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/pwm/mhal_pwm.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/pwm/hdl_pwm.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/psramc/psramc_pi_main.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/psramc/psramc_pi_calibration_api.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/psramc/psramc_pi_basic_api.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/psramc/pemi.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/psramc/Hal_io.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_psram.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_pmu_wrap_interface.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_pmu.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_asic_mpu.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_mpu_internal.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_mpu.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_md5.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_nvic_internal.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_nvic.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_i2c_master_internal.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_i2c_master.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_sej_gpt.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_gpt_internal.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_gpt.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_gpio.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_gdma_internal.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_gdma.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_flash.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/eint/hdl_eint.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/eint/mhal_eint.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/eint/hal_eint.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_des.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_clk.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_cache_internal.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_cache.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_aes.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/adc/hal_adc.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/adc/mhal_adc.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/adc/hdl_adc.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/hal_sys.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/chip/mt7933/src/common/mhal_osai.d: No such file or directory
+/bin/bash: line 1: /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/obj/mt7933cv_xip_bga_no/driver/board/mt7933_hdk/ept/src/bsp_gpio_ept_config.d: No such file or directory
+../../../../../driver/chip/mt7933/src/eint/hal_eint.c: In function 'hal_eint_deinit':
+../../../../../driver/chip/mt7933/src/eint/hal_eint.c:177:62: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  177 |     if ((eint_number >= HAL_EINT_NUMBER_MAX) || (eint_number < 0)) {
+      |                                                              ^
+../../../../../driver/chip/mt7933/src/eint/hal_eint.c: In function 'eint_isr':
+../../../../../driver/chip/mt7933/src/eint/hal_eint.c:195:62: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  195 |     if ((eint_number == HAL_EINT_NUMBER_MAX) || (eint_number < 0))
+      |                                                              ^
+../../../../../driver/chip/mt7933/src/eint/hal_eint.c: In function 'hal_eint_register_callback':
+../../../../../driver/chip/mt7933/src/eint/hal_eint.c:210:89: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  210 |     if ((eint_number >= HAL_EINT_NUMBER_MAX) || (eint_callback == NULL) || (eint_number < 0)) {
+      |                                                                                         ^
+../../../../../driver/chip/mt7933/src/pwm/hdl_pwm.c: In function 'pwm_backup_register_log':
+../../../../../driver/chip/mt7933/src/pwm/hdl_pwm.c:69:19: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+   69 |     if (group_num < PWM_GROUP0 || group_num >= PWM_GROUP_MAX)
+      |                   ^
+../../../../../kernel/rtos/FreeRTOS-ext/FreeRTOS-Labs/Source/FreeRTOS-Plus-POSIX/FreeRTOS-Plus-POSIX/source/FreeRTOS_POSIX_timer.c: In function 'prvTimerCallback':
+../../../../../kernel/rtos/FreeRTOS-ext/FreeRTOS-Labs/Source/FreeRTOS-Plus-POSIX/FreeRTOS-Plus-POSIX/source/FreeRTOS_POSIX_timer.c:93:38: warning: cast between incompatible function types from 'void (*)(union sigval)' to 'void * (*)(void *)' [-Wcast-function-type]
+   93 |                                      ( void * ( * )( void * ) )pxTimer->xTimerEvent.sigev_notify_function,
+      |                                      ^
+../../../../../middleware/third_party/fatfs/source/ff.c: In function 'get_fat':
+../../../../../middleware/third_party/fatfs/source/ff.c:1217:48: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 1217 |    if ((obj->objsize != 0 && obj->sclust != 0) || obj->stat == 0) { /* Object except root dir must have valid data length */
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+../../../../../middleware/third_party/fatfs/source/ff.c:1241:3: note: here
+ 1241 |   default:
+      |   ^~~~~~~
+../../../../../middleware/third_party/fatfs/source/ff.c: In function 'f_mkfs':
+../../../../../middleware/third_party/fatfs/source/ff.c:6008:8: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 6008 |     st = 1;   /* Do not compress short run */
+      |     ~~~^~~
+../../../../../middleware/third_party/fatfs/source/ff.c:6010:4: note: here
+ 6010 |    case 1:
+      |    ^~~~
+../../../../../middleware/MTK/ssusb/host/src/usbhid.c: In function 'usbhid_getbarcode':
+../../../../../middleware/MTK/ssusb/host/src/usbhid.c:563:11: warning: unused variable 'ret' [-Wunused-variable]
+  563 |     short ret;
+      |           ^~~
+../../../../../middleware/third_party/lwprintf//lwprintf/src/lwprintf/lwprintf.c: In function 'prv_out_fn_write_buff':
+../../../../../middleware/third_party/lwprintf//lwprintf/src/lwprintf/lwprintf.c:248:27: warning: comparison of integer expressions of different signedness: 'int' and 'unsigned int' [-Wsign-compare]
+  248 |     if (c != '\0' && p->n < (p->buff_size - 1)) {
+      |                           ^
+../../../../../middleware/third_party/lwprintf//lwprintf/src/lwprintf/lwprintf.c: In function 'prv_out_str_before':
+../../../../../middleware/third_party/lwprintf//lwprintf/src/lwprintf/lwprintf.c:340:64: warning: comparison of integer expressions of different signedness: 'size_t' {aka 'unsigned int'} and 'int' [-Wsign-compare]
+  340 |         for (size_t i = buff_size; !p->m.flags.left_align && i < p->m.width; ++i) {
+      |                                                                ^
+../../../../../middleware/third_party/lwprintf//lwprintf/src/lwprintf/lwprintf.c:351:50: warning: comparison of integer expressions of different signedness: 'size_t' {aka 'unsigned int'} and 'int' [-Wsign-compare]
+  351 |         } else if (p->m.flags.space && buff_size >= p->m.width) {
+      |                                                  ^~
+../../../../../middleware/third_party/lwprintf//lwprintf/src/lwprintf/lwprintf.c: In function 'prv_out_str_after':
+../../../../../middleware/third_party/lwprintf//lwprintf/src/lwprintf/lwprintf.c:369:38: warning: comparison of integer expressions of different signedness: 'size_t' {aka 'unsigned int'} and 'int' [-Wsign-compare]
+  369 |         for (size_t i = buff_size; i < p->m.width; ++i) {
+      |                                      ^
+../../../../../middleware/third_party/lwprintf//lwprintf/src/lwprintf/lwprintf.c: In function 'prv_calculate_dbl_num_data':
+../../../../../middleware/third_party/lwprintf//lwprintf/src/lwprintf/lwprintf.c:547:24: warning: comparison of integer expressions of different signedness: 'int' and 'unsigned int' [-Wsign-compare]
+  547 |     if (p->m.precision >= LWPRINTF_ARRAYSIZE(powers_of_10)) {
+      |                        ^~
+../../../../../middleware/third_party/lwprintf//lwprintf/src/lwprintf/lwprintf.c:569:17: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+  569 |     if (n->diff > 0.5f) {
+      |                 ^
+../../../../../middleware/third_party/lwprintf//lwprintf/src/lwprintf/lwprintf.c:575:24: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+  575 |     } else if (n->diff < 0.5f) {
+      |                        ^
+../../../../../middleware/third_party/lwprintf//lwprintf/src/lwprintf/lwprintf.c: In function 'prv_double_to_str':
+../../../../../middleware/third_party/lwprintf//lwprintf/src/lwprintf/lwprintf.c:690:24: warning: comparison of integer expressions of different signedness: 'int' and 'unsigned int' [-Wsign-compare]
+  690 |     if (p->m.precision >= LWPRINTF_ARRAYSIZE(powers_of_10)) {
+      |                        ^~
+../../../../../middleware/third_party/lwprintf//lwprintf/src/lwprintf/lwprintf.c:809:27: warning: comparison of integer expressions of different signedness: 'int' and 'size_t' {aka 'unsigned int'} [-Wsign-compare]
+  809 |             for (x = 0; x < p->m.precision - i && dblnum.digits_cnt_decimal_part_useful > 0; ++x, --dblnum.digits_cnt_decimal_part_useful) {
+      |                           ^
+../../../../../middleware/third_party/lwprintf//lwprintf/src/lwprintf/lwprintf.c: In function 'prv_format':
+../../../../../middleware/third_party/lwprintf//lwprintf/src/lwprintf/lwprintf.c:1078:29: warning: comparison of integer expressions of different signedness: 'size_t' {aka 'unsigned int'} and 'int' [-Wsign-compare]
+ 1078 |                     if (len > p->m.precision) {
+      |                             ^
+../../../../../tools/gcc/linux/gcc-arm-none-eabi/bin/arm-none-eabi-objcopy -O binary /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/mt7933cv_xip_bga_no.elf /home/vincent/Genio/MT793x_SDK_v3_1_0/out/mt7933_hdk/hal_examples/mt7933cv_xip_bga_no.bin

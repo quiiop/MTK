@@ -1,0 +1,494 @@
+# Xtensa default parameter values
+
+# Customer ID=14794; Build=0x87a3c; Copyright (c) 2004-2018 Tensilica Inc.  ALL RIGHTS RESERVED.
+# These coded instructions, statements, and computer programs are the
+# copyrighted works and confidential proprietary information of Tensilica Inc.
+# They may not be modified, copied, reproduced, distributed, or disclosed to
+# third parties in any manner, medium, or form, in whole or in part, without
+# the prior written consent of Tensilica Inc.
+
+# WARNING: This file has been automatically generated with values that are
+# specific to a particular Xtensa processor configuration.  Changing values
+# here will likely result in an inconsistent system.  Do not edit!
+
+
+# Version information for software tools and target hardware
+SWToolsRelease = RI-2019.1
+SWToolsVername = 14.01
+SWToolsVersion = 1401000
+HWMicroArchLatest = 281010
+HWMicroArchEarliest = 281010
+TargetHWVersion = LX7.1.1
+ConfigName = Xm_hifi4_MockingBird_PROD
+IsPreconfiguredCore = 0
+uarchName = Barcelona
+HasVectorPipe = 0
+HasXNNE = 0
+
+# Preconfigured ISA parameters
+IsaIsBigEndian = 0
+IsaMaxInstructionSize = 11
+IsaUseWindowedRegisters = 1
+IsaUseDensityInstruction = 1
+IsaNumContexts = 1
+IsaUseL32R = 1
+IsaUseConst16 = 0
+IsaUseAbs = 1
+IsaUseAddx = 1
+IsaUsePredictedBranches = 0
+IsaUseNormShiftAmount = 1
+IsaUseMinMax = 1
+IsaUseSignExtend = 1
+IsaUseDepBits = 0
+IsaUseClamps = 1
+IsaUseMAC16 = 0
+IsaUseMul16 = 1
+MUL32ImplementsMul16 = 1
+MAC16ImplementsMul16 = 0
+IsaUseS32C1I = 0
+IsaUseTAPMaster = 0
+IsaUseVectorFPU2005 = 0
+IsaAssumesSPFPU = 1
+IsaAssumesDPFPU = 0
+IsaUseDoubleFP_accel = 0
+IsaUseFloatingPoint = 1
+IsaUseFloatingPointDiv = 1
+IsaUseFloatingPointRecip = 1
+IsaUseFloatingPointSqrt = 1
+IsaUseFloatingPointRSqrt = 1
+IsaUseDoubleFP = 0
+IsaUseDoubleFPDiv = 0
+IsaUseDoubleFPRecip = 0
+IsaUseDoubleFPSqrt = 0
+IsaUseDoubleFPRSqrt = 0
+IsaUseVectra1 = 0
+IsaUseVectra2 = 0
+IsaUseVTMMU = 0
+IsaUseLinuxMMU = 0
+IsaUseLinuxMMUIIndexCount = 0
+IsaUseLinuxMMUDIndexCount = 0
+IsaUseRegionProt = 1
+IsaUseRegionProtXlation = 0
+IsaUseThreadPtr = 1
+IsaUseBBE16 = 0
+IsaUseBBENEP = 0
+IsaUsePDX = 0
+IsaUseFusionG = 0
+IsaUseFusionJ = 0
+IsaUseVision = 0
+IsaUseBall = 0
+IsaUseFusion = 0
+IsaUseHiFi2 = 0
+IsaUseHiFi3 = 0
+IsaUseHiFi3Z = 0
+IsaUseHiFi4 = 1
+IsaUseHiFi5 = 0
+IsaUseHiFiPro = 0
+IsaUseHiFi2_32x24 = 0
+IsaUseHiFi2_40b = 0
+IsaUseConnXD2 = 0
+IsaUse32bitMul = 1
+IsaUse32bitMulh = 0
+IsaUseIterative32bitMul = 0
+IsaUse32bitDiv = 1
+IsaUseBooleans = 1
+IsaUseCoprocessor = 1
+IsaCoprocessorCount = 2
+IsaUseLeadingZeros = 1
+IsaUseLoops = 1
+IsaUseExtL32R = 0
+IsaUseLitBase = 0
+IsaUseInstPif = 1
+IsaUseDataPif = 1
+IsaUseExceptions = 1
+IsaUseImpreciseExceptions = 0
+IsaUseHalt = 0
+IsaUsePrid = 1
+ProcessorID = 0
+HWConfigID0 = 0xC003B286
+HWConfigID1 = 0x28487A3C
+IsaMisAlignedLoadExc = 1
+IsaMisAlignedStoreExc = 1
+IsaUseSynchronization = 1
+IsaUsePerfCounters = 0
+perfCounterCount = 8
+IsaSysHandlesMisAlignedLoad = 0
+IsaSysHandlesMisAlignedStore = 0
+IsaHardwareHandlesMisAlignedLoad = 0
+IsaHardwareHandlesMisAlignedStore = 0
+IsaUseOCD = 1
+DebugLoadStoreDDR = 1
+DebugDataVAddrTrapCount = 2
+DebugInstVAddrTrapCount = 2
+DebugExternalInterrupt = 1
+ExternalRegistersInterface = 1
+ArithmeticException = 0
+NumMiscRegs = 4
+PIFReadDataBits = 64
+PIFWriteDataBits = 64
+PIFWriteResponse = 1
+PIFCriticalWordFirst = 1
+PIFArbitraryByteEnables = 1
+PIFInbound = 0
+PIFInboundBufferEntries = 2
+PIFReqAttribute = 1
+#PIFReqDomain: Implies if POReqDomain[1:0] signal is present.
+#Also implies data cache tag have 3 extra bits (Allocate/Shared/Inner). 
+PIFReqDomain = 0
+EarlyRestart = 1
+LoopBufferSize = 256
+MemoryErrorsEnabled = 0
+DataErrorWordWidth = 0
+TIEUseWideStore = 1
+WideInstHoldingBuffer = 1
+IPrefetchBuffers = 0
+PrefetchBuffers = 16
+PrefetchToL1 = 0
+PrefetchCastoutLines = 1
+PrefetchBlock = 0
+PrefetchBlockEntries = 2 
+CMEDowngrades = 0 
+WriteBufferEntries = 32
+WriteBufferBypassAddrBits = 8
+
+
+HasL2CC = 0
+
+DataCacheBytes =       65536
+DataCacheWayCount =    4
+DataCacheLineBytes =   128
+DataCacheAccessWidth = 64
+DataCacheWriteback =   1
+DataCacheLock =        1
+DataCacheTest =        1
+DataCacheDataParity =  0
+DataCacheDataECC =     0
+DataCacheTagParity =   0
+DataCacheTagECC =      0
+DataCacheCoherence =   0
+DataCacheBanks =       2
+DataCacheWayDisable =  1
+
+InstCacheBytes = 32768
+InstCacheWayCount = 4
+InstCacheLineBytes = 128
+InstCacheAccessWidth = 128
+InstCacheLock = 1
+InstCacheTest = 1
+InstCacheDataParity = 0
+InstCacheDataECC = 0
+InstCacheTagParity = 0
+InstCacheTagECC = 0
+InstCacheBanks = 1
+InstCacheWayDisable = 1
+PhysicalAddressWidth = 32
+ByteEnableWidth = 8
+MasterExclAccess = 1
+SlaveExclAccess = 0
+ExtExclMasters = 0
+
+UnifiedRAMCount = 0
+InstRAMCount = 0
+InstROMCount = 0
+DataRAMCount = 0
+DataROMCount = 0
+DataPortCount = 0
+
+MissBufferEntries = 0
+StoreBufferEntries = 3
+
+# Local memory info for ISS:  
+# Get the count for each local memory type, and if
+# the count is non-zero, return a list of parameters
+# [ size, base_address, access_width, busy, dma, cbox, rcw, parity, ecc, enable_mask, enable_code, udma, dyn_base ]
+# for each instance of that memory type.
+# 
+ISSEntriesPerRam = 13
+ISSUnifiedRAMCount = 0
+ISSDataRAMCount = 0
+ISSDataROMCount = 0
+ISSInstRAMCount = 0
+ISSInstROMCount = 0
+ISSDataPortCount = 0
+
+# C-Box
+CBox = 0
+
+# LX ROM Patching
+NumROMPatchRegs = 0
+
+# PC
+PC_Width = 32
+PC_UpperFixedBits = 0x00000000
+
+# Local memory latency
+InstCIFCycles = 2
+InstFetchWidth = 128
+DataCIFCycles = 2
+LoadStoreWidth = 64
+LoadStoreUnitsCount = 2
+AllowImemLoadStore = 0
+FastL32RFromIRam = 1
+
+ImplRegFileBuildingBlock = FlipFlop
+ImplResetFlops = 1
+ImplAsyncReset = 1
+ImplTargetSpeed = 896
+ImplTargetSize = 770151
+ImplTargetTechnology = 28hm
+ImplOperatingCondition = Worst
+ImplVoltageCondition = Nominal
+ClkGateFuncUnit = 1
+ClkGateGlobal = 1
+LatchesTransparent = 0
+FullScan = 1
+
+TracePort = 1
+TracePortData = 1
+TracePortMemBytes = 4096
+TRAX = 1
+
+PIFBridgeType = AXI
+PIFAsyncBusBridge = 1
+
+BootLoader = 0
+
+DCQueues = 0
+DCPorts = 1
+TIE_DC545CK = 0
+TIE_DC570T = 0
+TIE_MUL32 = 1
+TIE_MUL32_H = 0
+ConnXBBE16 = 0
+ConnXBBE16_VecDiv = 0
+ConnXBBE16_Rsqrt = 0
+ConnXBBE16_Despread = 0
+
+# Base vector addresses
+RelocatableVectors = 1
+VectorBase1FromPins = 1
+StaticVectorSelect = 1
+StaticVectorBase0 = 0xa0000000
+StaticVectorBase1 = 0xa0000640
+DynVecBaseReset = 0xa0000400
+DynVecBaseAlignBits = 10
+InterruptStackBase = 0x00000000
+RelocatableISB = 1
+InterruptTableBase = 0x00000000
+RelocatableITB = 0
+
+# Vector offsets
+ResetVectorOffset           = 0x00000000
+MemoryExceptionVectorOffset = 0x00000000
+WindowVectorsOffset         = 0x00000000
+KernelExceptionVectorOffset = 0x000001dc
+UserExceptionVectorOffset   = 0x000001fc
+DoubleExceptionVectorOffset = 0x0000021c
+Level2InterruptVectorOffset = 0x0000017c
+Level3InterruptVectorOffset = 0x0000019c
+Level4InterruptVectorOffset = 0x000001bc
+Level5InterruptVectorOffset = 0x00000000
+Level6InterruptVectorOffset = 0x00000000
+Level7InterruptVectorOffset = 0x00000000
+DebugExceptionVectorOffset  = 0x000001bc
+NMIExceptionVectorOffset    = 0x00000000
+# Vectors configured
+Vectors = [ ResetVector KernelExceptionVector UserExceptionVector DoubleExceptionVector WindowVectors Level2InterruptVector Level3InterruptVector DebugExceptionVector ]
+VectorSizes = [ 736 28 28 28 376 28 28 28 ]
+StaticVectors = [ ResetVector ]
+
+# Interrupts
+InterruptCount = 25
+InterruptLevelMax = 4
+InterruptExtCount = 18
+IsaUseHighLevelInterrupt = 1
+
+ISSInterruptLevelMasks   = [ 0x0 0x00b900ff 0x0142ff00 0x00040000 0x00000000 ]
+InterruptVectorOffsets   = [ 0x0 0x0 0x0000017c 0x0000019c 0x000001bc ]
+
+IsNMIConfigured = 0
+
+ISSInterruptSoftwareMask = 0x00600000
+ISSInterruptExtLevelMask = 0x01803f3f
+ISSInterruptWriteErrMask = 0x00080000
+ISSInterruptExtEdgeMask  = 0x0000c0c0
+ISSInterruptNMIMask      = 0x00000000
+ISSInterruptUDmaDoneMask = 0x00000000
+ISSInterruptUDmaErrMask  = 0x00000000
+ISSInterruptGSErrMask    = 0x00000000
+ISSAllInterruptMask      = 0x01ffffff
+EXCMLevel = 2
+
+
+TimerCount = 3
+ISSTimerInterrupts = [ 16 17 18 ]
+
+# Debug info for ISS
+IsaUseDebug = 1
+DebugInterruptLevel = 4
+
+NewExceptionArch = 1
+ExternalExceptionArch = 0
+ExceptionArch2 = 1
+ExceptionArch3 = 0
+
+# NX Branch Prediction Using BTB (Branch Target Buffer)
+BTB = [
+    # Configured
+    0
+  ]
+
+AXI = 1
+AxiECC = 0
+AceLite = 0
+
+FullAce = 0
+
+MPU = [
+    # configured
+    1
+    # num of MPU background map entries
+    2
+    # num of MPU foreground map entries which software can write using WPTLB
+    32
+    # num of MTU entries
+    0
+    # Virtual address start LSB
+    12
+    # Is micro DMA configured
+    0
+    # Is block prefetch configured
+    0
+    # MPU Background Map Entries: Each line consists of an entry of the form:
+    #VirtStartAddr    SizeInBytes      AccessRights       MemoryType
+    0x00000000        0x80000000        0x00000007        0x00000006
+    0x80000000        0x80000000        0x00000007        0x00000006
+  ]
+
+
+
+MMU = [
+    # configured
+    0
+  ]
+
+# iDMA information
+iDMA = 0
+iDMANumChannels = 0
+iDMATranspose = 0
+iDMAPifBufDepth = 0
+iDMAMaxOutstandingRows = 0
+iDMAMaxOutstandingReq = 0
+iDMAPifDataBits = 0
+iDMAAddrWidth = 32
+
+#GatherScatter Information: 0 for regs implies that this isn't present
+GatherScatter = 0
+GS_ScatterRegs = 0
+GS_GatherRegs =  0
+GS_Unalign = 0
+GS_ElementsPerCycle = 0
+
+
+# Special locations used by ISS
+SysUartPAddr = 0xffffffff
+DVMagicLocVAddr = 0xc1fc3000
+DVMagicLocPAddr = 0xc1fc3000
+DVPrintfPAddr = 0xc1fc3004
+DVPrintfVAddr = 0xc1fc3004
+# Bus errors
+BusAddressErrors = [ 0x5ffff000 0x5ffff100 0x5ffff200 0x5ffff300 0x7ffff000 0x7ffff100 0x7ffff108 0x7ffff210 0x7ffff310 0x7ffff318 ]
+BusAddressErrorCount = 10
+BusDataErrors = [ 0x5ffff420 0x5ffff528 0x5ffff630 0x5ffff738 0x7ffff420 0x7ffff528 0x7ffff630 0x7ffff738 ]
+BusDataErrorCount = 8
+BusErrorPattern = 0
+
+# System information
+SW_ABI = windowed
+SW_FloatingPointABI = 1
+SW_CLibrary = xclib
+SW_FuSa = 0
+SW_memmap_cacheattr_reset = default
+default-lsp = sim
+alwaysPIC = 0
+maxPageSize = 1
+enableShared = 0
+sysroot =
+# for Linux:
+#   default-lsp = linux
+#   alwaysPIC = 1
+#   maxPageSize = 1
+#   enableShared = 1
+#   sysroot = <sysroot directory>
+BuildUniqueID = 555580
+BuildMode = Production
+ConfigKey0 = 0x85BA7F91
+ConfigKey1 = 0x6DF1B72B
+
+# File locations
+# Note: Relative paths are relative to the location of the parameter file.
+install-prefix = /././home/xpgcust/tree/RI-2019.1/ib/tools/swtools-x86_64-linux
+config-prefix = /././project/cust/genapp/RI-2019.1/build/mediatek_hifi4/prod/hifi4_MockingBird_PROD/314227/RI-2019.1/hifi4_MockingBird_PROD
+xtensa-tools = /././usr/xtensa/tools-8.0
+tc-tools = /././home/xpgcust/tree/RI-2019.1/ib/tools/swtools-x86_64-linux/TIE
+isa-base-dlls = [
+  /././project/cust/genapp/RI-2019.1/build/mediatek_hifi4/prod/hifi4_MockingBird_PROD/314227/RI-2019.1/hifi4_MockingBird_PROD/config/libisa-core-hw.so
+  /././project/cust/genapp/RI-2019.1/build/mediatek_hifi4/prod/hifi4_MockingBird_PROD/314227/RI-2019.1/hifi4_MockingBird_PROD/config/libisa-core.so
+]
+ctype-base-dll = /././project/cust/genapp/RI-2019.1/build/mediatek_hifi4/prod/hifi4_MockingBird_PROD/314227/RI-2019.1/hifi4_MockingBird_PROD/config/libctype.so
+iss-base-dll = /././project/cust/genapp/RI-2019.1/build/mediatek_hifi4/prod/hifi4_MockingBird_PROD/314227/RI-2019.1/hifi4_MockingBird_PROD/config/libcas-core.so
+iss-ref-base-dll = /././project/cust/genapp/RI-2019.1/build/mediatek_hifi4/prod/hifi4_MockingBird_PROD/314227/RI-2019.1/hifi4_MockingBird_PROD/config/libcas-ref-core.so
+fiss-base-dll = /././project/cust/genapp/RI-2019.1/build/mediatek_hifi4/prod/hifi4_MockingBird_PROD/314227/RI-2019.1/hifi4_MockingBird_PROD/config/libfiss-base.so
+fiss-ref-base-dll = /././project/cust/genapp/RI-2019.1/build/mediatek_hifi4/prod/hifi4_MockingBird_PROD/314227/RI-2019.1/hifi4_MockingBird_PROD/config/libfiss-ref-base.so
+xml-base-dll = /././project/cust/genapp/RI-2019.1/build/mediatek_hifi4/prod/hifi4_MockingBird_PROD/314227/RI-2019.1/hifi4_MockingBird_PROD/config/libtie-core.so
+xml-msem-dll=/././project/cust/genapp/RI-2019.1/build/mediatek_hifi4/prod/hifi4_MockingBird_PROD/314227/RI-2019.1/hifi4_MockingBird_PROD/config/libtie-Xtensa-msem.so
+xtensa-base-header = /././project/cust/genapp/RI-2019.1/build/mediatek_hifi4/prod/hifi4_MockingBird_PROD/314227/RI-2019.1/hifi4_MockingBird_PROD/xtensa-elf/arch/include/xtensa/config/defs.h
+tie-internal-module-headers = []
+
+# TIE parameters
+isa-tie-dll = /././project/cust/genapp/RI-2019.1/build/mediatek_hifi4/prod/hifi4_MockingBird_PROD/314227/RI-2019.1/hifi4_MockingBird_PROD/config/libisa-MATHFUN_V4.so
+iss-tie-dll = /././project/cust/genapp/RI-2019.1/build/mediatek_hifi4/prod/hifi4_MockingBird_PROD/314227/RI-2019.1/hifi4_MockingBird_PROD/config/libcas-MATHFUN_V4.so
+iss-ref-tie-dll = /././project/cust/genapp/RI-2019.1/build/mediatek_hifi4/prod/hifi4_MockingBird_PROD/314227/RI-2019.1/hifi4_MockingBird_PROD/config/libcas-ref-MATHFUN_V4.so
+xml-tie-dll = /././project/cust/genapp/RI-2019.1/build/mediatek_hifi4/prod/hifi4_MockingBird_PROD/314227/RI-2019.1/hifi4_MockingBird_PROD/config/libtie-MATHFUN_V4.so
+xtensa-tie-header = /././project/cust/genapp/RI-2019.1/build/mediatek_hifi4/prod/hifi4_MockingBird_PROD/314227/RI-2019.1/hifi4_MockingBird_PROD/xtensa-elf/arch/include/xtensa/tie/MATHFUN_V4.h
+IsaUseWideBranches = 1
+tie-checksum-0 = 0xf6e6d84b
+tie-checksum-1 = 0x4b75fae7
+tie-checksum-2 = 0x34bfad3d
+tie-checksum-3 = 0x25ac147b
+tie-includedir =
+tie-ident = 0
+
+# Register information
+num_aregs = 64
+
+# Pipeline stages
+ISSPipeBStage = 1
+ISSPipeEStage = 1
+ISSPipeMStage = 3
+ISSPipeWStage = 4
+ISSArchLicense = 0
+
+# Initial values for ISS rams
+iss_irom_init_value  = 0x00000000
+iss_iram_init_value  = 0x00000000
+iss_dram_init_value  = 0x00000000
+iss_drom_init_value  = 0x00000000
+iss_dport_init_value = 0x00000000
+iss_uram_init_value  = 0x00000000
+
+# Initial values for ISS caches 
+iss_idata_init_value = 0xa5a5a5a5
+iss_itag_init_value  = 0xabcdef00
+iss_ddata_init_value = 0x1a2b3c4d
+iss_dtag_init_value  = 0xbecada00
+
+# System Ram and Rom parameters
+ISSSysRamBytes = 0x10000000
+ISSSysRamPAddr = 0xa0000000
+
+# DV parameters
+DV_DynVecBaseReset = 0xa0000400
+DV_StaticVectorBase0 = 0xa0000000
+DV_StaticVectorBase1 = 0xa0000640
+

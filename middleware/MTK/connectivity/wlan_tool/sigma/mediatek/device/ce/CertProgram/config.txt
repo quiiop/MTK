@@ -1,0 +1,9 @@
+DEVICE=ce
+NO_NEED_WPA=AP
+BIN_DIR=/data/bin
+CTRL_IFACE_DIR=/data/vendor/misc/wifi/sockets
+WPA_SUPPLICANT_BIN=/vendor/bin/hw/wpa_supplicant
+WPA_CONF_PATH=/vendor/etc/wifi
+DRIVER_KO=/vendor/lib/modules/wlan_mt7961.ko
+DRIVER_NAME=wlan_mt7961_usb
+WPA_CLI_CMD=wpa_cli -p /data/vendor/misc/wifi/sockets -s /data/vendor/misc/wifi/sockets

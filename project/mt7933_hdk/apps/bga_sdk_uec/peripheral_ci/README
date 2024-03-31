@@ -1,0 +1,21 @@
+IP Peripheral CI
+
+support items:
+SDIOm
+SDIOs
+ecc
+USB
+I2C
+SPI
+RTC
+EINT
+GCPU
+DMA
+AUXADC
+NVIC
+PWM
+keypad
+IRRX
+UART
+GPT
+WDT

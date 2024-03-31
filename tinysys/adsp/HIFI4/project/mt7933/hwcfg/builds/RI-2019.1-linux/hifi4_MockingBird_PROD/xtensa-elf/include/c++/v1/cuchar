@@ -1,0 +1,59 @@
+// -*- C++ -*-
+#if defined(TENSILICA) || 1
+//===--------------------------- cuchar -----------------------------------===//
+//
+//                     The LLVM Compiler Infrastructure
+//
+// This file is dual licensed under the MIT and the University of Illinois Open
+// Source Licenses. See LICENSE.TXT for details.
+//
+//===----------------------------------------------------------------------===//
+
+#ifndef _LIBCPP_CUCHAR
+#define _LIBCPP_CUCHAR
+
+/*
+    cuchar synopsis
+
+Macros:
+
+    __STDC_UTF_16__
+    __STDC_UTF_32__
+
+namespace std
+{
+
+Types:
+
+    mbstate_t
+    size_t
+
+size_t mbrtoc16(char16_t*, const char*, size_t, mbstate_t*);
+size_t c16rtomb(char*, char16_t, mbstate_t*);
+size_t mbrtoc32(char32_t*, const char*, size_t, mbstate_t*);
+size_t c32rtomb(char*, char32_t, mbstate_t*);
+
+}  // std
+
+*/
+
+#include <__config>
+#include <c99/uchar.h>
+
+#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
+#pragma GCC system_header
+#endif
+
+_LIBCPP_BEGIN_NAMESPACE_STD
+
+using ::mbstate_t;
+using ::size_t;
+using ::mbrtoc16;
+using ::c16rtomb;
+using ::mbrtoc32;
+using ::c32rtomb;
+
+_LIBCPP_END_NAMESPACE_STD
+
+#endif  // _LIBCPP_CUCHAR
+#endif // TENSILICA

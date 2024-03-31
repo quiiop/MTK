@@ -1,0 +1,6 @@
+wifi deinit
+os
+ble
+bton
+btdrv
+ver

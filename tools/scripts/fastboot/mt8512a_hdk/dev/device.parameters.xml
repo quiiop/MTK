@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<device>
+    <!-- key support list: charger, project-->
+
+	<project>
+	<key>project</key>
+	<file>project.dat</file>
+	</project>
+	
+	<!-- can extend other devices here -->	
+</device>

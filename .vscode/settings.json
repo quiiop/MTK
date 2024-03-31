@@ -1,0 +1,17 @@
+{
+    "files.associations": {
+        "cli_def.h": "c",
+        "mtk_hifixdsp_common.h": "c",
+        "os_hal_adc.h": "c",
+        "cyberon_test_cli.h": "c",
+        "cybserver_mtk_trial_little.h": "c",
+        "cybdspotter.h": "c",
+        "adsp_debug.h": "c",
+        "chrono": "c",
+        "mutex": "c",
+        "shared_mutex": "c",
+        "*.def": "c",
+        "hal.h": "c",
+        "ci.h": "c"
+    }
+}

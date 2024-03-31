@@ -1,0 +1,200 @@
+######### DUT (Device Under Test) Information #########################
+
+
+#======================== General =====================================
+#These parameters are applicable for both APUT and STAUT
+
+#### Wi-Fi Test Suite Control Agent Support ########
+# 1-If DUT supports configuration using CAPI commands.
+# 0-If not supported.
+WTS_ControlAgent_Support!1!
+
+#### Wi-Fi Test Suite Traffic Agent Support ########
+# 1-If DUT supports data traffic generation using WTS.
+# 0-If not supported (DUT uses other data traffic tools).
+WTS_TrafficAgent_Support!1!
+
+# DUTType : WPA2-Personal or WPA2-Enterprise
+DUTType!WPA2-Enterprise!
+
+# DUT Band : ABG or BG or B (B only) or ABGN or GN or AC or AX
+DUTBand!AX!
+
+#DUT Category : c1 or c2 or c3 if device is WPA2-Enterprise
+DUTCategory!c1!
+
+#--------------------------OOB test case 4.2.1----------------------------
+#DUT OOB SSID 
+DUTOOBSSID!wi-fi!
+
+#DUT OOB security configuration - WPA2-PSK or OPEN
+DUTOOBSecurity!WPA2-PSK!
+
+
+#DUT OOB Passphrase - applicable only if DUT OOB security configuration is WPA2-PSK
+#if not applicable leave the value as 12345678
+DUTOOBPassPhrase!12345678!
+#-------------------------------------------------------------------------
+
+#Supported EAP Methods 0-No 1-Yes
+TLS!1!
+TTLS!0!
+PEAP0!0!
+PEAP1!0!
+FAST!0!
+SIM!0!
+AKA!0!
+
+## Number of Streams Support for both APUT/STAUT
+## 1-1X1, 2-2X2, 3-3X3, etc upto 8-8X8 for APUT. Upto 2-2X2 for STAUT
+Streams!2!
+
+# WEP Support 0-No 1-Yes
+### Applicable for HE-4.2.2_24G, HE-4.2.2_5G, HE-5.2.2_24G, HE-5.2.2_5G
+WEP!1!
+
+### DUT Support for open security 0-No 1-Yes
+### Applicable for HE-4.5.2_24G, HE-4.5.2_5G, HE-5.5.2_24G, HE-5.5.2_5G
+Open_Security!1!
+
+### Ability to Receive A-MPDU with A-MSDU  0-No 1-Yes
+### Applicable for HE-4.17.1_24G, HE-4.17.1_5G, HE-5.21.1_24G, HE-5.21.1_5G
+Rx_A-MPDU_of_A-MSDU!1!
+
+##### LDPC in 2.4GHz 20MHz supported 0-No 1-Yes
+### Applicable for HE-4.20.1_24G, HE-4.21.1_24G, HE-5.24.1_24G, HE-5.25.1_24G
+LDPC_24G_20!1!
+
+## Supported Channel Widht 20-20Mhz 40-20/40Mhz 80-20/40/80Mhz or 160-20/40/80/160Mhz
+### Applicable for HE-4.5.3_24G, HE-4.5.3_5G
+SupportedChannelWidth!160!
+
+#### Multiple User (MU)Transmit Beamforming when STAUT is the Beamformee 0-No 1-Yes
+Tx_MU_beamformee!1!
+
+#160 MHz bandwidth support
+### Applicable for HE-4.35.3, HE-4.38.1, HE-4.39.1, HE-4.44.1, HE-4.47.1, HE-4.48.1, HE-5.39.3, HE-5.42.1, HE-5.43.1, HE-5.49.1, HE-5.57.3
+BW_160_Support!0!
+
+### DUT Support for Mixed mode WPA2/WPA Security 0-No 1-Yes
+### Applicable for HE-4.2.3_24G, HE-4.2.3_5G, HE-5.2.3_24G, HE-5.2.3_5G
+Mixedmode_WPA2WPA!1!
+
+### BSRP transmission support 0-No 1-Yes
+### Applicable for HE-4.49.1_24G, HE-4.49.1_5G
+BSRP_Tx!1!
+
+##### DUT Support for receiving 256-QAM MCSs(MCS8 and 9) 0-No 1-Yes
+### Applicable for HE-4.32.1_24G, HE-4.32.1_5G, HE-4.63.1_24G, HE-4.63.1_5G, HE-5.35.1_24G, HE-5.35.1_5G, HE-5.40.1_1SS_24G, HE-5.40.1_2SS_24G, HE-5.40.1_1SS_5G, HE-5.40.1_2SS_5G
+Rx_MCS_8-9!1!
+
+### DUT Support for transmission 256-QAM MCSs(MCS8 and 9) 0-No 1-Yes
+### Applicable for HE-4.31.1_24G, HE-4.31.1_5G, HE-4.36.1_24G, HE-4.36.1_5G, HE-5.36.1_24G, HE-5.36.1_5G, HE-5.69.1_24G, HE-5.69.1_5G
+Tx_MCS_8-9!1!
+
+### DUT Support for receiving 1024-QAM MCSs(MCS10 and 11) 0-No 1-Yes
+### Applicable for HE-4.34.1_24G, HE-4.34.1_5G, HE-4.64.1, HE-5.37.1_24G, HE-5.37.1_5G, HE-5.41.1
+Rx_MCS_10-11!1!
+
+### DUT Support for transmission of 1024-QAM MCSs(MCS10 and 11) 0-No 1-Yes
+### Applicable for HE-4.33.1_24G, HE-4.33.1_24G, HE-4.37.1, HE-5.38.1_24G, HE-5.38.1_24G, HE-5.70.1
+Tx_MCS_10-11!1!
+
+
+### DUT Support for Compressed BlockAck (C-BA) fames with up to 256 MSDUs/A-MSDUs, RX with no fragmentation 0-No 1-Yes
+### Applicable for HE-4.50.1_24G, HE-4.50.1_5G, HE-5.54.1_24G, HE-5.54.1_5G
+C-BA_256MSDUs_Rx_NoFrag!1!
+
+##### DUT Support for Compressed BlockAck (C-BA) fames with up to 256 MSDUs/A-MSDUs, TX with no fragmentation 0-No 1-Yes
+### Applicable for HE-4.51.1_24G, HE-4.51.1_5G, HE-5.55.1_24G, HE-5.55.1_5G
+C-BA_256MSDUs_Tx_NoFrag!1!
+
+
+#======================== APUT ========================================
+#These parameters are applicable only for APUT
+
+#Concurrent Dual Band AP (2.4 GHz and 5 GHz operation) 0-No 1-Yes
+### Applicable for HE-4.7.1
+Dual_band!1!
+
+### APUT Support the Multi BSSID feature 0-No 1-Yes
+### Applicable for HE-4.67.1_24G, HE-4.67.1_5G
+MultiBSSID!1!
+
+### Specify number of BSS supported by Multi BSS AP
+### Applicable for HE-4.67.1_24G, HE-4.67.1_5G
+NumBSS!2!
+
+### APUT Support for Tx beamforming with Sounding dimension of 8 0-No 1-Yes
+### Applicable for HE-4.35.2, HE-4.53.2
+Tx_beamforming_Snd_Dim_8!1!
+
+### APUT Support  for MU-BAR trigger frames transmission 0-No 1-Yes
+### Applicable for HE-4.45.1_24G, HE-4.45.1_5G
+MU-BAR_Trig_frames_trans!1!
+
+### APUT Support BSRP trigger frame transmission 0-No 1-Yes
+### Applicable for HE-4.49.1_24G, HE-4.49.1_5G
+BSRP_Trig_frame_trans!1!
+
+#--------------------------------------------------------------------------
+### APUT Supports 4 or more Transmit antennas 0-No 1-Yes
+### Applicable for HE-4.54.1_24G, HE-4.54.1_5G
+TxAntenna_4!1!
+
+### APUT Support for DL MU MIMO 0-No 1-Yes
+### Applicable for HE-4.53.1_24G, HE-4.53.1_5G
+DL_MUMIMO!1!
+
+### Single User (SU) Transmit beamforming when APUT is the beamformer 0-No 1-Yes
+### Applicable for HE-4.35.1_24G, HE-4.35.1_5G
+Tx_SU_beamformer!1!
+#--------------------------------------------------------------------------
+
+### APUT Support for Basic Trigger in HE MU PPDU to solicit Ack/C-BA in HE TB PPDU 0-No 1-Yes
+### Applicable for HE-4.62.1_24G, HE-4.62.1_5G
+BT_HE-MU_PPDU_Ack_C-BA!1!
+
+### APUT Support for the MU EDCA Parameter Set 0-No 1-Yes
+### Applicable for HE-4.65.1_24G, HE-4.65.1_5G
+MU-EDCA_ParamSet!1!
+
+### APUT Support for TXOP duration-based RTS threshold 0-No 1-Yes
+### Applicable for HE-4.66.1_24G, HE-4.66.1_5G
+TXOP_Dur_RTS_Thres!1!
+
+### APUT Support for MU-RTS trigger frame transmission 0-No 1-Yes
+### Applicable for HE-4.68.1_24G, HE-4.68.1_5G
+MU-RTS_Trig_frame_trans!1!
+
+
+#========================= STAUT ========================================
+#These parameters are applicable only for STAUT
+
+### STAUT Support for receiving HE NDPs with the number of STS up to 8 0-No 1-Yes
+### Applicable for HE-5.39.2, HE-5.57.2
+HE_NDPs_STS_8!0!
+
+### STAUT Support for receiving the OM Control field within the HE Variant of the HT Control field 0-No 1-Yes
+### Applicable for HE-5.56.1_24G, HE-5.56.1_5G
+A-Control_OM_Receive!1!
+
+### STAUT Support for TWT 0-No 1-Yes
+### Applicable for HE-5.60.1_24G, HE-5.60.1_5G
+TWT!1!
+
+### Announced TWT support 0-No 1-Yes
+### Applicable for HE-5.60.1_24G, HE-5.60.1_5G
+AnnouncedTWT!1!
+
+### Unannounced TWT support 0-No 1-Yes
+### Applicable for HE-5.60.1_24G, HE-5.60.1_5G
+UnannouncedTWT!0!
+
+### TWT Setup Command 0-Request TWT; 1-Suggest TWT
+### Applicable for HE-5.60.1_24G, HE-5.60.1_5G
+SetupCommandTWT!1!
+
+### STAUT Support for transmitting the OM Control field within the HE Variant of the HT Control field 0-No 1-Yes
+### Applicable for HE-5.74.1_24G, HE-5.74.1_5G
+OM_Ctrl_HEVar_HTCtrl!0!

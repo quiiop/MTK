@@ -1,0 +1,40 @@
+; print uart log: Hello,MT8512 in DSP uart
+d.s c:0x1001500c %le %long 0x3
+d.s c:0x10015024 %le %long 0x3
+d.s c:0x1001500c %le %long 0x83
+d.s c:0x10015000 %le %long 0x1
+d.s c:0x10015004 %le %long 0x0
+d.s c:0x10015028 %le %long 0xc
+d.s c:0x1001502c %le %long 0x5
+d.s c:0x1001500c %le %long 0x3
+d.s c:0x10015000 %le %long 0x48 ;H
+d.s c:0x10015000 %le %long 0x65 ;e
+d.s c:0x10015000 %le %long 0x6c ;l
+d.s c:0x10015000 %le %long 0x6c ;l
+d.s c:0x10015000 %le %long 0x6f ;o
+d.s c:0x10015000 %le %long 0x2c ;,
+d.s c:0x10015000 %le %long 0x4d ;M
+d.s c:0x10015000 %le %long 0x54 ;T
+d.s c:0x10015000 %le %long 0x38 ;8
+d.s c:0x10015000 %le %long 0x35 ;5
+d.s c:0x10015000 %le %long 0x31 ;1
+d.s c:0x10015000 %le %long 0x32 ;8
+d.s c:0x10015000 %le %long 0x0d ;CR
+d.s c:0x10015000 %le %long 0x0a ;LF
+
+d.load.binary ../../../../../out/fpga8512_emmc/HIFI4_A/hifi4_a_sram.bin 0x00110000
+d.load.binary ../../../../../out/fpga8512_emmc/HIFI4_A/hifi4_a_dram.bin 0x40060000
+;d.s c:0x4006521f %le %long 0x0020f0  ;NOP
+;d.s c:0x40062039 %le %long 0xffff06  ;B Self
+
+// DSP boot up
+d.s c:0x1000637c %le %long 0xf002d
+d.s c:0x10018004 %le %long 0x40020000
+d.s c:0x10018024 %le %long 0x8
+d.s c:0x10018024 %le %long 0xb
+d.s c:0x10018024 %le %long 0x8
+d.s c:0x1001800c %le %long 0x1
+d.s c:0x10018024 %le %long 0x28
+d.s c:0x10018024 %le %long 0x20
+
+d.l

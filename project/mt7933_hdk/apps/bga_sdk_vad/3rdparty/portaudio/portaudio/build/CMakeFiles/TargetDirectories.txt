@@ -1,0 +1,8 @@
+/proj/mtk23169/portaudio/build/CMakeFiles/install/strip.dir
+/proj/mtk23169/portaudio/build/CMakeFiles/install/local.dir
+/proj/mtk23169/portaudio/build/CMakeFiles/portaudio.dir
+/proj/mtk23169/portaudio/build/CMakeFiles/rebuild_cache.dir
+/proj/mtk23169/portaudio/build/CMakeFiles/portaudio_static.dir
+/proj/mtk23169/portaudio/build/CMakeFiles/edit_cache.dir
+/proj/mtk23169/portaudio/build/CMakeFiles/list_install_components.dir
+/proj/mtk23169/portaudio/build/CMakeFiles/install.dir

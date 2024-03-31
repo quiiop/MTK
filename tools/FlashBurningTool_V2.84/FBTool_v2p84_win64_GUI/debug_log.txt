@@ -1,0 +1,104 @@
+[2023-09-18 16:09:29.696311] f_log_start:IoT Flash Burning tool VERSION:2.84(2022/10/5)
+[2023-09-18 16:09:29.792053] **Start**:
+[2023-09-18 16:09:29.837930] open_uart_device
+[2023-09-18 16:09:29.859872] Node done:Got:COM160
+[2023-09-18 16:09:29.859872] uart_start_cmd
+[2023-09-18 16:09:31.341943] write8, data=0xa
+[2023-09-18 16:09:31.357860] write8, data=0x50
+[2023-09-18 16:09:31.373847] write8, data=0x5
+[2023-09-18 16:09:31.495492] Node done:uart_start_cmd
+[2023-09-18 16:09:31.495492] get_version
+[2023-09-18 16:09:31.495492] write8, data=0xff
+[2023-09-18 16:09:31.526409] write8, data=0xfd
+[2023-09-18 16:09:31.552339] write8, data=0xfc
+[2023-09-18 16:09:31.597219] get_target_config
+[2023-09-18 16:09:31.597219] write8, data=0xd8
+[2023-09-18 16:09:31.645091] send_auth
+[2023-09-18 16:09:31.645091] da_size_trim_to_even
+[2023-09-18 16:09:31.645091] load_binary:C:/Users/mtk24583/Desktop/MTK_Tool/FB_Tool/FlashBurningTool_V2.84 - UEC-IoT - GD25WQ128E/FlashBurningTool_V2.84/FBTool_v2p84_win64_GUI/mtk_files/mt7933_DA_2.84.sgn
+[2023-09-18 16:09:31.655065] load_binary:C:/Users/mtk24583/Desktop/MTK_Tool/FB_Tool/FlashBurningTool_V2.84 - UEC-IoT - GD25WQ128E/FlashBurningTool_V2.84/FBTool_v2p84_win64_GUI/mtk_files/mt7933_DA_2.84.sgn
+[2023-09-18 16:09:31.706785] da1 length:0x9de4
+[2023-09-18 16:09:31.741718] send_da
+[2023-09-18 16:09:31.760640] write8, data=0xd7
+[2023-09-18 16:09:31.773607] write32, data=0x8001000
+[2023-09-18 16:09:31.789564] write32, data=0x9de4
+[2023-09-18 16:09:31.805521] write32, data=0x0
+[2023-09-18 16:09:31.821509] send_bin_step
+[2023-09-18 16:09:35.446768] checksum:0xb5b4| 0xb5b4
+[2023-09-18 16:09:35.446768] Node done:send_da
+[2023-09-18 16:09:35.446768] *CmdRun*
+[2023-09-18 16:09:35.464721] get_run_cmd_info
+[2023-09-18 16:09:35.510597] <BURN CMD:>
+[2023-09-18 16:09:35.896091] Section to burn:=ROM_RTOS
+[2023-09-18 16:09:36.093562] total_session_enable:1
+[2023-09-18 16:09:36.095557] jump_da
+[2023-09-18 16:09:36.114506] jump_da_1st
+[2023-09-18 16:09:36.129467] write8, data=0xd5
+[2023-09-18 16:09:36.140437] write32, data=0x8001080
+[2023-09-18 16:09:36.143429] Node done:jump_da_1st
+[2023-09-18 16:09:36.275076] wait_sync_8, data=0xc0
+[2023-09-18 16:09:37.113027] chip_info
+[2023-09-18 16:09:37.122002] write8, data=0xda
+[2023-09-18 16:09:37.326454] CHIP_ID/HW_VER/FW_VER:0x7933 0x8a12 0x8a39
+[2023-09-18 16:09:37.326454] PKG_TYPE/PSRAM_TYPE:BGA UHS-8M
+[2023-09-18 16:09:37.326454] flash init:
+[2023-09-18 16:09:37.342412] write8, data=0xde
+[2023-09-18 16:09:37.404246] flash id/size:0xef4018 16M
+[2023-09-18 16:09:37.422198] checkDAvalid
+[2023-09-18 16:09:37.422198] write8, data=0xd0
+[2023-09-18 16:09:37.423196] write32_ex, data=0x5248c33d
+[2023-09-18 16:09:37.423196] write8, data=0x52
+[2023-09-18 16:09:37.444140] write8, data=0x48
+[2023-09-18 16:09:37.455110] write8, data=0xc3
+[2023-09-18 16:09:37.471067] write8, data=0x3d
+[2023-09-18 16:09:37.487024] write32_ex, data=0x828afa2a
+[2023-09-18 16:09:37.487024] write8, data=0x82
+[2023-09-18 16:09:37.502981] write8, data=0x8a
+[2023-09-18 16:09:37.518968] write8, data=0xfa
+[2023-09-18 16:09:37.534896] write8, data=0x2a
+[2023-09-18 16:09:37.550854] write32_ex, data=0x8219a6ab
+[2023-09-18 16:09:37.550854] write8, data=0x82
+[2023-09-18 16:09:37.566812] write8, data=0x19
+[2023-09-18 16:09:37.583765] write8, data=0xa6
+[2023-09-18 16:09:37.599758] write8, data=0xab
+[2023-09-18 16:09:37.623659] write32_ex, data=0x9d7a570c
+[2023-09-18 16:09:37.623659] write8, data=0x9d
+[2023-09-18 16:09:37.631638] write8, data=0x7a
+[2023-09-18 16:09:37.647623] write8, data=0x57
+[2023-09-18 16:09:37.663552] write8, data=0xc
+[2023-09-18 16:09:37.679510] Parm1:BROM_time:6.18
+[2023-09-18 16:09:38.183161] test_DA=1=>start to set bypass brom
+[2023-09-18 16:09:38.183161] write8, data=0xcc
+[2023-09-18 16:09:38.284887] ERASE CMD:
+[2023-09-18 16:09:38.299848] write8, data=0xc1
+[2023-09-18 16:09:38.302839] write32_ex, data=0x44080
+[2023-09-18 16:09:38.302839] write8, data=0x0
+[2023-09-18 16:09:38.318827] write8, data=0x4
+[2023-09-18 16:09:38.334783] write8, data=0x40
+[2023-09-18 16:09:38.350741] write8, data=0x80
+[2023-09-18 16:09:38.366697] write8, data=0xc2
+[2023-09-18 16:09:38.382654] write32_ex, data=0x8dbf80
+[2023-09-18 16:09:38.382654] write8, data=0x0
+[2023-09-18 16:09:38.399610] write8, data=0x8d
+[2023-09-18 16:09:38.415538] write8, data=0xbf
+[2023-09-18 16:09:38.431524] write8, data=0x80
+[2023-09-18 16:09:38.447452] write8, data=0xc3
+[2023-09-18 16:10:06.937351] wait_sync_8, data=0xc4
+[2023-09-18 16:10:07.607527] Session be erased:=ROM_RTOS, Completed:= 0.5/1 
+[2023-09-18 16:10:07.612514] write8, data=0xc7
+[2023-09-18 16:10:07.625509] write32_ex, data=0x30da44
+[2023-09-18 16:10:07.625509] write8, data=0x0
+[2023-09-18 16:10:07.641468] write8, data=0x30
+[2023-09-18 16:10:07.656959] write8, data=0xda
+[2023-09-18 16:10:07.672916] write8, data=0x44
+[2023-09-18 16:10:07.702837] FlashWrite mode:0
+[2023-09-18 16:10:07.702837] write8, data=0xc6
+[2023-09-18 16:10:07.705829] write8, data=0x0
+[2023-09-18 16:10:07.721786] send_binary:Z:/Customer_Branch/hadron_master_20230815_wpa2-enterprise/out/mt7933_hdk/bga_sdk_demo/mt7933cv_xip_bga_al.bin
+[2023-09-18 16:10:54.049566] Session be burned:=ROM_RTOS, Completed:= 1/1 
+[2023-09-18 16:10:55.083060] wait_sync_8, data=0xc4
+[2023-09-18 16:10:55.921814] write8, data=0xcb
+[2023-09-18 16:10:55.958744] checksum0/1=0xc560|0xc560
+[2023-09-18 16:10:55.958744] Parm2:Burn_time:78.27
+[2023-09-18 16:10:55.978661] Node done:Burn Finished
+[2023-09-18 16:10:55.989631] Finished!

@@ -1,0 +1,44 @@
+SYStem.RESet
+SYStem.CPU CORTEXM33F
+SYStem.Option ENRESET ON
+SYStem.Option TRST ON
+SYStem.Option ResBreak OFF
+SYStem.Option WaitReset OFF
+SYStem.JtagClock 1MHz
+;sys.mode prepare
+;if swd mode, need set debug port type to swd
+SYStem.CONFIG.DEBUGPORTTYPE SWD
+SYStem.Up
+
+Setup.IMASKHLL ON
+Setup.IMASKASM ON
+
+Break.Select Program OnChip
+Break.Select Hll OnChip
+Break.Select Spot OnChip
+Break.Select Read OnChip
+Break.Select Write OnChip
+
+; TODO: Disable watch dog
+;D.S SD:0x21020030 %LE %WORD 0x2200
+
+; Clear the exceptions: AIRCR.VECTCLRACTIVE
+d.s asd:0xE000ED0C %le %long 0x05FA0002
+
+; disable cache (to allow reload on FPGA execution without power reset)
+d.s 0x20080000 %Long 0x00000300
+
+; ===================================================================
+; Download the binary image
+; ===================================================================
+D.LOAD.ELF .\mt7933_bootloader-ram.elf  /quad
+
+d.s asd:0x21060000 %le %long data.long(asd:__isr_vector)
+d.s asd:0x21060004 %le %long data.long(asd:__isr_vector+4)
+d.s asd:0x21060008 %le %long data.long(asd:0x21060008)|0x1
+
+system.reset
+system.up
+wait 10.ms
+
+D.L
